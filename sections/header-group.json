@@ -43,12 +43,12 @@
       ],
       "settings": {
         "enable_sticky": false,
-        "text_size": "text-xs",
+        "text_size": "text-base",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
-        "background": "#1a1a1a",
+        "background": "#ffb74a",
         "background_gradient": "",
-        "text_color": "#ffffff"
+        "text_color": "#000000"
       }
     },
     "header": {
@@ -56,14 +56,14 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
-        "logo": "shopify://shop_images/image_21.png",
+        "logo": "shopify://shop_images/QLEAN_3.png",
         "logo_max_width": 195,
-        "logo_mobile_max_width": 140,
+        "logo_mobile_max_width": 100,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
         "menu_open_trigger": "click",
-        "opening_from": "left",
+        "opening_from": "bottom",
         "layout": "logo_left_navigation_center",
         "show_social_media": false,
         "show_locale_selector": false,
@@ -71,7 +71,6 @@
         "show_country_flag": false,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
-        "transparent_logo": "shopify://shop_images/image_22411.png",
         "reduce_padding": true,
         "background_opacity": 100,
         "background_blur_radius": 0

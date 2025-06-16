@@ -72,6 +72,12 @@
             "liquid": "<style>\n  .custom-shipping-container {\n    display: flex;\n    padding: 6px 16px;\n    justify-content: space-between;\n    align-items: center;\n    align-self: stretch;\n    background-color: #f6f6f6;\n    border-radius: 20px;\n  }\n\n  .custom-shipping-item {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n  }\n\n  .text-block-shipping {\n    font-size: 12px;\n    color: #000;\n  }\n\n  .shipping-date {\n    font-weight: bold;\n  }\n\n  .free-shipping {\n    font-weight: bold;\n  }\n\n  .green-circle {\n    animation: fade 1s ease-in-out infinite;\n  }\n\n  .custom-icon {\n    width: 20px; /* Állítsd be a kívánt szélességet */\n    height: auto; /* Automatikus magasság a szélesség arányában */\n  }\n\n  @keyframes fade {\n    0%, 100% {\n      opacity: 1;\n    }\n    50% {\n      opacity: 0.5;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    var daysAfterToday = 5; // Set this to the number of days after today that the item will ship\n    var today = new Date();\n    var shipDate = new Date(today.setDate(today.getDate() + daysAfterToday));\n    var options = { weekday: 'short', month: 'long', day: 'numeric' };\n\n    var formattedDate = shipDate.toLocaleDateString('en-US', options);\n    document.getElementById('shipping-date').textContent = formattedDate;\n  });\n</script>\n\n<div class=\"custom-shipping-container\">\n  <div class=\"custom-shipping-item\">\n    <svg class=\"green-circle\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\">\n      <circle cx=\"6\" cy=\"6.5\" r=\"6\" fill=\"#137333\" />\n    </svg>\n    <div class=\"text-block-shipping\">\n      <b>Livrare în 24 de ore\n\n\n\n\n\n\n\n\n\n</b>\n    </div>\n  </div>\n  <div class=\"custom-shipping-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0923/5284/0022/files/images.png?v=1750103188\" loading=\"lazy\" alt=\"USA flag\" class=\"custom-icon\">\n    <div class=\"text-block-shipping\">\n      <span class=\"free-shipping\">Din depozit din România\n    </div>\n  </div>\n</div>"
           }
         },
+        "text_U3tRDN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>❗<strong>Stoc redus:</strong> produsele noastre se epuizează rapid ❗</p>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -95,6 +101,7 @@
         "variant_picker",
         "quantity_selector",
         "liquid_xnqPc7",
+        "text_U3tRDN",
         "buy_buttons"
       ],
       "settings": {

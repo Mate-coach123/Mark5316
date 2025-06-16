@@ -94,6 +94,92 @@
           "settings": {
             "product": "{{product}}"
           }
+        },
+        "text_fFjywT": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>📦 Livrare GLS în 1–2 zile lucrătoare</strong></p>"
+          }
+        },
+        "associated_products_6YheU6": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Adaugă arome la comanda ta cu o reducere de 25%!",
+            "stack_products": true,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        },
+        "offer_Lecwba": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-award-gift",
+            "icon_width": 24,
+            "title": "CADOU: Cartuș aromatizat suficient pentru 18 zile",
+            "content": "<p>2 plicuri care conțin în total 6 cartușe aromatizate</p>",
+            "background": "#f4e8d5",
+            "text_color": "#d27f04"
+          }
+        },
+        "collapsible_text_64D6NW": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Cum este să inhalezi aer aromatizat?",
+            "content": "<p>Aerul aromatizat de la Qlean oferă un gust plăcut și natural, fiind o alternativă agreabilă pentru utilizarea de zi cu zi. Este mai puțin intens decât vaporii, dar oferă totuși o experiență revigorantă – asemănătoare cu un ceai de plante ușor infuzat sau o băutură carbogazoasă fără zahăr.</p>"
+          }
+        },
+        "collapsible_text_ccRqEC": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Cum funcționează Qlean?",
+            "content": "<p>Qlean oferă aer aromatizat natural, care aduce o experiență revigorantă în viața de zi cu zi.</p><p>Este realizat 100% din ingrediente naturale și reprezintă o alternativă comodă pentru cei care doresc să adopte obiceiuri mai conștiente.</p><p><strong><br/>Utilizarea Qlean este simplă – doar 3 pași:</strong></p><ol><li>Înmoaie ușor cartușul aromat preferat.</li><li>Introdu cartușul în dispozitivul Qlean.</li><li>Bucură-te de experiența revigorantă a aromaterapiei naturale.</li></ol>"
+          }
+        },
+        "collapsible_text_44T676": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Este Qlean sigur?",
+            "content": "<p><strong>Desigur!<br/></strong>Qlean este realizat 100% din ingrediente naturale, inclusiv uleiuri esențiale pure, extracte din plante și arome naturale.</p><p>Nu conține nicotină, produse de ardere sau aditivi artificiali, oferind astfel o alternativă naturală și revigorantă pentru utilizarea zilnică.</p><p>Informații suplimentare:</p>"
+          }
+        },
+        "collapsible_text_DETCHP": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Cât de mult durează un cartuș aromatizat?",
+            "content": "<p>Fiecare cartuș aromatizat durează între 2 și 3 zile în cazul unei utilizări regulate, în funcție de cât de des folosești Qlean.</p>"
+          }
+        },
+        "collapsible_text_wfhRXJ": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Ce include pachetul?",
+            "content": "<p>Conținutul pachetului:</p><ul><li>1 buc. – Difuzor Qlean POD</li><li>2 pachete – Cartușe aromatizate Qlean</li><li>1 buc. – Set de curățare Qlean</li></ul>"
+          }
+        },
+        "collapsible_text_AAhnNW": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Livrare",
+            "content": "<p>De livrarea precisă se ocupă serviciul de curierat GLS. Expediem coletul tău în următoarea zi lucrătoare după plasarea comenzii.<br/>De la expediere, coletul este livrat a doua zi, astfel livrarea durează în medie între 1 și 3 zile lucrătoare.</p>"
+          }
+        },
+        "collapsible_text_mQa9EW": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Ai întrebări? Ia legătura cu noi!",
+            "content": "<p>Te ajutăm să faci alegerea potrivită! Serviciul nostru de asistență pentru clienți este disponibil în fiecare zi lucrătoare, între orele 09:00 și 17:00.</p><ul><li>qlean.info@gmail.com</li></ul>"
+          }
+        },
+        "image_3CicPB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/QLEAN_3.png",
+            "alignment": "start",
+            "max_width": 150
+          }
         }
       },
       "block_order": [
@@ -109,7 +195,18 @@
         "liquid_xnqPc7",
         "text_U3tRDN",
         "buy_buttons",
-        "releasit_cod_form_button_app_block_iGHBCp"
+        "releasit_cod_form_button_app_block_iGHBCp",
+        "text_fFjywT",
+        "associated_products_6YheU6",
+        "offer_Lecwba",
+        "collapsible_text_64D6NW",
+        "collapsible_text_ccRqEC",
+        "collapsible_text_44T676",
+        "collapsible_text_DETCHP",
+        "collapsible_text_wfhRXJ",
+        "collapsible_text_AAhnNW",
+        "collapsible_text_mQa9EW",
+        "image_3CicPB"
       ],
       "settings": {
         "full_width": true,
@@ -127,6 +224,116 @@
         "text_color": "",
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
+      }
+    },
+    "rich_text_dC78HP": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_93UftX": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h0",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_gTbgpJ": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Trăiește-ți viața în mod natural, cu o experiență revigorantă de aromaterapie oferită de Qlean!</strong></p><p>O alegere <strong>conștientă</strong> care te poate ghida către un stil de viață mai <strong>echilibrat</strong> și mai natural.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_93UftX",
+        "richtext_gTbgpJ"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "medium",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "#000000"
+      }
+    },
+    "image_with_text_overlay_aL6dcE": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
+      "settings": {
+        "full_width": true,
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/GIF-ezgif.com-video-to-gif-converter.gif",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "text_with_icons_7aYgK7": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_BLGeFA": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Free shipping",
+            "content": "<p>Free worldwide shipping and returns - customs and duties taxes included</p>"
+          }
+        },
+        "item_nccaGY": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Customer service",
+            "content": "<p>We are available from monday to friday to answer your questions.</p>"
+          }
+        },
+        "item_kqeTzw": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-coupon",
+            "mobile_icon_width": 24,
+            "icon_width": 32,
+            "icon_background_type": "circle",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Secure payment",
+            "content": "<p>Your payment information is processed securely.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_BLGeFA",
+        "item_nccaGY",
+        "item_kqeTzw"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h5",
+        "text_alignment": "center",
+        "icon_spacing": "medium",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "17500911687bffbabb": {
@@ -157,6 +364,9 @@
   },
   "order": [
     "main",
+    "rich_text_dC78HP",
+    "image_with_text_overlay_aL6dcE",
+    "text_with_icons_7aYgK7",
     "17500911687bffbabb"
   ]
 }

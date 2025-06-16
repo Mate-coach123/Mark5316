@@ -75,6 +75,23 @@
     "footer": {
       "type": "footer",
       "blocks": {
+        "newsletter_dfnjXc": {
+          "type": "newsletter",
+          "settings": {
+            "image_width": 150,
+            "heading_size": "h3",
+            "title": "Abonează-te la newsletterul nostru pentru a fi la curent cu ofertele și promoțiile noastre încă din primul moment!",
+            "content": ""
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "title": "Despre noi",
+            "content": "<p>Scopul nostru este să oferim o alternativă naturală și revigorantă pentru toți cei care doresc să adopte un stil de viață mai conștient. Experiența Qlean este ușoară, sigură și ușor de integrat în rutina zilnică.</p>",
+            "enable_follow_on_shop": true
+          }
+        },
         "links": {
           "type": "links",
           "settings": {
@@ -82,18 +99,20 @@
             "show_menu_title": true
           }
         },
-        "text": {
+        "text_finxyF": {
           "type": "text",
           "settings": {
-            "title": "About",
-            "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme editor.</p>",
+            "title": "Submeniu",
+            "content": "",
             "enable_follow_on_shop": true
           }
         }
       },
       "block_order": [
+        "newsletter_dfnjXc",
+        "text",
         "links",
-        "text"
+        "text_finxyF"
       ],
       "settings": {
         "show_social_media": true,

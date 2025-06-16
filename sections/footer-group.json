@@ -11,6 +11,67 @@
   "type": "footer",
   "name": "Footer group",
   "sections": {
+    "text_with_icons_wkPNYF": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item_FJA9hn": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-box",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Livrare expres în 1–2 zile lucrătoare",
+            "content": "<p>În prezent, toate produsele noastre sunt livrate prin curier rapid, în 1–2 zile lucrătoare.</p>"
+          }
+        },
+        "item_jnjQ6j": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-customer-support",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Asistență clienți rapidă",
+            "content": "<p>Dacă ai întrebări sau nu ești sigur de alegerea ta, nu ezita să ne contactezi cu încredere la adresa qlean.info@gmail.com!</p>"
+          }
+        },
+        "item_aKgVRc": {
+          "type": "item",
+          "settings": {
+            "icon": "picto-leaf",
+            "mobile_icon_width": 24,
+            "icon_width": 24,
+            "icon_background_type": "none",
+            "icon_background": "",
+            "icon_color": "",
+            "title": "Fă-ți viața de zi cu zi mai conștientă cu o alternativă naturală.",
+            "content": "<p>Scopul nostru este să oferim o experiență naturală și revigorantă tuturor celor care își doresc un stil de viață mai conștient. Qlean sprijină formarea noilor obiceiuri zilnice printr-o experiență ușoară de aromaterapie.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_FJA9hn",
+        "item_jnjQ6j",
+        "item_aKgVRc"
+      ],
+      "name": "Text with icons",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "title": "",
+        "heading_tag": "h6",
+        "text_alignment": "center",
+        "icon_spacing": "small",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "footer": {
       "type": "footer",
       "blocks": {
@@ -45,6 +106,7 @@
     }
   },
   "order": [
+    "text_with_icons_wkPNYF",
     "footer"
   ]
 }

@@ -380,6 +380,83 @@
         "background_gradient": "",
         "text_color": ""
       }
+    },
+    "faq_k7Pbei": {
+      "type": "faq",
+      "blocks": {
+        "item_dNrECL": {
+          "type": "item",
+          "settings": {
+            "title": "Cum este să inhalezi aer aromatizat?",
+            "content": "<p>Aerul aromatizat de la Qlean oferă un gust plăcut și natural, care te poate ajuta să renunți la obiceiurile dăunătoare.<br/><br/>Este mai puțin intens decât vaporii, dar revigorant – asemănător cu un ceai de plante ușor infuzat sau o băutură carbogazoasă fără zahăr.</p>"
+          }
+        },
+        "item_kDzycT": {
+          "type": "item",
+          "settings": {
+            "title": "Cum funcționează Qlean?",
+            "content": "<p>Qlean oferă aer aromatizat natural, care oferă o experiență plăcută și revigorantă pentru cei care doresc să adopte un stil de viață mai conștient.<br/><br/>Fabricat din ingrediente 100% naturale, reprezintă o alternativă accesibilă pentru cei care vor să-și formeze noi obiceiuri.<br/>Păstrarea gestului mână-gură poate facilita integrarea noii rutine în viața de zi cu zi.<br/></p>"
+          }
+        },
+        "item_7p3Tek": {
+          "type": "item",
+          "settings": {
+            "title": "Cum să folosesc Qlean?",
+            "content": "<p>Utilizarea Qlean este simplă – doar 3 pași:</p><ol><li>Înmoaie ușor cartușul aromat preferat.</li><li>Introdu cartușul în dispozitivul Qlean.</li><li>Bucură-te de experiența revigorantă a aromaterapiei naturale!</li></ol>"
+          }
+        },
+        "item_iKgcpa": {
+          "type": "item",
+          "settings": {
+            "title": "Qlean este sigur?",
+            "content": "<p><strong>Desigur! </strong><br/>Qlean este realizat 100% din ingrediente naturale, inclusiv uleiuri esențiale pure, extracte din plante și arome naturale. Nu conține nicotină, produse de ardere sau aditivi artificiali, oferind astfel o alternativă naturală și revigorantă pentru utilizarea de zi cu zi.</p>"
+          }
+        },
+        "item_xpgdhc": {
+          "type": "item",
+          "settings": {
+            "title": "Cât timp durează un cartuș aromatizat?",
+            "content": "<p>Fiecare cartuș aromatizat durează între 2 și 3 zile în cazul unei utilizări regulate, în funcție de cât de des folosești dispozitivul Qlean.</p>"
+          }
+        },
+        "item_iwnycK": {
+          "type": "item",
+          "settings": {
+            "title": "Ce conține pachetul?",
+            "content": "<p>Conținutul pachetului:</p><ul><li>1 buc. – Difuzor Qlean POD</li><li>2 pachete – Cartușe aromatizate Qlean</li><li>1 buc. – Set de curățare Qlean</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "item_dNrECL",
+        "item_kDzycT",
+        "item_7p3Tek",
+        "item_iKgcpa",
+        "item_xpgdhc",
+        "item_iwnycK"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Întrebări frecvente",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Serviciul nostru de asistență pentru clienți este disponibil în fiecare zi lucrătoare, între orele 08:00 și 20:00, la adresa qlean.info@gmail.com!",
+        "answer_time": "Timp mediu de răspuns: în decurs de 24 de ore.",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
     }
   },
   "order": [
@@ -391,6 +468,7 @@
     "rich_text_yp4jVa",
     "testimonials_jQ4WLW",
     "featured_collection_dfeF3N",
-    "rich_text_RPqeD6"
+    "rich_text_RPqeD6",
+    "faq_k7Pbei"
   ]
 }

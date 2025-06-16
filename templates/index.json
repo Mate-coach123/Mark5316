@@ -15,18 +15,17 @@
         "slide-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/shampoo-header.webp",
-            "mobile_image": "shopify://shop_images/pexels-karolina-grabowska-5241037_1.webp",
-            "content_max_width": 1200,
+            "image": "shopify://shop_images/3.png",
+            "content_max_width": 780,
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
-            "subheading": "Filtrul care transformă apa robinetului în apă de izvor – sau banii înapoi!",
+            "subheading": "",
             "title": "Gata cu Pielea Uscată și Păru!",
             "heading_tag": "h0",
             "button_text": "",
             "button_link": "",
             "text_color": "#ffffff",
-            "button_background": "#ffffff",
+            "button_background": "#ffb74a",
             "button_text_color": "#000000",
             "overlay_color": "#000000",
             "overlay_opacity": 30,
@@ -50,34 +49,29 @@
         "background_gradient": "linear-gradient(60deg, rgba(60, 65, 68, 1), rgba(23, 29, 33, 1) 98%)"
       }
     },
-    "scrolling-text": {
-      "type": "scrolling-text",
+    "image_with_text_overlay_TJf3TF": {
+      "type": "image-with-text-overlay",
+      "name": "Image with text overlay",
       "settings": {
         "full_width": true,
-        "text": "99% clor eliminat - 0,001 mm filtrare - 92% mai puțină încrețire",
-        "text_size": "large",
-        "text_style": "fill",
-        "scrolling_mode": "auto",
-        "scrolling_speed": 5,
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "text_gradient": ""
+        "allow_transparent_header": false,
+        "enable_parallax": false,
+        "image_size": "auto",
+        "image": "shopify://shop_images/GIF-ezgif.com-video-to-gif-converter.gif",
+        "mobile_text_position": "place-self-center text-center",
+        "desktop_text_position": "sm:place-self-center sm:text-center",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
       }
     },
     "rich_text_xFGCyf": {
       "type": "rich-text",
       "blocks": {
-        "subheading_beh4zU": {
-          "type": "subheading",
-          "settings": {
-            "text": "Revoluționează-ți experiența la duș!"
-          }
-        },
         "heading_XjtBfc": {
           "type": "heading",
           "settings": {
-            "text": "CALITATE SUPERIOARĂ",
+            "text": "Despre noi",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -86,12 +80,11 @@
         "richtext_6y8XLR": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Bun venit la Filterbaby – unde fiecare picătură de apă înseamnă piele catifelată și păr strălucitor. Cu filtrele noastre inovatoare, aducem puritatea apei de izvor în casa ta.</p><p><strong>De ce să ne alegi?</strong><br/>✔ 99% eliminare clor și calcar<br/>✔ Instalare în 3 minute – fără expert<br/>✔ Peste 50.000 clienți mulțumiți</p>"
+            "content": "<p>Qlean este un dispozitiv inovator de aromaterapie pe bază naturală, care sprijină formarea obiceiurilor conștiente. Scopul nostru este să oferim o alternativă naturală, fără substanțe chimice, tuturor celor care caută o schimbare în stilul lor de viață.</p><p>Qlean folosește uleiuri esențiale pure, de origine vegetală, pentru a oferi o experiență plăcută și revigorantă în viața de zi cu zi. Credem că puterea naturii poate fi o sursă de inspirație pentru dezvoltarea unor obiceiuri pozitive – într-un mod simplu, sigur și plăcut.<br/><br/></p>"
           }
         }
       },
       "block_order": [
-        "subheading_beh4zU",
         "heading_XjtBfc",
         "richtext_6y8XLR"
       ],
@@ -104,207 +97,300 @@
         "text_color": ""
       }
     },
-    "image-with-text-overlay": {
-      "type": "image-with-text-overlay",
+    "featured_product_ycdmrM": {
+      "type": "featured-product",
       "blocks": {
-        "1664424230c4756b0e-0": {
-          "type": "subheading",
+        "vendor_bU6Xx9": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "title_Ca4aCh": {
+          "type": "title",
           "settings": {
-            "text": "Bun venit în lumea apei pure!"
+            "heading_tag": "h2"
           }
         },
-        "1664424230c4756b0e-1": {
-          "type": "heading",
+        "badges_d9xU9G": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price_wUzjhF": {
+          "type": "price",
           "settings": {
-            "text": "FILTRU DE DUȘ REVOLUȚIONAR",
-            "heading_tag": "h1"
+            "show_taxes_notice": false
           }
         },
-        "1664424230c4756b0e-2": {
-          "type": "richtext",
+        "rating_bhBKcP": {
+          "type": "rating",
           "settings": {
-            "content": "<p>Aquafiltr Pro transformă apa robinetului într-un izvor de hidratare. Spune adio pielii uscate și părului lipsit de viață.</p>"
+            "show_empty": false
           }
+        },
+        "separator_eAdr6W": {
+          "type": "separator",
+          "settings": {}
+        },
+        "description_TmjAj3": {
+          "type": "description",
+          "settings": {
+            "collapse_content": false
+          }
+        },
+        "variant_picker_p9jWVg": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": true,
+            "selector_mode": "block",
+            "color_mode": "color",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector_Bd4JYB": {
+          "type": "quantity_selector",
+          "settings": {}
         }
       },
       "block_order": [
-        "1664424230c4756b0e-0",
-        "1664424230c4756b0e-1",
-        "1664424230c4756b0e-2"
+        "vendor_bU6Xx9",
+        "title_Ca4aCh",
+        "badges_d9xU9G",
+        "price_wUzjhF",
+        "rating_bhBKcP",
+        "separator_eAdr6W",
+        "description_TmjAj3",
+        "variant_picker_p9jWVg",
+        "quantity_selector_Bd4JYB"
       ],
+      "name": "Featured product",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": false,
-        "enable_parallax": false,
-        "image_size": "md",
-        "image": "shopify://shop_images/pexels-timmossholder-1049687.jpg",
-        "mobile_image": "shopify://shop_images/pexels-timmossholder-1049687.jpg",
-        "mobile_text_position": "place-self-center text-center",
-        "desktop_text_position": "sm:place-self-center sm:text-center",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "product": "qlean™-kezdo-szett-pod-18-napra-elegendo-ajandek-betet",
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "expanded",
+        "mobile_carousel_control": "floating_dots",
+        "enable_video_autoplay": true,
+        "enable_video_looping": false,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
       }
     },
-    "press": {
-      "type": "press",
+    "impact_text_jzzVPt": {
+      "type": "impact-text",
       "blocks": {
-        "16644243327ba53d2a-0": {
-          "type": "quote",
+        "item_Cie7bH": {
+          "type": "item",
           "settings": {
-            "logo_width": 100,
-            "author": "Ioan***",
-            "content": "Sincer să fiu, Filtrul chiar oprește impuritățile – se vede în cartuș după câteva săptămâni. Sunt mulțumit pe deplin.",
-            "show_rating": true,
-            "rating": 5
-          }
-        },
-        "16644243327ba53d2a-1": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "Pop ***",
-            "content": "Nu credema că un simplu filtru poate face o așa diferență. Pielea nu mai e uscată după duș. O să mai cumpăr unul pentru părinți.",
-            "show_rating": true,
-            "rating": 5
-          }
-        },
-        "quote_rtzh3B": {
-          "type": "quote",
-          "settings": {
-            "logo_width": 100,
-            "author": "Violeta ***",
-            "content": "Pentru mine, Folosesc Aquafiltr de 2 luni și se simte o mare diferență la duș. Îl voi recomanda și altora.",
-            "show_rating": true,
-            "rating": 5
+            "title": "1500+",
+            "subheading": "",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
           }
         }
       },
       "block_order": [
-        "16644243327ba53d2a-0",
-        "16644243327ba53d2a-1",
-        "quote_rtzh3B"
+        "item_Cie7bH"
       ],
+      "name": "Impact text",
       "settings": {
         "full_width": true,
-        "content_size": "medium",
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "#e68b00",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "rich_text_yp4jVa": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_HhncJt": {
+          "type": "heading",
+          "settings": {
+            "text": "Poveste de succes",
+            "heading_tag": "h0",
+            "text_color": "#ffb74a",
+            "gradient": ""
+          }
+        },
+        "richtext_LELYnK": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>Fă primul pas către un stil de viață mai natural și mai conștient! Noi îți oferim inspirația – alegerea este în mâinile tale.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_HhncJt",
+        "richtext_LELYnK"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "testimonials_jQ4WLW": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_t8PMyt": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "John S.",
+            "title": "În sfârșit, am scăpat de obiceiurile rele",
+            "content": "<p>Am încercat de mai multe ori să renunț, dar nu a durat mult. Însă cu acest dispozitiv am ajuns deja în a treia lună.</p>"
+          }
+        },
+        "testimonial_EhGQXw": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Mary U.",
+            "title": "Incredibil",
+            "content": "<p>De când folosesc acest dispozitiv, nu mai simt acea poftă ca înainte. Genial!</p>"
+          }
+        },
+        "testimonial_CaNn6R": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Joshua A.",
+            "title": "Mă ajută enorm",
+            "content": "<p>Sunt mai calm, mai plin de energie și mai fericit de când îl folosesc. Nu am crezut că va funcționa atât de bine.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_t8PMyt",
+        "testimonial_EhGQXw",
+        "testimonial_CaNn6R"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
         "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "logo_item_background": "",
-        "logo_item_border": ""
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
       }
     },
-    "faq": {
-      "type": "faq",
-      "blocks": {
-        "item_hGPgLh": {
-          "type": "item",
-          "settings": {
-            "title": "Protejează și mașina de spălat? (Și alte aparate?)",
-            "content": "<p><br/><em>Deși Filterbaby este conceput special pentru duș, apa filtrată ajută la reducerea calcarului în TOATE aparatele casei!<br/><br/></em><strong>Reducere ~60% a depunerilor</strong> <em>TOATE aparatele</em><br/><br/></p>"
-          }
-        },
-        "item_BJegKj": {
-          "type": "item",
-          "settings": {
-            "title": "Se potrivește capul de duș filtratAquafiltr Pro la dușul meu existent?",
-            "content": "<p>Da, capul de duș filtrat Aquafiltr Pro are un filtru integrat și este proiectat să fie compatibil cu majoritatea furtunurilor de duș și fitingurilor standard.</p>"
-          }
-        },
-        "item_yCzmPt": {
-          "type": "item",
-          "settings": {
-            "title": "Cât de ușor este de instalat?",
-            "content": "<p>Este super ușor – o poți face singur, nu ai nevoie de instalator. Tot ce îți trebuie sunt 3 pași simpli:</p><ol><li>Demontați capul de duș original.</li><li>Înșurubați filtrul de duș Filterbaby Pro Series.</li><li>Înșurubați capul de duș original pe filtrul de duș Filterbaby Pro Series.</li></ol>"
-          }
-        },
-        "item_9tEAMH": {
-          "type": "item",
-          "settings": {
-            "title": "Ce rezultate mă pot aștepta de la utilizarea capului de duș filtrat Aquafiltr Pro?",
-            "content": "<p><br/>Vă puteți aștepta la îmbunătățiri semnificative ale pielii și părului, inclusiv reducerea erupțiilor cutanate, roșeții și iritațiilor; o piele mai moale, mai hidratată și un păr mai sănătos și mai strălucitor. Ajută pielea uscată, eczematoasă, predispusă la acnee și rozacee, și îmbunătățește sănătatea respiratorie prin eliminarea vaporilor de clor.<br/><br/></p>"
-          }
-        },
-        "item_4MqF7H": {
-          "type": "item",
-          "settings": {
-            "title": "Ce impurități elimină filtrul?",
-            "content": "<p><br/>Aquafiltr Pro elimină până la 99% din clor, cloramină și plumb. De asemenea, reduce metalele grele și alte substanțe chimice dăunătoare.<br/><br/><br/></p>"
-          }
-        },
-        "item_Q9rzTC": {
-          "type": "item",
-          "settings": {
-            "title": "Înmuierează apa capul de duș filtrat?",
-            "content": "<p><br/>Aquafiltr Pro elimină până la 99% din clor, cloramină și plumb. De asemenea, reduce metalele grele și alte substanțe chimice dăunătoare.<br/><br/><br/></p>"
-          }
-        },
-        "item_a6JTwc": {
-          "type": "item",
-          "settings": {
-            "title": "Când schimb filtrul?",
-            "content": "<p><br/>Majoritatea filtrelor de duș trebuie schimbate la fiecare 3 luni sau după filtrarea a aproximativ 10.000 de litri de apă.<br/><br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "item_hGPgLh",
-        "item_BJegKj",
-        "item_yCzmPt",
-        "item_9tEAMH",
-        "item_4MqF7H",
-        "item_Q9rzTC",
-        "item_a6JTwc"
-      ],
+    "featured_collection_dfeF3N": {
+      "type": "featured-collection",
+      "name": "Featured collection",
       "settings": {
-        "full_width": false,
+        "collection": "",
+        "products": [],
+        "full_width": true,
+        "stack_products": true,
+        "show_progress_bar": false,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "Intrebari frecvente",
+        "title": "Aromele noastre bestseller",
         "content": "",
-        "team_avatar_width": 160,
-        "support_hours": "Serviciul nostru de asistență pentru clienți este disponibil de luni până vineri, între orele 8:00 și 20:30.",
-        "answer_time": "Timp mediu de răspuns: 4-6 ore",
-        "button_text": "",
-        "button_url": "",
-        "text_position": "start",
-        "background": "#ffffff",
+        "link_url": "",
+        "link_text": "Produse suplimentare",
+        "background": "",
         "background_gradient": "",
         "text_color": "",
         "heading_color": "",
         "heading_gradient": "",
-        "button_background": "",
-        "button_text_color": "",
-        "accordion_background": "",
-        "accordion_text_color": ""
+        "product_card_background": "",
+        "product_card_text_color": ""
       }
     },
-    "newsletter_EwrzRX": {
-      "type": "newsletter",
+    "rich_text_RPqeD6": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_zVH3y6": {
+          "type": "heading",
+          "settings": {
+            "text": "Siguranță",
+            "heading_tag": "h0",
+            "text_color": "#e68b00",
+            "gradient": ""
+          }
+        },
+        "richtext_LTnRbz": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>A fi primul vine cu responsabilitate. În cercetarea, testarea și producția produselor noastre de aromaterapie, stabilim cele mai înalte standarde de calitate.</strong></p>"
+          }
+        },
+        "button_Kae7jD": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "xl",
+            "text": "Află mai multe",
+            "url": "",
+            "background": "#ffb74a",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_zVH3y6",
+        "richtext_LTnRbz",
+        "button_Kae7jD"
+      ],
+      "name": "Rich text",
       "settings": {
         "full_width": true,
-        "show_icon": false,
-        "title": "Nu rata nicio oportunitate!",
-        "content": "<p>Abonează-te acum și primești 10% reducere la prima comandă!</p>",
-        "button_text": "VREAU ACCES EXCLUSIV",
-        "subtext": "",
-        "background": "#ffffff",
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
         "background_gradient": "",
-        "text_color": "",
-        "button_background": "",
-        "button_text_color": ""
+        "text_color": ""
       }
     }
   },
   "order": [
     "slideshow",
-    "scrolling-text",
+    "image_with_text_overlay_TJf3TF",
     "rich_text_xFGCyf",
-    "image-with-text-overlay",
-    "press",
-    "faq",
-    "newsletter_EwrzRX"
+    "featured_product_ycdmrM",
+    "impact_text_jzzVPt",
+    "rich_text_yp4jVa",
+    "testimonials_jQ4WLW",
+    "featured_collection_dfeF3N",
+    "rich_text_RPqeD6"
   ]
 }

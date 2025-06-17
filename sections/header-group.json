@@ -17,21 +17,21 @@
         "message_wpBUVW": {
           "type": "message",
           "settings": {
-            "text": " 99% eliminare clor și calcar",
+            "text": "Livrare cu ramburs în 1–2 zile lucrătoare",
             "url": ""
           }
         },
         "message_wy9mhU": {
           "type": "message",
           "settings": {
-            "text": "Livrare gratuita peste 299 de lei",
+            "text": "Garanție de aromă de 30 de zile",
             "url": ""
           }
         },
         "message": {
           "type": "message",
           "settings": {
-            "text": "Peste 50.000 clienți mulțumiți",
+            "text": "Descoperă alternativa naturală",
             "url": ""
           }
         }

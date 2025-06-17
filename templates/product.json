@@ -233,7 +233,7 @@
           "type": "heading",
           "settings": {
             "text": "Eliberează-te de obiceiurile rele",
-            "heading_tag": "h0",
+            "heading_tag": "h1",
             "text_color": "#e68b00",
             "gradient": ""
           }
@@ -397,7 +397,7 @@
           "type": "heading",
           "settings": {
             "text": "Poveste de succes",
-            "heading_tag": "h0",
+            "heading_tag": "h1",
             "text_color": "#ffb74a",
             "gradient": ""
           }
@@ -483,6 +483,247 @@
         "testimonial_card_text_color": ""
       }
     },
+    "rich_text_JEBCq4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_etGJBe": {
+          "type": "heading",
+          "settings": {
+            "text": "Alegere revigorantă și naturală",
+            "heading_tag": "h1",
+            "text_color": "#e68b00",
+            "gradient": ""
+          }
+        },
+        "richtext_LmYzQz": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p><strong>De multe ori este greu să schimbi obiceiurile – însă cu puțină conștiență, totul devine mai ușor. Qlean oferă aer aromatizat natural, care te ajută să adopți un stil de viață mai revigorant și mai natural.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_etGJBe",
+        "richtext_LmYzQz"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "rich_text_wHG7mb": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_LAedBr": {
+          "type": "heading",
+          "settings": {
+            "text": "Primul difuzor de aer aromatizat din lume",
+            "heading_tag": "h1",
+            "text_color": "#e68b00",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_LAedBr"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_6MUBVL": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_teHznw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/QLEAN_3.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Bucură-te de experiența revigorantă a aromaterapiei naturale în fiecare zi!",
+            "content": "<p>Qlean oferă un nou tip de experiență naturală pentru a te ajuta să îți formezi obiceiuri mai conștiente.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_teHznw"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_UjAtBQ": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_kiR7DB": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/QLEAN_3.png",
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Ce conține setul de început?",
+            "content": "<p><strong>Un set de început care te ajută să-ți formezi obiceiuri naturale!</strong></p><p>Pachetul include un difuzor Qlean, cartușe aromatizate suficiente pentru 18 zile și un set de curățare. Tot ce îți mai rămâne este să-ți formezi obiceiuri naturale!</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_kiR7DB"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_QVAV7p": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_pL3k7q": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/3.png",
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Garanție de aromă",
+            "content": "<p><strong>Nu ești sigur că alegi aroma potrivită pentru tine?</strong></p><p>Dacă aroma aleasă nu este pe placul tău, nu-ți face griji! Ia legătura cu noi și îți vom înlocui cartușele aromatizate sau îți vom returna contravaloarea acestora!</p><p><strong>Astfel, poți porni pe drumul natural fără niciun risc!</strong></p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "rgba(0,0,0,0)",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_pL3k7q"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "faq_PfAnC7": {
+      "type": "faq",
+      "blocks": {
+        "item_k9ccKT": {
+          "type": "item",
+          "settings": {
+            "title": "Cum este să inhalezi aer aromatizat?",
+            "content": "<p>Aerul aromatizat de la Qlean oferă un gust plăcut și natural, care te poate ajuta să renunți la obiceiurile dăunătoare.<br/><br/>Este mai puțin intens decât vaporii, dar revigorant – asemănător cu un ceai de plante ușor infuzat sau o băutură carbogazoasă fără zahăr.</p>"
+          }
+        },
+        "item_RzJyqR": {
+          "type": "item",
+          "settings": {
+            "title": "Cum funcționează Qlean?",
+            "content": "<p>Qlean oferă aer aromatizat natural, care oferă o experiență plăcută și revigorantă pentru cei care doresc să adopte un stil de viață mai conștient.<br/><br/>Fabricat din ingrediente 100% naturale, reprezintă o alternativă accesibilă pentru cei care vor să-și formeze noi obiceiuri.<br/>Păstrarea gestului mână-gură poate facilita integrarea noii rutine în viața de zi cu zi.</p>"
+          }
+        },
+        "item_wXKqxG": {
+          "type": "item",
+          "settings": {
+            "title": "Cum să folosesc Qlean?",
+            "content": "<p>Utilizarea Qlean este simplă – doar 3 pași:</p><ol><li>Înmoaie ușor cartușul aromat preferat.</li><li>Introdu cartușul în dispozitivul Qlean.</li><li>Bucură-te de experiența revigorantă a aromaterapiei naturale!</li></ol>"
+          }
+        },
+        "item_cEjQTn": {
+          "type": "item",
+          "settings": {
+            "title": "Qlean este sigur?",
+            "content": "<p><strong>Desigur!<br/></strong>Qlean este realizat 100% din ingrediente naturale, inclusiv uleiuri esențiale pure, extracte din plante și arome naturale. Nu conține nicotină, produse de ardere sau aditivi artificiali, oferind astfel o alternativă naturală și revigorantă pentru utilizarea de zi cu zi.</p>"
+          }
+        },
+        "item_Fi6n8F": {
+          "type": "item",
+          "settings": {
+            "title": "Cât timp durează un cartuș aromatizat?",
+            "content": "<p>Fiecare cartuș aromatizat durează între 2 și 3 zile în cazul unei utilizări regulate, în funcție de cât de des folosești dispozitivul Qlean.</p>"
+          }
+        },
+        "item_RahKt4": {
+          "type": "item",
+          "settings": {
+            "title": "Ce conține pachetul?",
+            "content": "<p>Conținutul pachetului:</p><ul><li>1 buc. – Difuzor Qlean POD</li><li>2 pachete – Cartușe aromatizate Qlean</li><li>1 buc. – Set de curățare Qlean</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "item_k9ccKT",
+        "item_RzJyqR",
+        "item_wXKqxG",
+        "item_cEjQTn",
+        "item_Fi6n8F",
+        "item_RahKt4"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Întrebări frecvente",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
+        "answer_time": "Average answer time: 24h",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "17500911687bffbabb": {
       "type": "apps",
       "blocks": {
@@ -517,6 +758,12 @@
     "impact_text_aYXeVi",
     "rich_text_mQtgBH",
     "testimonials_gqP3Ar",
+    "rich_text_JEBCq4",
+    "rich_text_wHG7mb",
+    "media_with_text_6MUBVL",
+    "media_with_text_UjAtBQ",
+    "media_with_text_QVAV7p",
+    "faq_PfAnC7",
     "17500911687bffbabb"
   ]
 }

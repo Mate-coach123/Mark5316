@@ -22,8 +22,8 @@
             "subheading": "",
             "title": "Gata cu Pielea Uscată și Păru!",
             "heading_tag": "h0",
-            "button_text": "",
-            "button_link": "",
+            "button_text": "Cumpără acum!",
+            "button_link": "shopify://products/qlean™-kezdo-szett-pod-18-napra-elegendo-ajandek-betet",
             "text_color": "#ffffff",
             "button_background": "#ffb74a",
             "button_text_color": "#000000",
@@ -146,9 +146,11 @@
             "size_chart_page": ""
           }
         },
-        "quantity_selector_Bd4JYB": {
-          "type": "quantity_selector",
-          "settings": {}
+        "text_MrbmVJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/products/qlean™-kezdo-szett-pod-18-napra-elegendo-ajandek-betet\" title=\"Qlean™ - Set de început (POD + cartuș CADOU suficient pentru 18 zile)\">Vizualizează produsul</a></p>"
+          }
         }
       },
       "block_order": [
@@ -160,7 +162,7 @@
         "separator_eAdr6W",
         "description_TmjAj3",
         "variant_picker_p9jWVg",
-        "quantity_selector_Bd4JYB"
+        "text_MrbmVJ"
       ],
       "name": "Featured product",
       "settings": {

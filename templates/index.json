@@ -317,7 +317,18 @@
       "name": "Featured collection",
       "settings": {
         "collection": "",
-        "products": [],
+        "products": [
+          "qlean™-set-de-3-cartușe-aromatizate-cu-vanilie-suficient-pentru-9-zile",
+          "qlean™-set-de-3-cartușe-aromatizate-cu-portocala-suficient-pentru-9-zile",
+          "qlean™-set-de-3-cartușe-aromatizate-cu-menta-creața-suficient-pentru-9-zile",
+          "qlean™-set-de-3-cartușe-aromatizate-cu-menta-suficient-pentru-9-zile",
+          "qlean™-set-de-3-cartușe-aromatizate-cu-grapefruit-suficient-pentru-9-zile",
+          "qlean™-set-de-3-cartușe-aromatizate-cu-capșuna-suficient-pentru-9-zile",
+          "qlean™-set-de-3-cartușe-aromatizate-cu-cafea-suficient-pentru-9-zile",
+          "a-chatgpt-ezt-mondta-qlean™-set-de-3-cartușe-aromatizate-cu-afina-suficient-pentru-9-zile",
+          "qlean™-selecție-de-arome-12-bucați-suficient-pentru-36-de-zile",
+          "qlean™-selecție-de-arome-2-0-12-bucați-suficient-pentru-36-de-zile"
+        ],
         "full_width": true,
         "stack_products": true,
         "show_progress_bar": false,

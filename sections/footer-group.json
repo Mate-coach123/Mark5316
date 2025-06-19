@@ -95,7 +95,7 @@
         "links": {
           "type": "links",
           "settings": {
-            "menu": "",
+            "menu": "uj-menu",
             "show_menu_title": true
           }
         },
@@ -103,7 +103,7 @@
           "type": "text",
           "settings": {
             "title": "Submeniu",
-            "content": "",
+            "content": "<p>Termeni și condiții generale</p><p>Politica de confidențialitate</p><p>Condiții de livrare</p><p>Politica de retur</p>",
             "enable_follow_on_shop": true
           }
         }

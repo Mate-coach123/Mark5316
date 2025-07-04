@@ -267,7 +267,7 @@
         "allow_transparent_header": false,
         "enable_parallax": false,
         "image_size": "auto",
-        "image": "shopify://shop_images/GIF-ezgif.com-video-to-gif-converter.gif",
+        "image": "shopify://shop_images/0622_1.gif",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -618,7 +618,7 @@
         "image_pL3k7q": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/3.png",
+            "image": "shopify://shop_images/13_a2125316-42c1-470b-9818-12e03056fccf.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",

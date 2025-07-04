@@ -105,8 +105,8 @@
           "type": "associated_products",
           "settings": {
             "title": "Adaugă arome la comanda ta cu o reducere de 25%!",
-            "stack_products": true,
-            "products_count": 5,
+            "stack_products": false,
+            "products_count": 10,
             "background": "",
             "text_color": ""
           }

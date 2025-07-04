@@ -176,9 +176,9 @@
         "image_3CicPB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/QLEAN_3.png",
+            "image": "shopify://shop_images/A_bekezdes_szovege_9.png",
             "alignment": "start",
-            "max_width": 150
+            "max_width": 500
           }
         }
       },
@@ -548,7 +548,7 @@
         "image_teHznw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/QLEAN_3.png",
+            "image": "shopify://shop_images/nem_ez_nem_egy_ujabb_karos_alternativa.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -583,7 +583,7 @@
         "image_kiR7DB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/QLEAN_3.png",
+            "image": "shopify://shop_images/11.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",

@@ -23,7 +23,7 @@
             "title": "Gata cu Pielea Uscată și Păru!",
             "heading_tag": "h0",
             "button_text": "Cumpără acum!",
-            "button_link": "shopify://products/qlean™-kezdo-szett-pod-18-napra-elegendo-ajandek-betet",
+            "button_link": "shopify://products/qlean™-set-de-inceput",
             "text_color": "#ffffff",
             "button_background": "#ffb74a",
             "button_text_color": "#000000",
@@ -167,7 +167,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "qlean™-kezdo-szett-pod-18-napra-elegendo-ajandek-betet",
+        "product": "qlean™-set-de-inceput",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",

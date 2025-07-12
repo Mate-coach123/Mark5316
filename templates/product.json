@@ -396,7 +396,7 @@
         "heading_P9XACN": {
           "type": "heading",
           "settings": {
-            "text": "Poveste de succes",
+            "text": "Povești de succes",
             "heading_tag": "h1",
             "text_color": "#ffb74a",
             "gradient": ""
@@ -590,8 +590,8 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Ce conține setul de început?",
-            "content": "<p><strong>Un set de început care te ajută să-ți formezi obiceiuri naturale!</strong></p><p>Pachetul include un difuzor Qlean, cartușe aromatizate suficiente pentru 18 zile și un set de curățare. Tot ce îți mai rămâne este să-ți formezi obiceiuri naturale!</p>",
+            "title": "Ce conține pachetul de start?",
+            "content": "<p><strong>Un pachat de start care te ajută să-ți formezi obiceiuri naturale!</strong></p><p>Pachetul include un difuzor Qlean, cartușe aromatizate suficiente pentru 18 zile și un set de curățare. Tot ce îți mai rămâne este să-ți formezi obiceiuri naturale!</p>",
             "link_text": "",
             "link_url": "",
             "background": "rgba(0,0,0,0)",
@@ -668,13 +668,13 @@
           "type": "item",
           "settings": {
             "title": "Cum să folosesc Qlean?",
-            "content": "<p>Utilizarea Qlean este simplă – doar 3 pași:</p><ol><li>Înmoaie ușor cartușul aromat preferat.</li><li>Introdu cartușul în dispozitivul Qlean.</li><li>Bucură-te de experiența revigorantă a aromaterapiei naturale!</li></ol>"
+            "content": "<p>Utilizarea Qlean este simplă – conține doar 3 pași:</p><ol><li>Înmoaie ușor cartușul aromat preferat.</li><li>Introdu cartușul în dispozitivul Qlean.</li><li>Bucură-te de experiența revigorantă a aromaterapiei naturale!</li></ol>"
           }
         },
         "item_cEjQTn": {
           "type": "item",
           "settings": {
-            "title": "Qlean este sigur?",
+            "title": "Este Qlean sigur?",
             "content": "<p><strong>Desigur!<br/></strong>Qlean este realizat 100% din ingrediente naturale, inclusiv uleiuri esențiale pure, extracte din plante și arome naturale. Nu conține nicotină, produse de ardere sau aditivi artificiali, oferind astfel o alternativă naturală și revigorantă pentru utilizarea de zi cu zi.</p>"
           }
         },

@@ -20,7 +20,7 @@
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
-            "title": "Gata cu Pielea Uscată și Păru!",
+            "title": "Gata cu pielea și părul uscat!",
             "heading_tag": "h0",
             "button_text": "Cumpără acum!",
             "button_link": "shopify://products/qlean-pachet-de-start",
@@ -415,13 +415,13 @@
           "type": "item",
           "settings": {
             "title": "Cum să folosesc Qlean?",
-            "content": "<p>Utilizarea Qlean este simplă – doar 3 pași:</p><ol><li>Înmoaie ușor cartușul aromat preferat.</li><li>Introdu cartușul în dispozitivul Qlean.</li><li>Bucură-te de experiența revigorantă a aromaterapiei naturale!</li></ol>"
+            "content": "<p>Utilizarea Qlean este simplă – conține doar 3 pași:</p><ol><li>Înmoaie ușor cartușul aromat preferat.</li><li>Introdu cartușul în dispozitivul Qlean.</li><li>Bucură-te de experiența revigorantă a aromaterapiei naturale!</li></ol>"
           }
         },
         "item_iKgcpa": {
           "type": "item",
           "settings": {
-            "title": "Qlean este sigur?",
+            "title": "Este Qlean sigur?",
             "content": "<p><strong>Desigur! </strong><br/>Qlean este realizat 100% din ingrediente naturale, inclusiv uleiuri esențiale pure, extracte din plante și arome naturale. Nu conține nicotină, produse de ardere sau aditivi artificiali, oferind astfel o alternativă naturală și revigorantă pentru utilizarea de zi cu zi.</p>"
           }
         },

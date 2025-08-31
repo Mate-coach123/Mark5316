@@ -18,10 +18,6 @@
             "heading_tag": "h2"
           }
         },
-        "judge_me_reviews_preview_badge_aXWgB7": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -31,25 +27,25 @@
         "text_ymY8Mt": {
           "type": "text",
           "settings": {
-            "text": "<p>🍃 100% ingrediente naturale</p>"
+            "text": "<p>🍃 100% naturalne składniki</p>"
           }
         },
         "text_eCwxUz": {
           "type": "text",
           "settings": {
-            "text": "<p>🌟 1500+ povești de succes</p>"
+            "text": "<p>🌟 Ponad 1500 historii sukcesu</p>"
           }
         },
         "text_piHtpE": {
           "type": "text",
           "settings": {
-            "text": "<p>🚫 Bucură-te de susținerea aromelor naturale în fiecare zi!</p>"
+            "text": "<p>🚫 Ciesz się wsparciem naturalnych aromatów każdego dnia!</p>"
           }
         },
         "text_WccVEm": {
           "type": "text",
           "settings": {
-            "text": "<p>🎁 Cadou: cartuș aromatizat suficient pentru 18 zile</p>"
+            "text": "<p>🎁 Prezent: aromatyzowany wkład wystarczający na 18 dni</p>"
           }
         },
         "variant_picker": {
@@ -69,11 +65,12 @@
         "liquid_xnqPc7": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n  .custom-shipping-container {\n    display: flex;\n    padding: 6px 16px;\n    justify-content: space-between;\n    align-items: center;\n    align-self: stretch;\n    background-color: #f6f6f6;\n    border-radius: 20px;\n  }\n\n  .custom-shipping-item {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n  }\n\n  .text-block-shipping {\n    font-size: 12px;\n    color: #000;\n  }\n\n  .shipping-date {\n    font-weight: bold;\n  }\n\n  .free-shipping {\n    font-weight: bold;\n  }\n\n  .green-circle {\n    animation: fade 1s ease-in-out infinite;\n  }\n\n  .custom-icon {\n    width: 20px; /* Állítsd be a kívánt szélességet */\n    height: auto; /* Automatikus magasság a szélesség arányában */\n  }\n\n  @keyframes fade {\n    0%, 100% {\n      opacity: 1;\n    }\n    50% {\n      opacity: 0.5;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    var daysAfterToday = 5; // Set this to the number of days after today that the item will ship\n    var today = new Date();\n    var shipDate = new Date(today.setDate(today.getDate() + daysAfterToday));\n    var options = { weekday: 'short', month: 'long', day: 'numeric' };\n\n    var formattedDate = shipDate.toLocaleDateString('en-US', options);\n    document.getElementById('shipping-date').textContent = formattedDate;\n  });\n</script>\n\n<div class=\"custom-shipping-container\">\n  <div class=\"custom-shipping-item\">\n    <svg class=\"green-circle\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\">\n      <circle cx=\"6\" cy=\"6.5\" r=\"6\" fill=\"#137333\" />\n    </svg>\n    <div class=\"text-block-shipping\">\n      <b>Livrare în 24 de ore\n\n\n\n\n\n\n\n\n\n</b>\n    </div>\n  </div>\n  <div class=\"custom-shipping-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0923/5284/0022/files/images.png?v=1750103188\" loading=\"lazy\" alt=\"USA flag\" class=\"custom-icon\">\n    <div class=\"text-block-shipping\">\n      <span class=\"free-shipping\">Din depozit din România\n    </div>\n  </div>\n</div>"
+            "liquid": "<style>\n  .custom-shipping-container {\n    display: flex;\n    padding: 6px 16px;\n    justify-content: space-between;\n    align-items: center;\n    align-self: stretch;\n    background-color: #f6f6f6;\n    border-radius: 20px;\n  }\n\n  .custom-shipping-item {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n  }\n\n  .text-block-shipping {\n    font-size: 12px;\n    color: #000;\n  }\n\n  .shipping-date {\n    font-weight: bold;\n  }\n\n  .free-shipping {\n    font-weight: bold;\n  }\n\n  .green-circle {\n    animation: fade 1s ease-in-out infinite;\n  }\n\n  .custom-icon {\n    width: 20px; /* Állítsd be a kívánt szélességet */\n    height: auto; /* Automatikus magasság a szélesség arányában */\n  }\n\n  @keyframes fade {\n    0%, 100% {\n      opacity: 1;\n    }\n    50% {\n      opacity: 0.5;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    var daysAfterToday = 5; // Set this to the number of days after today that the item will ship\n    var today = new Date();\n    var shipDate = new Date(today.setDate(today.getDate() + daysAfterToday));\n    var options = { weekday: 'short', month: 'long', day: 'numeric' };\n\n    var formattedDate = shipDate.toLocaleDateString('en-US', options);\n    document.getElementById('shipping-date').textContent = formattedDate;\n  });\n</script>\n\n<div class=\"custom-shipping-container\">\n  <div class=\"custom-shipping-item\">\n    <svg class=\"green-circle\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\">\n      <circle cx=\"6\" cy=\"6.5\" r=\"6\" fill=\"#137333\" />\n    </svg>\n    <div class=\"text-block-shipping\">\n      <b>Wysyłka w ciągu 24 godzin\n\n\n\n\n\n\n\n\n\n\n</b>\n    </div>\n  </div>\n  <div class=\"custom-shipping-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0940/1742/1696/files/letoltes.jpg?v=1756641505\" loading=\"lazy\" alt=\"USA flag\" class=\"custom-icon\">\n    <div class=\"text-block-shipping\">\n      <span class=\"free-shipping\">Z magazynu w Polsce\n\n    </div>\n  </div>\n</div>"
           }
         },
         "text_U3tRDN": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>❗<strong>Stoc redus:</strong> produsele noastre se epuizează rapid ❗</p>"
           }
@@ -89,22 +86,16 @@
             "payment_button_text_color": ""
           }
         },
-        "releasit_cod_form_button_app_block_iGHBCp": {
-          "type": "shopify://apps/releasit-cod-form/blocks/button-app-block/72faf214-4174-4fec-886b-0d0e8d3af9a2",
-          "settings": {
-            "product": "{{product}}"
-          }
-        },
         "text_fFjywT": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>📦 Livrare GLS în 1–2 zile lucrătoare</strong></p>"
+            "text": "<p><strong>📦 Dostawa GLS w 1–2 dni</strong></p>"
           }
         },
         "associated_products_6YheU6": {
           "type": "associated_products",
           "settings": {
-            "title": "Adaugă arome la comanda ta cu o reducere de 25%!",
+            "title": "Dodaj smaki do swojego zamówienia z 25% rabatem!",
             "stack_products": false,
             "products_count": 10,
             "background": "",
@@ -118,8 +109,8 @@
             "icon_position": "aligned",
             "icon": "picto-award-gift",
             "icon_width": 24,
-            "title": "CADOU: Cartuș aromatizat suficient pentru 18 zile",
-            "content": "<p>2 plicuri care conțin în total 6 cartușe aromatizate</p>",
+            "title": "PREZENT: AROMATYZOWANY WKŁAD WYSTARCZAJĄCY NA 18 DNI",
+            "content": "<p>2 saszetki zawierające łącznie 6 aromatyzowanych wkładów</p>",
             "background": "#f4e8d5",
             "text_color": "#d27f04"
           }
@@ -127,56 +118,55 @@
         "collapsible_text_64D6NW": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Cum este să inhalezi aer aromatizat?",
-            "content": "<p>Aerul aromatizat de la Qlean oferă un gust plăcut și natural, fiind o alternativă agreabilă pentru utilizarea de zi cu zi. Este mai puțin intens decât vaporii, dar oferă totuși o experiență revigorantă – asemănătoare cu un ceai de plante ușor infuzat sau o băutură carbogazoasă fără zahăr.</p>"
+            "title": "Jakie aromatyzowane powietrze warto wdychać?",
+            "content": "<p>Aromatyzowane powietrze Qlean zapewnia delikatny, naturalny smak, stanowiąc przyjemną alternatywę na co dzień. Jest mniej intensywne niż para wodna, a mimo to oferuje orzeźwiające doznanie – porównywalne do lekko zaparzonej herbaty ziołowej lub napoju gazowanego bez cukru.</p>"
           }
         },
         "collapsible_text_ccRqEC": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Cum funcționează Qlean?",
-            "content": "<p>Qlean oferă aer aromatizat natural, care aduce o experiență revigorantă în viața de zi cu zi.</p><p>Este realizat 100% din ingrediente naturale și reprezintă o alternativă comodă pentru cei care doresc să adopte obiceiuri mai conștiente.</p><p><strong><br/>Utilizarea Qlean este simplă – doar 3 pași:</strong></p><ol><li>Înmoaie ușor cartușul aromat preferat.</li><li>Introdu cartușul în dispozitivul Qlean.</li><li>Bucură-te de experiența revigorantă a aromaterapiei naturale.</li></ol>"
+            "title": "Jak działa Qlean?",
+            "content": "<p>Qlean oferuje naturalnie aromatyzowane powietrze, które zapewnia orzeźwiające doznania na co dzień.<br/><br/>Wykonany w 100% z naturalnych składników, stanowi wygodną alternatywę dla osób, które chcą wprowadzić bardziej świadome nawyki.</p><p>Używanie Qlean jest proste – tylko 3 kroki:</p><ol><li>Zmiękcz swój ulubiony aromatyzowany wkład.</li><li>Umieść wkład w urządzeniu Qlean.</li><li>Ciesz się orzeźwiającym doświadczeniem naturalnej aromaterapii.</li></ol>"
           }
         },
         "collapsible_text_44T676": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Este Qlean sigur?",
-            "content": "<p><strong>Desigur!<br/></strong>Qlean este realizat 100% din ingrediente naturale, inclusiv uleiuri esențiale pure, extracte din plante și arome naturale.</p><p>Nu conține nicotină, produse de ardere sau aditivi artificiali, oferind astfel o alternativă naturală și revigorantă pentru utilizarea zilnică.</p><p>Informații suplimentare:</p>"
+            "title": "Czy Qlean jest bezpieczny?",
+            "content": "<p><strong>Oczywiście!</strong><br/>Qlean jest w 100% wykonany z naturalnych składników, w tym czystych olejków eterycznych, ekstraktów roślinnych i naturalnych aromatów.<br/><br/>Nie zawiera nikotyny, produktów spalania ani sztucznych dodatków, dzięki czemu stanowi orzeźwiającą, naturalną alternatywę na co dzień.</p><p>Więcej informacji:<br/><br/><a href=\"/pages/bezpieczenstwo-toksykologia-smaki\" title=\"Bezpieczeństwo, toksykologia, smaki\">Bezpieczeństwo, wyniki toksykologiczne<br/></a><br/><a href=\"/pages/instrukcja-uzytkowania-i-informacja-dotyczaca-bezpieczenstwa\" title=\"Instrukcja użytkowania i informacja dotycząca bezpieczeństwa\">Instrukcja użytkowania produktu</a></p>"
           }
         },
         "collapsible_text_DETCHP": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Cât de mult durează un cartuș aromatizat?",
-            "content": "<p>Fiecare cartuș aromatizat durează între 2 și 3 zile în cazul unei utilizări regulate, în funcție de cât de des folosești Qlean.</p>"
+            "title": "Jak długo wystarcza aromatyzowany wkład?",
+            "content": "<p>Każdy aromatyzowany wkład wystarcza na 2–3 dni regularnego użytkowania, w zależności od tego, jak często używasz Qlean.</p>"
           }
         },
         "collapsible_text_wfhRXJ": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Ce include pachetul?",
-            "content": "<p>Conținutul pachetului:</p><ul><li>1 buc. – Difuzor Qlean POD</li><li>2 pachete – Cartușe aromatizate Qlean</li><li>1 buc. – Set de curățare Qlean</li></ul>"
+            "title": "Co zawiera zestaw?",
+            "content": "<p>Zawartość zestawu:<br/></p><ul><li>1 szt. – Qlean POD Dyfuzor</li><li>2 opakowania – Qlean aromatyzowane wkłady</li><li>1 szt. – Zestaw czyszczący Qlean</li></ul>"
           }
         },
         "collapsible_text_AAhnNW": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Livrare",
-            "content": "<p>De livrarea precisă se ocupă serviciul de curierat GLS. Expediem coletul tău în următoarea zi lucrătoare după plasarea comenzii.<br/>De la expediere, coletul este livrat a doua zi, astfel livrarea durează în medie între 1 și 3 zile lucrătoare.</p>"
+            "title": "Dostawa",
+            "content": "<p>Za terminową dostawę odpowiada firma kurierska <strong>GLS</strong>. Twoją paczkę przekazujemy kurierowi w pierwszy dzień roboczy po złożeniu zamówienia. Od momentu nadania paczka zazwyczaj dociera do Ciebie następnego dnia, więc cały proces dostawy zajmuje średnio <strong>1–3 dni robocze</strong>.</p>"
           }
         },
         "collapsible_text_mQa9EW": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Ai întrebări? Ia legătura cu noi!",
-            "content": "<p>Te ajutăm să faci alegerea potrivită! Serviciul nostru de asistență pentru clienți este disponibil în fiecare zi lucrătoare, între orele 09:00 și 17:00.</p><ul><li>qlean.info@gmail.com</li></ul>"
+            "title": "Masz pytanie? Skontaktuj się z nami!",
+            "content": "<p>Pomożemy Ci w wyborze! Nasz dział obsługi klienta jest dostępny od poniedziałku do piątku w godzinach 9:00–17:00.<br/><strong>qlean.info@gmail.com</strong></p>"
           }
         },
         "image_3CicPB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/A_bekezdes_szovege_9.png",
             "alignment": "start",
             "max_width": 500
           }
@@ -184,7 +174,6 @@
       },
       "block_order": [
         "title",
-        "judge_me_reviews_preview_badge_aXWgB7",
         "price",
         "text_ymY8Mt",
         "text_eCwxUz",
@@ -195,7 +184,6 @@
         "liquid_xnqPc7",
         "text_U3tRDN",
         "buy_buttons",
-        "releasit_cod_form_button_app_block_iGHBCp",
         "text_fFjywT",
         "associated_products_6YheU6",
         "offer_Lecwba",
@@ -232,7 +220,7 @@
         "heading_93UftX": {
           "type": "heading",
           "settings": {
-            "text": "Eliberează-te de obiceiurile rele",
+            "text": "UWOLNIJ SIĘ",
             "heading_tag": "h1",
             "text_color": "#e68b00",
             "gradient": ""
@@ -241,7 +229,7 @@
         "richtext_gTbgpJ": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Trăiește-ți viața în mod natural, cu o experiență revigorantă de aromaterapie oferită de Qlean!</strong></p><p>O alegere <strong>conștientă</strong> care te poate ghida către un stil de viață mai <strong>echilibrat</strong> și mai natural.</p>"
+            "content": "<p><strong>Żyj naturalnie i ciesz się orzeźwiającym doświadczeniem aromaterapii z Qlean!<br/></strong><br/>To świadoma decyzja, która może poprowadzić Cię w stronę bardziej zrównoważonego, naturalnego stylu życia.</p>"
           }
         }
       },
@@ -282,56 +270,52 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/FUM_HappyLungs_Light_v2.svg",
             "mobile_icon_width": 68,
             "icon_width": 80,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Prospețime, în mod natural – cu Qlean",
-            "content": "<p>Bucură-te de experiența revigorantă oferită de ingredientele naturale!</p>"
+            "title": "Świeżość, naturalnie – z Qlean",
+            "content": "<p>Ciesz się orzeźwiającym doświadczeniem, jakie dają naturalne składniki!</p>"
           }
         },
         "item_nccaGY": {
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/FUM_Icon_Airflow_Light.svg",
             "mobile_icon_width": 68,
             "icon_width": 80,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Flux de aer reglabil",
-            "content": "<p>Reglează fluxul de aer în funcție de nevoile tale.</p>"
+            "title": "Regulowany przepływ powietrza",
+            "content": "<p>Dostosuj przepływ powietrza do swoich potrzeb.</p>"
           }
         },
         "item_kqeTzw": {
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/FUM_Icon_Fidget_Light.svg",
             "mobile_icon_width": 68,
             "icon_width": 80,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Relaxare naturală",
-            "content": "<p>Elementele sale mobile oferă o experiență plăcută, ce evocă relaxarea.</p>"
+            "title": "Naturalny relaks",
+            "content": "<p>Ruchome elementy zapewniają przyjemne, relaksujące doznania.</p>"
           }
         },
         "item_HbDfY6": {
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/FUM_CostEffective_Light_v2.svg",
             "mobile_icon_width": 68,
             "icon_width": 80,
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Economic",
-            "content": "<p>Dispozitivele și aromele noastre oferă o soluție pe termen lung, economică, pentru iubitorii de prospețime.</p>"
+            "title": "Oszczędny",
+            "content": "<p>Nasze urządzenia i smaki oferują długoterminowe, oszczędne rozwiązanie dla miłośników świeżości.</p>"
           }
         }
       },
@@ -548,7 +532,6 @@
         "image_teHznw": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/nem_ez_nem_egy_ujabb_karos_alternativa.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -583,7 +566,6 @@
         "image_kiR7DB": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/szerk_kepek_uj_2.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -618,7 +600,6 @@
         "image_pL3k7q": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/13_a2125316-42c1-470b-9818-12e03056fccf.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -726,15 +707,6 @@
     },
     "17500911687bffbabb": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_pKiPbN": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_pKiPbN"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,

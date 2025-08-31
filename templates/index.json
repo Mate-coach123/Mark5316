@@ -20,10 +20,10 @@
             "mobile_text_position": "place-self-center text-center",
             "desktop_text_position": "sm:place-self-center sm:text-center",
             "subheading": "",
-            "title": "Gata cu pielea și părul uscat!",
-            "heading_tag": "h0",
-            "button_text": "Cumpără acum!",
-            "button_link": "shopify://products/qlean-set-de-inceput",
+            "title": "Kolejny poziom aromaterapeutycznego doświadczenia",
+            "heading_tag": "h3",
+            "button_text": "Kup teraz!",
+            "button_link": "shopify://products/qlean-kezdoszett",
             "text_color": "#ffffff",
             "button_background": "#ffb74a",
             "button_text_color": "#000000",
@@ -71,7 +71,7 @@
         "heading_XjtBfc": {
           "type": "heading",
           "settings": {
-            "text": "Despre noi",
+            "text": "O nas",
             "heading_tag": "h1",
             "text_color": "",
             "gradient": ""
@@ -80,7 +80,7 @@
         "richtext_6y8XLR": {
           "type": "richtext",
           "settings": {
-            "content": "<p>Qlean este un dispozitiv inovator de aromaterapie pe bază naturală, care sprijină formarea obiceiurilor conștiente. Scopul nostru este să oferim o alternativă naturală, fără substanțe chimice, tuturor celor care caută o schimbare în stilul lor de viață.</p><p>Qlean folosește uleiuri esențiale pure, de origine vegetală, pentru a oferi o experiență plăcută și revigorantă în viața de zi cu zi. Credem că puterea naturii poate fi o sursă de inspirație pentru dezvoltarea unor obiceiuri pozitive – într-un mod simplu, sigur și plăcut.<br/><br/></p>"
+            "content": "<p><strong>Qlean</strong> to <strong>innowacyjne, naturalne </strong>urządzenie do <strong>aromaterapii</strong>, które wspiera kształtowanie świadomych nawyków. Naszym celem jest oferowanie naturalnej, wolnej od chemikaliów alternatywy dla wszystkich, którzy pragną zmiany w swoim stylu życia.<br/><br/><strong>Qlean</strong> wykorzystuje czyste, roślinne olejki eteryczne, aby zapewnić odświeżające i przyjemne doświadczenie na co dzień.<br/><br/>Wierzymy, że siła natury może inspirować do tworzenia <strong>pozytywnych</strong> nawyków – w sposób prosty, bezpieczny i przyjemny.</p>"
           }
         }
       },
@@ -149,7 +149,7 @@
         "text_MrbmVJ": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"/products/qlean™-kezdo-szett-pod-18-napra-elegendo-ajandek-betet\" title=\"Qlean™ - Set de început (POD + cartuș CADOU suficient pentru 18 zile)\">Vizualizează produsul</a></p>"
+            "text": "<p><a href=\"/products/qlean-kezdoszett\" title=\"Qlean™ - Kezdő szett ( POD + 18 Napra elegendő AJÁNDÉK betét)\">Zobacz produkt</a></p>"
           }
         }
       },
@@ -167,7 +167,7 @@
       "name": "Featured product",
       "settings": {
         "full_width": true,
-        "product": "qlean-pachet-de-start",
+        "product": "qlean-kezdoszett",
         "desktop_media_width": 55,
         "desktop_media_layout": "carousel_thumbnails_left",
         "mobile_media_size": "expanded",
@@ -225,7 +225,7 @@
         "heading_HhncJt": {
           "type": "heading",
           "settings": {
-            "text": "Povești de succes",
+            "text": "Historia sukcesu",
             "heading_tag": "h0",
             "text_color": "#ffb74a",
             "gradient": ""
@@ -234,7 +234,7 @@
         "richtext_LELYnK": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Fă primul pas către un stil de viață mai natural și mai conștient! Noi îți oferim inspirația – alegerea este în mâinile tale.</strong></p>"
+            "content": "<p><strong>Zrób pierwszy krok w stronę bardziej naturalnego i świadomego życia! My damy Ci inspirację – decyzja należy do Ciebie.</strong></p>"
           }
         }
       },
@@ -262,8 +262,8 @@
             "show_rating": true,
             "rating": 5,
             "author": "Andrei P.",
-            "title": "În sfârșit, am scăpat de obiceiurile rele",
-            "content": "<p>Am încercat de mai multe ori să renunț, dar nu a durat mult. Însă cu acest dispozitiv am ajuns deja în a treia lună.</p>"
+            "title": "W końcu uwolniłem się od złych nawyków.",
+            "content": "<p>Próbowałem już kilka razy zerwać z nałogiem, ale nigdy nie trwało to długo. Jednak z tym urządzeniem jestem już w trzecim miesiącu.</p>"
           }
         },
         "testimonial_EhGQXw": {
@@ -273,8 +273,8 @@
             "show_rating": true,
             "rating": 5,
             "author": "Elena Ionescu",
-            "title": "Incredibil",
-            "content": "<p>De când folosesc acest dispozitiv, nu mai simt acea poftă ca înainte. Genial!</p>"
+            "title": "Niesamowite",
+            "content": "<p>Odkąd go używam, nie odczuwam już takiego głodu jak wcześniej. Genialne!</p>"
           }
         },
         "testimonial_CaNn6R": {
@@ -284,8 +284,8 @@
             "show_rating": true,
             "rating": 5,
             "author": "Mihai",
-            "title": "Mă ajută enorm",
-            "content": "<p>Sunt mai calm, mai plin de energie și mai fericit de când îl folosesc. Nu am crezut că va funcționa atât de bine.</p>"
+            "title": "Bardzo mi pomaga.",
+            "content": "<p>Jestem spokojniejszy, bardziej energiczny i szczęśliwszy, odkąd tego używam. Nie wierzyłem, że to działa aż tak dobrze.</p>"
           }
         }
       },
@@ -336,10 +336,10 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "Aromele noastre bestseller",
+        "title": "Nasze bestsellery smakowe",
         "content": "",
         "link_url": "",
-        "link_text": "Produse suplimentare",
+        "link_text": "Więcej produktów",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -355,7 +355,7 @@
         "heading_zVH3y6": {
           "type": "heading",
           "settings": {
-            "text": "Siguranță",
+            "text": "Bezpieczeństwo",
             "heading_tag": "h0",
             "text_color": "#e68b00",
             "gradient": ""
@@ -364,25 +364,13 @@
         "richtext_LTnRbz": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>A fi primul vine cu responsabilitate. În cercetarea, testarea și producția produselor noastre de aromaterapie, stabilim cele mai înalte standarde de calitate.</strong></p>"
-          }
-        },
-        "button_Kae7jD": {
-          "type": "button",
-          "settings": {
-            "style": "fill",
-            "size": "xl",
-            "text": "Află mai multe",
-            "url": "",
-            "background": "#ffb74a",
-            "text_color": "#000000"
+            "content": "<p><strong>Bycie pierwszym wiąże się z odpowiedzialnością. W badaniach, testowaniu i produkcji naszych produktów aromaterapeutycznych stawiamy najwyższe standardy jakości.</strong></p>"
           }
         }
       },
       "block_order": [
         "heading_zVH3y6",
-        "richtext_LTnRbz",
-        "button_Kae7jD"
+        "richtext_LTnRbz"
       ],
       "name": "Rich text",
       "settings": {
@@ -400,43 +388,43 @@
         "item_dNrECL": {
           "type": "item",
           "settings": {
-            "title": "Cum este să inhalezi aer aromatizat?",
-            "content": "<p>Aerul aromatizat de la Qlean oferă un gust plăcut și natural, care te poate ajuta să renunți la obiceiurile dăunătoare.<br/><br/>Este mai puțin intens decât vaporii, dar revigorant – asemănător cu un ceai de plante ușor infuzat sau o băutură carbogazoasă fără zahăr.</p>"
+            "title": "Jak to jest wdychać aromatyzowane powietrze?",
+            "content": "<p>Powietrze aromatyzowane Qlean zapewnia przyjemny, naturalny smak, który może pomóc w porzuceniu szkodliwych nałogów.</p><p> Jest mniej intensywne niż para, ale odświeżające – przypomina lekko zaparzoną herbatę ziołową lub bezcukrową wodę gazowaną.</p>"
           }
         },
         "item_kDzycT": {
           "type": "item",
           "settings": {
-            "title": "Cum funcționează Qlean?",
-            "content": "<p>Qlean oferă aer aromatizat natural, care oferă o experiență plăcută și revigorantă pentru cei care doresc să adopte un stil de viață mai conștient.<br/><br/>Fabricat din ingrediente 100% naturale, reprezintă o alternativă accesibilă pentru cei care vor să-și formeze noi obiceiuri.<br/>Păstrarea gestului mână-gură poate facilita integrarea noii rutine în viața de zi cu zi.<br/></p>"
+            "title": "Jak działa Qlean?",
+            "content": "<p>Qlean oferuje powietrze o naturalnym smaku, które zapewnia przyjemne i odświeżające doznania wspierające świadome zmiany stylu życia.</p><p>Stworzony w 100% z naturalnych składników, stanowi przystępną cenowo alternatywę dla tych, którzy chcą wykształcić nowe nawyki. Zachowanie znajomego ruchu ręka–usta może dodatkowo ułatwić wdrożenie nowych rutyn w codzienne życie.<br/></p>"
           }
         },
         "item_7p3Tek": {
           "type": "item",
           "settings": {
-            "title": "Cum să folosesc Qlean?",
-            "content": "<p>Utilizarea Qlean este simplă – conține doar 3 pași:</p><ol><li>Înmoaie ușor cartușul aromat preferat.</li><li>Introdu cartușul în dispozitivul Qlean.</li><li>Bucură-te de experiența revigorantă a aromaterapiei naturale!</li></ol>"
+            "title": "Jak używać Qlean?",
+            "content": "<p>Używanie Qlean jest proste – tylko 3 kroki: </p><ol><li>Zmiękcz swój ulubiony aromatyzowany wkład.</li><li>Umieść wkład w urządzeniu Qlean.</li><li>Ciesz się orzeźwiającym doświadczeniem naturalnej aromaterapii!</li></ol>"
           }
         },
         "item_iKgcpa": {
           "type": "item",
           "settings": {
-            "title": "Este Qlean sigur?",
-            "content": "<p><strong>Desigur! </strong><br/>Qlean este realizat 100% din ingrediente naturale, inclusiv uleiuri esențiale pure, extracte din plante și arome naturale. Nu conține nicotină, produse de ardere sau aditivi artificiali, oferind astfel o alternativă naturală și revigorantă pentru utilizarea de zi cu zi.</p>"
+            "title": "Czy Qlean jest bezpieczny?",
+            "content": "<p><strong>Oczywiście!</strong><br/>Qlean jest w 100% wykonany z naturalnych składników, w tym czystych olejków eterycznych, ekstraktów roślinnych i naturalnych aromatów.<br/>Nie zawiera nikotyny, produktów spalania ani sztucznych dodatków, dzięki czemu stanowi orzeźwiającą, naturalną alternatywę na co dzień.</p>"
           }
         },
         "item_xpgdhc": {
           "type": "item",
           "settings": {
-            "title": "Cât timp durează un cartuș aromatizat?",
-            "content": "<p>Fiecare cartuș aromatizat durează între 2 și 3 zile în cazul unei utilizări regulate, în funcție de cât de des folosești dispozitivul Qlean.</p>"
+            "title": "Jak długo wystarcza aromatyzowany wkład?",
+            "content": "<p>Każdy aromatyzowany wkład wystarcza na 2–3 dni regularnego użytkowania, w zależności od tego, jak często używasz Qlean.</p>"
           }
         },
         "item_iwnycK": {
           "type": "item",
           "settings": {
-            "title": "Ce conține pachetul?",
-            "content": "<p>Conținutul pachetului:</p><ul><li>1 buc. – Difuzor Qlean POD</li><li>2 pachete – Cartușe aromatizate Qlean</li><li>1 buc. – Set de curățare Qlean</li></ul>"
+            "title": "Co zawiera zestaw?",
+            "content": "<p>Zawartość zestawu:</p><ul><li>1 szt. – Qlean POD Dyfuzor</li><li>2 opakowania – Qlean Aromatyzowane wkłady</li><li>1 szt. – Zestaw czyszczący Qlean</li></ul>"
           }
         }
       },
@@ -452,11 +440,11 @@
       "settings": {
         "full_width": true,
         "subheading": "",
-        "title": "Întrebări frecvente",
+        "title": "Najczęściej zadawane pytania",
         "content": "",
         "team_avatar_width": 160,
-        "support_hours": "Serviciul nostru de asistență pentru clienți este disponibil în fiecare zi lucrătoare, între orele 08:00 și 20:00, la adresa qlean.info@gmail.com!",
-        "answer_time": "Timp mediu de răspuns: în decurs de 24 de ore.",
+        "support_hours": "Nasz dział obsługi klienta jest dostępny od poniedziałku do piątku w godzinach 8:00–20:00 pod adresem e-mail: qlean.info@gmail.com",
+        "answer_time": "Średni czas odpowiedzi: w ciągu 24 godzin",
         "button_text": "",
         "button_url": "",
         "text_position": "center",

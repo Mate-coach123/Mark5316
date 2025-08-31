@@ -23,8 +23,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Livrare expres în 1–2 zile lucrătoare",
-            "content": "<p>În prezent, toate produsele noastre sunt livrate prin curier rapid, în 1–2 zile lucrătoare.</p>"
+            "title": "Ekspresowa dostawa w 1–2 dni",
+            "content": "<p>Obecnie wszystkie nasze produkty dostarczamy ekspresowo w ciągu 1–2 dni.</p>"
           }
         },
         "item_jnjQ6j": {
@@ -36,8 +36,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Asistentă rapidă a clienților",
-            "content": "<p>Dacă ai întrebări sau nu ești sigur de alegerea ta, nu ezita să ne contactezi cu încredere la adresa qlean.info@gmail.com!</p>"
+            "title": "Szybka obsługa klienta",
+            "content": "<p>Jeśli masz pytania lub nie jesteś pewien swojego wyboru, skontaktuj się z nami śmiało pod adresem qlean.info@gmail.com!</p>"
           }
         },
         "item_aKgVRc": {
@@ -49,8 +49,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Fă-ți viața de zi cu zi mai conștientă cu o alternativă naturală.",
-            "content": "<p>Scopul nostru este să oferim o experiență naturală și revigorantă tuturor celor care își doresc un stil de viață mai conștient. Qlean sprijină formarea noilor obiceiuri zilnice printr-o experiență ușoară de aromaterapie.</p>"
+            "title": "Uczyń codzienność bardziej świadomą dzięki naturalnej alternatywie",
+            "content": "<p>Naszym celem jest oferowanie orzeźwiającego, naturalnego doświadczenia wszystkim, którzy pragną bardziej świadomego stylu życia.<br/><br/>Qlean wspiera kształtowanie nowych nawyków na co dzień dzięki lekkiej, aromaterapeutycznej przyjemności.</p>"
           }
         }
       },
@@ -80,39 +80,30 @@
           "settings": {
             "image_width": 150,
             "heading_size": "h3",
-            "title": "Abonează-te la newsletterul nostru pentru a fi la curent cu ofertele și promoțiile noastre încă din primul moment!",
+            "title": "Zapisz się do naszego newslettera, aby jako pierwszy otrzymywać informacje o promocjach i ofertach!",
             "content": ""
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "title": "Despre noi",
-            "content": "<p>Scopul nostru este să oferim o alternativă naturală și revigorantă pentru toți cei care doresc să adopte un stil de viață mai conștient. Experiența Qlean este ușoară, sigură și ușor de integrat în rutina zilnică.</p>",
+            "title": "O nas",
+            "content": "<p>Naszym celem jest oferowanie naturalnej i orzeźwiającej alternatywy dla wszystkich, którzy chcą prowadzić bardziej świadomy styl życia.<br/><br/>Doświadczenie Qlean jest lekkie, bezpieczne i łatwe do wprowadzenia w codzienność.</p>",
             "enable_follow_on_shop": true
           }
         },
         "links": {
           "type": "links",
           "settings": {
-            "menu": "uj-menu",
+            "menu": "",
             "show_menu_title": true
-          }
-        },
-        "text_finxyF": {
-          "type": "text",
-          "settings": {
-            "title": "Submeniu",
-            "content": "<p><a href=\"/policies/terms-of-service\" title=\"Terms of Service\">Termeni și condiții generale</a></p><p><a href=\"/policies/privacy-policy\" title=\"Privacy Policy\">Politica de confidențialitate</a></p><p><a href=\"/policies/shipping-policy\" title=\"Shipping Policy\">Condiții de livrare</a></p><p><a href=\"/policies/refund-policy\" title=\"Refund Policy\">Politica de retur</a></p>",
-            "enable_follow_on_shop": true
           }
         }
       },
       "block_order": [
         "newsletter_dfnjXc",
         "text",
-        "links",
-        "text_finxyF"
+        "links"
       ],
       "settings": {
         "show_social_media": true,

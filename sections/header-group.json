@@ -17,21 +17,21 @@
         "message_wpBUVW": {
           "type": "message",
           "settings": {
-            "text": "Livrare cu ramburs în 1–2 zile lucrătoare",
+            "text": "Wysyłka za pobraniem w 1–2 dni",
             "url": ""
           }
         },
         "message_wy9mhU": {
           "type": "message",
           "settings": {
-            "text": "Garanție de aromă de 30 de zile",
+            "text": "30-dniowa gwarancja smaku",
             "url": ""
           }
         },
         "message": {
           "type": "message",
           "settings": {
-            "text": "Descoperă alternativa naturală",
+            "text": "Odkryj naturalną alternatywę",
             "url": ""
           }
         }
@@ -59,7 +59,7 @@
         "logo": "shopify://shop_images/QLEAN_3.png",
         "logo_max_width": 195,
         "logo_mobile_max_width": 100,
-        "menu": "uj-menu",
+        "menu": "",
         "sidebar_menu": "",
         "secondary_menu": "",
         "menu_open_trigger": "click",

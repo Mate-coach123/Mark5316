@@ -571,6 +571,7 @@
         "image_kiR7DB": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/szerk_kepek_uj_4.png",
             "media_width": 50,
             "media_position": "start",
             "text_position": "place-self-center text-center",
@@ -605,6 +606,7 @@
         "image_pL3k7q": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/13.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",

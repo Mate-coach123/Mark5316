@@ -275,6 +275,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/FUM_HappyLungs_Light_v2.svg",
             "mobile_icon_width": 68,
             "icon_width": 80,
             "icon_background_type": "none",
@@ -288,6 +289,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/FUM_Icon_Airflow_Light.svg",
             "mobile_icon_width": 68,
             "icon_width": 80,
             "icon_background_type": "none",
@@ -301,6 +303,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/FUM_Icon_Fidget_Light.svg",
             "mobile_icon_width": 68,
             "icon_width": 80,
             "icon_background_type": "none",
@@ -314,6 +317,7 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
+            "custom_icon": "shopify://shop_images/FUM_CostEffective_Light_v2.svg",
             "mobile_icon_width": 68,
             "icon_width": 80,
             "icon_background_type": "none",

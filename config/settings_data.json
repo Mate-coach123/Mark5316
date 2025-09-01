@@ -46,55 +46,6 @@
         "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {}
-      },
-      "13669795325273674392": {
-        "type": "shopify://apps/releasit-cod-form/blocks/app-embed/72faf214-4174-4fec-886b-0d0e8d3af9a2",
-        "disabled": false,
-        "settings": {}
-      },
-      "5134484470793087125": {
-        "type": "shopify://apps/vitals/blocks/app-embed/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
-        "disabled": false,
-        "settings": {}
-      },
-      "4015264832934714879": {
-        "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
-        "disabled": false,
-        "settings": {}
-      },
-      "6810535121229352664": {
-        "type": "shopify://apps/monster-cart-upsell-free-gifts/blocks/app-embed/a1b8e58a-bf1d-4e0f-8768-a387c3f643c0",
-        "disabled": false,
-        "settings": {
-          "markets_rounding": false,
-          "send_gtag_atc": false,
-          "disable_tiktok_tracking": false,
-          "disable_klaviyo_tracking": false,
-          "stop_cart_page": false,
-          "apply_discount_before_checkout": false,
-          "bag_selector": "",
-          "hide_when_opened": "",
-          "show_item_properties": false,
-          "stop_shopify_rate": false,
-          "dev_mode": false,
-          "beta_version": false,
-          "custom_code": "<script>\n    // custom code here\n</script>"
-        }
-      },
-      "7147999719060634790": {
-        "type": "shopify://apps/gsc-countdown-timer/blocks/countdown-bar/58dc5b1b-43d2-4209-b1f3-52aff31643ed",
-        "disabled": false,
-        "settings": {}
-      },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "9094328589753815681": {
-        "type": "shopify://apps/hextom-shipping-bar/blocks/fsb-embeded-block/7ef5d9af-75a2-45c7-9b1b-f9240ee488e9",
-        "disabled": false,
-        "settings": {}
       }
     }
   },

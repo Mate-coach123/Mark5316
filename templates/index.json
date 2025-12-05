@@ -336,10 +336,10 @@
         "products_per_row_mobile": "2",
         "products_per_row_desktop": 3,
         "subheading": "",
-        "title": "Nasze bestsellery smakowe",
+        "title": "Naše chuťové bestsellery",
         "content": "",
         "link_url": "",
-        "link_text": "Więcej produktów",
+        "link_text": "Naše chuťové bestsellery",
         "background": "",
         "background_gradient": "",
         "text_color": "",
@@ -355,7 +355,7 @@
         "heading_zVH3y6": {
           "type": "heading",
           "settings": {
-            "text": "Bezpieczeństwo",
+            "text": "Bezpečnosť",
             "heading_tag": "h0",
             "text_color": "#e68b00",
             "gradient": ""
@@ -364,7 +364,7 @@
         "richtext_LTnRbz": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Bycie pierwszym wiąże się z odpowiedzialnością. W badaniach, testowaniu i produkcji naszych produktów aromaterapeutycznych stawiamy najwyższe standardy jakości.</strong></p>"
+            "content": "<p><strong>Byť prvým znamená niesť zodpovednosť.<br/>Pri výskume, testovaní a výrobe našich aromaterapeutických produktov dodržiavame tie najvyššie štandardy kvality.</strong></p>"
           }
         }
       },
@@ -388,22 +388,22 @@
         "item_dNrECL": {
           "type": "item",
           "settings": {
-            "title": "Jak to jest wdychać aromatyzowane powietrze?",
-            "content": "<p>Powietrze aromatyzowane Qlean zapewnia przyjemny, naturalny smak, który może pomóc w porzuceniu szkodliwych nałogów.</p><p> Jest mniej intensywne niż para, ale odświeżające – przypomina lekko zaparzoną herbatę ziołową lub bezcukrową wodę gazowaną.</p>"
+            "title": "Aké je to vdychovať aromatizovaný vzduch?",
+            "content": "<p>Aromatizovaný vzduch Qlean poskytuje príjemnú, prirodzenú chuť, ktorá môže pomôcť pri zanechaní škodlivých návykov.</p><p>Je menej intenzívny ako para, ale osviežujúci – pripomína jemne lúhovaný bylinkový čaj alebo nesýtenú ochutenú vodu.</p>"
           }
         },
         "item_kDzycT": {
           "type": "item",
           "settings": {
-            "title": "Jak działa Qlean?",
-            "content": "<p>Qlean oferuje powietrze o naturalnym smaku, które zapewnia przyjemne i odświeżające doznania wspierające świadome zmiany stylu życia.</p><p>Stworzony w 100% z naturalnych składników, stanowi przystępną cenowo alternatywę dla tych, którzy chcą wykształcić nowe nawyki. Zachowanie znajomego ruchu ręka–usta może dodatkowo ułatwić wdrożenie nowych rutyn w codzienne życie.<br/></p>"
+            "title": "Ako funguje Qlean?",
+            "content": "<p>Qlean ponúka vzduch s prirodzenou príchuťou, ktorý poskytuje príjemný a osviežujúci zážitok podporujúci vedomé zmeny životného štýlu.</p><p>Vytvorený zo 100 % prírodných ingrediencií predstavuje cenovo dostupnú alternatívu pre tých, ktorí si chcú vytvoriť nové návyky. Zachovanie známeho pohybu ruka–ústa môže navyše uľahčiť zavedenie nových rutín do každodenného života.</p>"
           }
         },
         "item_7p3Tek": {
           "type": "item",
           "settings": {
-            "title": "Jak używać Qlean?",
-            "content": "<p>Używanie Qlean jest proste – tylko 3 kroki: </p><ol><li>Zmiękcz swój ulubiony aromatyzowany wkład.</li><li>Umieść wkład w urządzeniu Qlean.</li><li>Ciesz się orzeźwiającym doświadczeniem naturalnej aromaterapii!</li></ol>"
+            "title": "Ako používať Qlean?",
+            "content": "<p>Používanie Qleanu je jednoduché – stačia 3 kroky:</p><ol><li>Zmäkči svoj obľúbený aromatizovaný náplňový vložok.<br/></li><li>Vlož vložku do zariadenia Qlean.<br/></li><li>Užívaj si osviežujúci zážitok z prírodnej aromaterapie!</li></ol>"
           }
         },
         "item_iKgcpa": {
@@ -440,11 +440,11 @@
       "settings": {
         "full_width": true,
         "subheading": "",
-        "title": "Najczęściej zadawane pytania",
+        "title": "Najčastejšie kladené otázky",
         "content": "",
         "team_avatar_width": 160,
-        "support_hours": "Nasz dział obsługi klienta jest dostępny od poniedziałku do piątku w godzinach 8:00–20:00 pod adresem e-mail: qlean.info@gmail.com",
-        "answer_time": "Średni czas odpowiedzi: w ciągu 24 godzin",
+        "support_hours": "Náš zákaznícky servis je k dispozícii od pondelka do piatka v čase 8:00 – 20:00 na e-mailovej adrese:qlean.info@gmail.com",
+        "answer_time": "Priemerný čas odpovede: do 24 hodín",
         "button_text": "",
         "button_url": "",
         "text_position": "center",

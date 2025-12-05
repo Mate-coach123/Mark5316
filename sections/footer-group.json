@@ -80,15 +80,15 @@
           "settings": {
             "image_width": 150,
             "heading_size": "h3",
-            "title": "Zapisz się do naszego newslettera, aby jako pierwszy otrzymywać informacje o promocjach i ofertach!",
+            "title": "Prihlás sa na odber nášho newslettera, aby si ako prvý dostával informácie o akciách a ponukách!",
             "content": ""
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "title": "O nas",
-            "content": "<p>Naszym celem jest oferowanie naturalnej i orzeźwiającej alternatywy dla wszystkich, którzy chcą prowadzić bardziej świadomy styl życia.<br/><br/>Doświadczenie Qlean jest lekkie, bezpieczne i łatwe do wprowadzenia w codzienność.</p>",
+            "title": "O nás",
+            "content": "<p>Naším cieľom je ponúkať prirodzenú a osviežujúcu alternatívu pre všetkých, ktorí chcú viesť viac uvedomelý životný štýl.</p><p>Skúsenosť s Qlean je ľahká, bezpečná a jednoducho začleniteľná do každodenného života.</p>",
             "enable_follow_on_shop": true
           }
         },

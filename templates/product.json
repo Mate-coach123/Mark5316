@@ -389,7 +389,7 @@
         "heading_P9XACN": {
           "type": "heading",
           "settings": {
-            "text": "Historia sukcesu",
+            "text": "Príbeh úspechu",
             "heading_tag": "h1",
             "text_color": "#ffb74a",
             "gradient": ""
@@ -398,7 +398,7 @@
         "richtext_jqtByL": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Zrób pierwszy krok w stronę bardziej naturalnego i świadomego życia! My damy Ci inspirację – decyzja należy do Ciebie.</strong></p>"
+            "content": "<p><strong>Urob prvý krok smerom k prirodzenejšiemu a uvedomelejšiemu životu! My ti dáme inšpiráciu – rozhodnutie je na tebe.</strong></p>"
           }
         }
       },

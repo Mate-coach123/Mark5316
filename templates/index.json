@@ -409,22 +409,22 @@
         "item_iKgcpa": {
           "type": "item",
           "settings": {
-            "title": "Czy Qlean jest bezpieczny?",
-            "content": "<p><strong>Oczywiście!</strong><br/>Qlean jest w 100% wykonany z naturalnych składników, w tym czystych olejków eterycznych, ekstraktów roślinnych i naturalnych aromatów.<br/>Nie zawiera nikotyny, produktów spalania ani sztucznych dodatków, dzięki czemu stanowi orzeźwiającą, naturalną alternatywę na co dzień.</p>"
+            "title": "Je Qlean bezpečný?",
+            "content": "<p><strong>Samozrejme!</strong><br/><br/>Qlean je zo 100 % vyrobený z prírodných surovín, vrátane čistých esenciálnych olejov, rastlinných extraktov a prírodných aróm.</p><p>Neobsahuje nikotín, produkty horenia ani umelé prísady, vďaka čomu predstavuje osviežujúcu, prirodzenú alternatívu na každý deň.</p>"
           }
         },
         "item_xpgdhc": {
           "type": "item",
           "settings": {
-            "title": "Jak długo wystarcza aromatyzowany wkład?",
-            "content": "<p>Każdy aromatyzowany wkład wystarcza na 2–3 dni regularnego użytkowania, w zależności od tego, jak często używasz Qlean.</p>"
+            "title": "Ako dlho vydrží aromatizovaná náplň?",
+            "content": "<p>Každá aromatizovaná náplň vydrží 2–3 dni pravidelného používania, v závislosti od toho, ako často používaš Qlean.</p><p></p>"
           }
         },
         "item_iwnycK": {
           "type": "item",
           "settings": {
-            "title": "Co zawiera zestaw?",
-            "content": "<p>Zawartość zestawu:</p><ul><li>1 szt. – Qlean POD Dyfuzor</li><li>2 opakowania – Qlean Aromatyzowane wkłady</li><li>1 szt. – Zestaw czyszczący Qlean</li></ul>"
+            "title": "Čo obsahuje balenie?",
+            "content": "<p>Obsah balenia:</p><ul><li>1 ks – Qlean POD Difuzér<br/></li><li>2 balenia – Qlean aromatizované náplne<br/></li><li>1 ks – Čistiaca sada Qlean</li></ul>"
           }
         }
       },

@@ -482,7 +482,7 @@
         "heading_etGJBe": {
           "type": "heading",
           "settings": {
-            "text": "Orzeźwiający, naturalny wybór",
+            "text": "Osviežujúca, prirodzená voľba",
             "heading_tag": "h1",
             "text_color": "#e68b00",
             "gradient": ""
@@ -491,7 +491,7 @@
         "richtext_LmYzQz": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Często trudno jest zmienić nawyki – ale z odrobiną świadomości staje się to łatwiejsze.<br/>Qlean oferuje naturalnie aromatyzowane powietrze, które pomaga w kształtowaniu świeższego, bardziej naturalnego stylu życia.</strong></p>"
+            "content": "<p><strong>Často je ťažké zmeniť návyky – ale s trochou uvedomenia sa to stáva jednoduchším.<br/>Qlean ponúka prirodzene aromatizovaný vzduch, ktorý pomáha pri formovaní sviežšieho, prirodzenejšieho životného štýlu.</strong></p>"
           }
         }
       },
@@ -515,7 +515,7 @@
         "heading_LAedBr": {
           "type": "heading",
           "settings": {
-            "text": "Pierwszy na świecie dyfuzor aromatyzowanego powietrza",
+            "text": "Prvý na svete difúzor aromatizovaného vzduchu",
             "heading_tag": "h1",
             "text_color": "#e68b00",
             "gradient": ""
@@ -547,8 +547,8 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Ciesz się orzeźwiającym doświadczeniem naturalnej aromaterapii na co dzień!",
-            "content": "<p>Qlean oferuje nowy, naturalny sposób na tworzenie bardziej świadomych nawyków.</p>",
+            "title": "Uži si osviežujúci zážitok z prírodnej aromaterapie každý deň!",
+            "content": "<p>Qlean ponúka nový, prirodzený spôsob na vytváranie vedomejších návykov.</p>",
             "link_text": "",
             "link_url": "",
             "background": "rgba(0,0,0,0)",
@@ -581,8 +581,8 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Co zawiera zestaw startowy?",
-            "content": "<p><strong>Zestaw startowy, z którym możesz wykształcić naturalne nawyki!<br/></strong><br/>W skład zestawu wchodzi dyfuzor Qlean, aromatyzowany wkład wystarczający na 18 dni oraz zestaw czyszczący.<br/>Tobie pozostaje już tylko kształtować swoje naturalne nawyki!</p>",
+            "title": "Čo obsahuje štartovací set?",
+            "content": "<p><strong>Štartovací set, s ktorým si môžeš vytvoriť prirodzené návyky!</strong></p><p>Do setu patrí difúzor Qlean, aromatizovaná náplň vystačujúca na 18 dní a čistiaca sada.<br/><br/>Ostáva ti už len formovať svoje prirodzené návyky!</p>",
             "link_text": "",
             "link_url": "",
             "background": "rgba(0,0,0,0)",
@@ -616,8 +616,8 @@
             "icon": "none",
             "icon_width": 48,
             "subheading": "",
-            "title": "Gwarancja smaku",
-            "content": "<p><strong>Nie jesteś pewien, czy wybrałeś smak odpowiedni dla siebie?<br/></strong><br/>Jeśli wybrany aromat nie przypadnie Ci do gustu – nie martw się! Skontaktuj się z nami, a my wymienimy aromatyzowane wkłady lub zwrócimy pieniądze.<br/><br/><strong>Dzięki temu możesz bez ryzyka wyruszyć w naturalną drogę!</strong></p>",
+            "title": "Záruka chuti",
+            "content": "<p><strong>Nie si si istý, či si vybral správnu príchuť pre seba?</strong></p><p>Ak ti zvolená aróma nesadne – neboj sa!<br/><br/>Kontaktuj nás a my ti aromatizované náplne vymeníme alebo vrátime peniaze.</p><p><strong>Vďaka tomu môžeš bez rizika vyraziť na svoju prirodzenú cestu!</strong></p>",
             "link_text": "",
             "link_url": "",
             "background": "rgba(0,0,0,0)",

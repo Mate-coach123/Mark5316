@@ -416,47 +416,47 @@
         "text_color": ""
       }
     },
-    "testimonials_gqP3Ar": {
+    "testimonials_iFKing": {
       "type": "testimonials",
       "blocks": {
-        "testimonial_ypJnUP": {
+        "testimonial_MXE9X6": {
           "type": "testimonial",
           "settings": {
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
             "author": "Andrei P.",
-            "title": "W końcu uwolniłem się od złych nawyków.",
-            "content": "<p>Próbowałem już kilka razy zerwać z nałogiem, ale nigdy nie trwało to długo. Jednak z tym urządzeniem jestem już w trzecim miesiącu.</p>"
+            "title": "Konečne som sa oslobodil od zlých návykov.",
+            "content": "<p>Skúšal som už viackrát prestať s návykom, ale nikdy mi to dlho nevydržalo.<br/>S týmto zariadením som však už v treťom mesiaci.</p>"
           }
         },
-        "testimonial_EQr6YE": {
+        "testimonial_dwmj7r": {
           "type": "testimonial",
           "settings": {
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "Elena Ionescu",
-            "title": "Niesamowite",
-            "content": "<p>Odkąd go używam, nie odczuwam już takiego głodu jak wcześniej. Genialne!</p>"
+            "author": "Elena Nováková",
+            "title": "Úžasné",
+            "content": "<p>Odkedy ho používam, necítim už taký hlad ako predtým.<br/>Genialne!</p>"
           }
         },
-        "testimonial_gREUFE": {
+        "testimonial_3B6BmV": {
           "type": "testimonial",
           "settings": {
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "Mihai",
-            "title": "Bardzo mi pomaga.",
-            "content": "<p>Jestem spokojniejszy, bardziej energiczny i szczęśliwszy, odkąd tego używam. Nie wierzyłem, że to działa aż tak dobrze.</p>"
+            "author": "Michal K.",
+            "title": "Veľmi mi to pomáha.",
+            "content": "<p>Som pokojnejší, energickejší a šťastnejší, odkedy to používam.<br/>Neveril som, že to môže fungovať až tak dobre.</p>"
           }
         }
       },
       "block_order": [
-        "testimonial_ypJnUP",
-        "testimonial_EQr6YE",
-        "testimonial_gREUFE"
+        "testimonial_MXE9X6",
+        "testimonial_dwmj7r",
+        "testimonial_3B6BmV"
       ],
       "name": "Testimonials",
       "settings": {
@@ -769,7 +769,7 @@
     "text_with_icons_7aYgK7",
     "impact_text_aYXeVi",
     "rich_text_mQtgBH",
-    "testimonials_gqP3Ar",
+    "testimonials_iFKing",
     "rich_text_JEBCq4",
     "rich_text_wHG7mb",
     "media_with_text_6MUBVL",

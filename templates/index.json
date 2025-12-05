@@ -225,7 +225,7 @@
         "heading_HhncJt": {
           "type": "heading",
           "settings": {
-            "text": "Historia sukcesu",
+            "text": "Príbeh úspechu",
             "heading_tag": "h0",
             "text_color": "#ffb74a",
             "gradient": ""
@@ -234,7 +234,7 @@
         "richtext_LELYnK": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Zrób pierwszy krok w stronę bardziej naturalnego i świadomego życia! My damy Ci inspirację – decyzja należy do Ciebie.</strong></p>"
+            "content": "<p><strong>Urob prvý krok k prirodzenejšiemu a vedomejšiemu životu!<br/>My ti dáme inšpiráciu – rozhodnutie je na tebe.</strong></p>"
           }
         }
       },
@@ -262,8 +262,8 @@
             "show_rating": true,
             "rating": 5,
             "author": "Andrei P.",
-            "title": "W końcu uwolniłem się od złych nawyków.",
-            "content": "<p>Próbowałem już kilka razy zerwać z nałogiem, ale nigdy nie trwało to długo. Jednak z tym urządzeniem jestem już w trzecim miesiącu.</p>"
+            "title": "Konečne som sa oslobodil od zlých návykov.",
+            "content": "<p>Skúšal som už viackrát prestať s návykom, ale nikdy mi to dlho nevydržalo.<br/>S týmto zariadením som však už v treťom mesiaci.</p>"
           }
         },
         "testimonial_EhGQXw": {
@@ -272,9 +272,9 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "Elena Ionescu",
-            "title": "Niesamowite",
-            "content": "<p>Odkąd go używam, nie odczuwam już takiego głodu jak wcześniej. Genialne!</p>"
+            "author": "Elena Nováková",
+            "title": "Úžasné",
+            "content": "<p>Odkedy ho používam, necítim už taký hlad ako predtým.<br/>Genialne!</p>"
           }
         },
         "testimonial_CaNn6R": {
@@ -283,9 +283,9 @@
             "round_avatar": true,
             "show_rating": true,
             "rating": 5,
-            "author": "Mihai",
-            "title": "Bardzo mi pomaga.",
-            "content": "<p>Jestem spokojniejszy, bardziej energiczny i szczęśliwszy, odkąd tego używam. Nie wierzyłem, że to działa aż tak dobrze.</p>"
+            "author": "Michal K.",
+            "title": "Veľmi mi to pomáha.",
+            "content": "<p>Som pokojnejší, energickejší a šťastnejší, odkedy to používam.<br/>Neveril som, že to môže fungovať až tak dobre.</p>"
           }
         }
       },

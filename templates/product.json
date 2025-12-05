@@ -99,7 +99,7 @@
         "associated_products_6YheU6": {
           "type": "associated_products",
           "settings": {
-            "title": "Dodaj smaki do swojego zamówienia z 25% rabatem!",
+            "title": "Pridaj príchute k svojej objednávke so zľavou 25 %!",
             "stack_products": false,
             "products_count": 10,
             "background": "",
@@ -113,8 +113,8 @@
             "icon_position": "aligned",
             "icon": "picto-award-gift",
             "icon_width": 24,
-            "title": "PREZENT: AROMATYZOWANY WKŁAD WYSTARCZAJĄCY NA 18 DNI",
-            "content": "<p>2 saszetki zawierające łącznie 6 aromatyzowanych wkładów</p>",
+            "title": "DARČEK: AROMATIZOVANÁ NÁPLŇ VYDRŽÍ NA 18 DNÍ",
+            "content": "<p>2 sáčky obsahujúce spolu 6 aromatizovaných náplní</p>",
             "background": "#f4e8d5",
             "text_color": "#d27f04"
           }
@@ -122,50 +122,50 @@
         "collapsible_text_64D6NW": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Jakie aromatyzowane powietrze warto wdychać?",
-            "content": "<p>Aromatyzowane powietrze Qlean zapewnia delikatny, naturalny smak, stanowiąc przyjemną alternatywę na co dzień. Jest mniej intensywne niż para wodna, a mimo to oferuje orzeźwiające doznanie – porównywalne do lekko zaparzonej herbaty ziołowej lub napoju gazowanego bez cukru.</p>"
+            "title": "Aký aromatizovaný vzduch sa oplatí vdychovať?",
+            "content": "<p>Aromatizovaný vzduch Qlean poskytuje jemnú, prirodzenú chuť, ktorá predstavuje príjemnú alternatívu na každý deň. Je menej intenzívny ako vodná para, no zároveň ponúka osviežujúci zážitok – porovnateľný s ľahko vylúhovaným bylinným čajom alebo nesladenou perlivou vodou.</p>"
           }
         },
         "collapsible_text_ccRqEC": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Jak działa Qlean?",
-            "content": "<p>Qlean oferuje naturalnie aromatyzowane powietrze, które zapewnia orzeźwiające doznania na co dzień.<br/><br/>Wykonany w 100% z naturalnych składników, stanowi wygodną alternatywę dla osób, które chcą wprowadzić bardziej świadome nawyki.</p><p>Używanie Qlean jest proste – tylko 3 kroki:</p><ol><li>Zmiękcz swój ulubiony aromatyzowany wkład.</li><li>Umieść wkład w urządzeniu Qlean.</li><li>Ciesz się orzeźwiającym doświadczeniem naturalnej aromaterapii.</li></ol>"
+            "title": "Ako funguje Qlean?",
+            "content": "<p>Qlean ponúka prirodzene aromatizovaný vzduch, ktorý poskytuje osviežujúci zážitok na každý deň.</p><p>Vyrobený zo 100 % prírodných ingrediencií predstavuje pohodlnú alternatívu pre tých, ktorí chcú zaviesť vedomejšie návyky.</p><p>Používanie Qlean je jednoduché – stačia len 3 kroky:</p><ol><li>Zmäkči svoju obľúbenú aromatizovanú náplň.<br/></li><li>Vlož náplň do zariadenia Qlean.<br/></li><li>Užívaj si osviežujúci zážitok z prírodnej arómaterapie.<br/></li></ol>"
           }
         },
         "collapsible_text_44T676": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Czy Qlean jest bezpieczny?",
-            "content": "<p><strong>Oczywiście!</strong><br/>Qlean jest w 100% wykonany z naturalnych składników, w tym czystych olejków eterycznych, ekstraktów roślinnych i naturalnych aromatów.<br/><br/>Nie zawiera nikotyny, produktów spalania ani sztucznych dodatków, dzięki czemu stanowi orzeźwiającą, naturalną alternatywę na co dzień.</p><p>Więcej informacji:<br/><br/><a href=\"/pages/bezpieczenstwo-toksykologia-smaki\" title=\"Bezpieczeństwo, toksykologia, smaki\">Bezpieczeństwo, wyniki toksykologiczne<br/></a><br/><a href=\"/pages/instrukcja-uzytkowania-i-informacja-dotyczaca-bezpieczenstwa\" title=\"Instrukcja użytkowania i informacja dotycząca bezpieczeństwa\">Instrukcja użytkowania produktu</a></p>"
+            "title": "Je Qlean bezpečný?",
+            "content": "<p><strong>Samozrejme!</strong><br/><br/>Qlean je zo 100 % vyrobený z prírodných zložiek, vrátane čistých éterických olejov, rastlinných extraktov a prírodných aróm.</p><p>Neobsahuje nikotín, produkty spaľovania ani umelé prísady, vďaka čomu predstavuje osviežujúcu, prírodnú alternatívu na každý deň.</p><p>Viac informácií:<br/><br/><a href=\"/pages/bezpieczenstwo-toksykologia-smaki\" title=\"Bezpieczeństwo, toksykologia, smaki\">Bezpieczeństwo, wyniki toksykologiczne<br/></a><br/><a href=\"/pages/instrukcja-uzytkowania-i-informacja-dotyczaca-bezpieczenstwa\" title=\"Instrukcja użytkowania i informacja dotycząca bezpieczeństwa\">Instrukcja użytkowania produktu</a></p>"
           }
         },
         "collapsible_text_DETCHP": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Jak długo wystarcza aromatyzowany wkład?",
-            "content": "<p>Każdy aromatyzowany wkład wystarcza na 2–3 dni regularnego użytkowania, w zależności od tego, jak często używasz Qlean.</p>"
+            "title": "Ako dlho vydrží aromatizovaná náplň?",
+            "content": "<p>Každá aromatizovaná náplň vydrží 2–3 dni pravidelného používania, v závislosti od toho, ako často používaš Qlean.</p>"
           }
         },
         "collapsible_text_wfhRXJ": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Co zawiera zestaw?",
-            "content": "<p>Zawartość zestawu:<br/></p><ul><li>1 szt. – Qlean POD Dyfuzor</li><li>2 opakowania – Qlean aromatyzowane wkłady</li><li>1 szt. – Zestaw czyszczący Qlean</li></ul>"
+            "title": "Čo obsahuje balenie?",
+            "content": "<p>Obsah balenia:</p><ul><li>1 ks – Qlean POD Difúzor<br/></li><li>2 balenia – Qlean aromatizované náplne<br/></li><li>1 ks – Čistiaca sada Qlean</li></ul>"
           }
         },
         "collapsible_text_AAhnNW": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Dostawa",
-            "content": "<p>Za terminową dostawę odpowiada firma kurierska <strong>GLS</strong>. Twoją paczkę przekazujemy kurierowi w pierwszy dzień roboczy po złożeniu zamówienia. Od momentu nadania paczka zazwyczaj dociera do Ciebie następnego dnia, więc cały proces dostawy zajmuje średnio <strong>1–3 dni robocze</strong>.</p>"
+            "title": "Doručenie",
+            "content": "<p>Za včasné doručenie je zodpovedná kuriérska spoločnosť <strong>GLS</strong>. Tvoj balík odovzdáme kuriérovi v prvý pracovný deň po vytvorení objednávky. Od momentu odoslania balík zvyčajne dorazí k tebe nasledujúci deň, takže celý proces doručenia trvá v priemere <strong>1–3 pracovné dni</strong>.</p>"
           }
         },
         "collapsible_text_mQa9EW": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Masz pytanie? Skontaktuj się z nami!",
-            "content": "<p>Pomożemy Ci w wyborze! Nasz dział obsługi klienta jest dostępny od poniedziałku do piątku w godzinach 9:00–17:00.<br/><strong>qlean.info@gmail.com</strong></p>"
+            "title": "Máš otázku? Kontaktuj nás!",
+            "content": "<p>Pomôžeme ti s výberom! Náš zákaznícky servis je k dispozícii od pondelka do piatku v čase 9:00–17:00.<br/><br/><a><strong>qlean.info@gmail.com</strong></a></p>"
           }
         },
         "image_3CicPB": {
@@ -225,7 +225,7 @@
         "heading_93UftX": {
           "type": "heading",
           "settings": {
-            "text": "UWOLNIJ SIĘ",
+            "text": "OSLOBODI SA",
             "heading_tag": "h1",
             "text_color": "#e68b00",
             "gradient": ""
@@ -234,7 +234,7 @@
         "richtext_gTbgpJ": {
           "type": "richtext",
           "settings": {
-            "content": "<p><strong>Żyj naturalnie i ciesz się orzeźwiającym doświadczeniem aromaterapii z Qlean!<br/></strong><br/>To świadoma decyzja, która może poprowadzić Cię w stronę bardziej zrównoważonego, naturalnego stylu życia.</p>"
+            "content": "<p><strong>Ži prirodzene a užívaj si osviežujúci aromaterapeutický zážitok s Qlean!</strong></p><p>Je to vedomé rozhodnutie, ktoré ťa môže nasmerovať k udržateľnejšiemu, prirodzenejšiemu životnému štýlu.</p>"
           }
         }
       },
@@ -281,8 +281,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Świeżość, naturalnie – z Qlean",
-            "content": "<p>Ciesz się orzeźwiającym doświadczeniem, jakie dają naturalne składniki!</p>"
+            "title": "Sviežosť, prirodzene – s Qlean",
+            "content": "<p>Užívaj si osviežujúci zážitok, ktorý prinášajú prírodné ingrediencie!</p>"
           }
         },
         "item_nccaGY": {
@@ -295,8 +295,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Regulowany przepływ powietrza",
-            "content": "<p>Dostosuj przepływ powietrza do swoich potrzeb.</p>"
+            "title": "Regulovaný prietok vzduchu",
+            "content": "<p>Prispôsob si prietok vzduchu svojim potrebám.</p>"
           }
         },
         "item_kqeTzw": {
@@ -309,8 +309,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Naturalny relaks",
-            "content": "<p>Ruchome elementy zapewniają przyjemne, relaksujące doznania.</p>"
+            "title": "Prirodzený relax",
+            "content": "<p>Pohyblivé prvky poskytujú príjemné, relaxačné pocity.</p>"
           }
         },
         "item_HbDfY6": {
@@ -323,8 +323,8 @@
             "icon_background_type": "none",
             "icon_background": "",
             "icon_color": "",
-            "title": "Oszczędny",
-            "content": "<p>Nasze urządzenia i smaki oferują długoterminowe, oszczędne rozwiązanie dla miłośników świeżości.</p>"
+            "title": "Úsporný",
+            "content": "<p>Naše zariadenia a príchute ponúkajú dlhodobé, úsporné riešenie pre milovníkov sviežosti.</p>"
           }
         }
       },

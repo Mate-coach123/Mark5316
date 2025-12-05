@@ -17,21 +17,21 @@
         "message_wpBUVW": {
           "type": "message",
           "settings": {
-            "text": "Wysyłka za pobraniem w 1–2 dni",
+            "text": "Dobierková zásielka do 1–2 dní",
             "url": ""
           }
         },
         "message_wy9mhU": {
           "type": "message",
           "settings": {
-            "text": "30-dniowa gwarancja smaku",
+            "text": "30-dňová záruka chuti",
             "url": ""
           }
         },
         "message": {
           "type": "message",
           "settings": {
-            "text": "Odkryj naturalną alternatywę",
+            "text": "Objav prirodzenú alternatívu",
             "url": ""
           }
         }

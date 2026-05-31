@@ -1,6 +1,1095 @@
+{% doc %}
+  @prompt
+    Create a Shopify statistics/results section that displays large numbered stats with labels, similar to a "Real Sleep Results" style layout. The section must be fully customizable with every possible setting.
+    Layout: Display 3 to 5 stat items stacked vertically, each separated by a thin horizontal divider line. Each stat item contains a large number or percentage (e.g. "92%"), a bold label below it (e.g. "Saw improved sleep quality"), and an optional short description below the label.
+    Stat number styling: Large font size control (default around 64–80px). Option to apply a gradient to the number text with two color pickers for gradient start and end color and a gradient direction control. Option for solid color instead of gradient with a color picker. Font weight control. Optional text shadow on the number with shadow color, blur radius, and offset controls.
+    Label styling: Separate font size control. Font color picker. Font weight control. Optional letter spacing control.
+    Description text: Optional smaller text below each label. Font size, color, and font style (normal or italic) controls.
+    Divider lines: Toggle to show or hide dividers between stat items. Divider color picker. Divider thickness control in pixels. Divider width as percentage of section width. Divider alignment (left, center, full width).
+    Section title: Editable main heading at the top. Option to split the heading into two parts — first part in solid color, second part in italic style with a different color or gradient (e.g. "Real Sleep" in dark + "Results" in purple italic). Font size, color, and weight controls for each part separately.
+    Footer note: Optional small italic disclaimer text at the bottom of the section with an info icon before it. Font size and color controls.
+    Background: Section background color picker with option to switch to a two-color gradient with gradient angle control. Default should be a very light lavender or off-white.
+    Spacing: Individual top padding, bottom padding, left padding, and right padding controls for the entire section. Individual top and bottom padding controls for each stat item. Control for the gap between the number and the label.
+    Alignment: Text alignment control for all content (left, center, right) separately for desktop and mobile.
+    Number of stats: Setting to choose how many stat blocks to display (minimum 2, maximum 6) with each stat having its own number field, label field, description field, and individual color override option.
+    Make the section clean, minimal, and premium — consistent with a wellness and sleep brand aesthetic.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-stats-section-{{ ai_gen_id }} {
+    padding-top: {{ block.settings.section_padding_top }}px;
+    padding-bottom: {{ block.settings.section_padding_bottom }}px;
+    padding-left: {{ block.settings.section_padding_left }}px;
+    padding-right: {{ block.settings.section_padding_right }}px;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    {% if block.settings.background_type == 'solid' %}
+      background-color: {{ block.settings.background_color }};
+    {% else %}
+      background: linear-gradient({{ block.settings.gradient_angle }}deg, {{ block.settings.gradient_color_1 }}, {{ block.settings.gradient_color_2 }});
+    {% endif %}
+  }
+
+  .ai-stats-section__inner-{{ ai_gen_id }} {
+    max-width: {{ block.settings.content_max_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-stats-section__title-{{ ai_gen_id }} {
+    margin-bottom: {{ block.settings.title_bottom_margin }}px;
+    text-align: {{ block.settings.text_align_desktop }};
+  }
+
+  .ai-stats-section__title-part1-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_part1_font_size }}px;
+    color: {{ block.settings.title_part1_color }};
+    font-weight: {{ block.settings.title_part1_font_weight }};
+    display: inline;
+  }
+
+  .ai-stats-section__title-part2-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_part2_font_size }}px;
+    {% if block.settings.title_part2_style == 'gradient' %}
+      background: linear-gradient({{ block.settings.title_part2_gradient_angle }}deg, {{ block.settings.title_part2_gradient_color_1 }}, {{ block.settings.title_part2_gradient_color_2 }});
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    {% else %}
+      color: {{ block.settings.title_part2_color }};
+    {% endif %}
+    font-weight: {{ block.settings.title_part2_font_weight }};
+    font-style: {{ block.settings.title_part2_font_style }};
+    display: inline;
+  }
+
+  .ai-stats-section__items-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ai-stats-section__item-{{ ai_gen_id }} {
+    padding-top: {{ block.settings.stat_item_padding_top }}px;
+    padding-bottom: {{ block.settings.stat_item_padding_bottom }}px;
+    text-align: {{ block.settings.text_align_desktop }};
+  }
+
+  {% if block.settings.show_dividers %}
+    .ai-stats-section__item-{{ ai_gen_id }}:not(:last-child) {
+      border-bottom: {{ block.settings.divider_thickness }}px solid {{ block.settings.divider_color }};
+    }
+
+    .ai-stats-section__divider-{{ ai_gen_id }} {
+      width: {{ block.settings.divider_width }}%;
+      height: {{ block.settings.divider_thickness }}px;
+      background-color: {{ block.settings.divider_color }};
+      {% if block.settings.divider_alignment == 'left' %}
+        margin-left: 0;
+        margin-right: auto;
+      {% elsif block.settings.divider_alignment == 'center' %}
+        margin-left: auto;
+        margin-right: auto;
+      {% else %}
+        margin-left: 0;
+        margin-right: 0;
+      {% endif %}
+    }
+  {% endif %}
+
+  .ai-stats-section__number-{{ ai_gen_id }} {
+    font-size: {{ block.settings.number_font_size }}px;
+    font-weight: {{ block.settings.number_font_weight }};
+    line-height: 1.1;
+    margin-bottom: {{ block.settings.number_label_gap }}px;
+    {% if block.settings.number_style == 'gradient' %}
+      background: linear-gradient({{ block.settings.number_gradient_angle }}deg, {{ block.settings.number_gradient_color_1 }}, {{ block.settings.number_gradient_color_2 }});
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    {% else %}
+      color: {{ block.settings.number_color }};
+    {% endif %}
+    {% if block.settings.number_text_shadow %}
+      text-shadow: {{ block.settings.shadow_offset_x }}px {{ block.settings.shadow_offset_y }}px {{ block.settings.shadow_blur }}px {{ block.settings.shadow_color }};
+    {% endif %}
+  }
+
+  .ai-stats-section__label-{{ ai_gen_id }} {
+    font-size: {{ block.settings.label_font_size }}px;
+    color: {{ block.settings.label_color }};
+    font-weight: {{ block.settings.label_font_weight }};
+    letter-spacing: {{ block.settings.label_letter_spacing }}px;
+    margin-bottom: {{ block.settings.label_description_gap }}px;
+  }
+
+  .ai-stats-section__description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.description_font_size }}px;
+    color: {{ block.settings.description_color }};
+    font-style: {{ block.settings.description_font_style }};
+    margin-top: {{ block.settings.label_description_gap }}px;
+  }
+
+  .ai-stats-section__footer-{{ ai_gen_id }} {
+    margin-top: {{ block.settings.footer_top_margin }}px;
+    text-align: {{ block.settings.text_align_desktop }};
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    {% if block.settings.text_align_desktop == 'center' %}
+      justify-content: center;
+    {% elsif block.settings.text_align_desktop == 'right' %}
+      justify-content: flex-end;
+    {% else %}
+      justify-content: flex-start;
+    {% endif %}
+  }
+
+  .ai-stats-section__footer-icon-{{ ai_gen_id }} {
+    width: {{ block.settings.footer_font_size }}px;
+    height: {{ block.settings.footer_font_size }}px;
+    flex-shrink: 0;
+  }
+
+  .ai-stats-section__footer-icon-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    fill: {{ block.settings.footer_color }};
+  }
+
+  .ai-stats-section__footer-text-{{ ai_gen_id }} {
+    font-size: {{ block.settings.footer_font_size }}px;
+    color: {{ block.settings.footer_color }};
+    font-style: italic;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-stats-section__title-{{ ai_gen_id }} {
+      text-align: {{ block.settings.text_align_mobile }};
+    }
+
+    .ai-stats-section__item-{{ ai_gen_id }} {
+      text-align: {{ block.settings.text_align_mobile }};
+    }
+
+    .ai-stats-section__footer-{{ ai_gen_id }} {
+      text-align: {{ block.settings.text_align_mobile }};
+      {% if block.settings.text_align_mobile == 'center' %}
+        justify-content: center;
+      {% elsif block.settings.text_align_mobile == 'right' %}
+        justify-content: flex-end;
+      {% else %}
+        justify-content: flex-start;
+      {% endif %}
+    }
+
+    .ai-stats-section__number-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.number_font_size }}px * 0.7);
+    }
+
+    .ai-stats-section__title-part1-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_part1_font_size }}px * 0.7);
+    }
+
+    .ai-stats-section__title-part2-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.title_part2_font_size }}px * 0.7);
+    }
+  }
+{% endstyle %}
+
+<div class="ai-stats-section-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-stats-section__inner-{{ ai_gen_id }}">
+    {% if block.settings.title_part1 != blank or block.settings.title_part2 != blank %}
+      <div class="ai-stats-section__title-{{ ai_gen_id }}">
+        {% if block.settings.title_part1 != blank %}
+          <h2 class="ai-stats-section__title-part1-{{ ai_gen_id }}">{{ block.settings.title_part1 }}</h2>
+        {% endif %}
+        {% if block.settings.title_part2 != blank %}
+          <h2 class="ai-stats-section__title-part2-{{ ai_gen_id }}">{{ block.settings.title_part2 }}</h2>
+        {% endif %}
+      </div>
+    {% endif %}
+
+    <div class="ai-stats-section__items-{{ ai_gen_id }}">
+      {% for i in (1..block.settings.number_of_stats) %}
+        {% assign stat_number_key = 'stat_' | append: i | append: '_number' %}
+        {% assign stat_label_key = 'stat_' | append: i | append: '_label' %}
+        {% assign stat_description_key = 'stat_' | append: i | append: '_description' %}
+        {% assign stat_number_override_key = 'stat_' | append: i | append: '_number_color_override' %}
+        {% assign stat_use_override_key = 'stat_' | append: i | append: '_use_color_override' %}
+
+        {% assign stat_number = block.settings[stat_number_key] %}
+        {% assign stat_label = block.settings[stat_label_key] %}
+        {% assign stat_description = block.settings[stat_description_key] %}
+        {% assign stat_number_override = block.settings[stat_number_override_key] %}
+        {% assign stat_use_override = block.settings[stat_use_override_key] %}
+
+        <div class="ai-stats-section__item-{{ ai_gen_id }}">
+          {% if stat_number != blank %}
+            <div 
+              class="ai-stats-section__number-{{ ai_gen_id }}"
+              {% if stat_use_override and block.settings.number_style == 'solid' %}
+                style="color: {{ stat_number_override }};"
+              {% endif %}
+            >
+              {{ stat_number }}
+            </div>
+          {% endif %}
+
+          {% if stat_label != blank %}
+            <div class="ai-stats-section__label-{{ ai_gen_id }}">
+              {{ stat_label }}
+            </div>
+          {% endif %}
+
+          {% if stat_description != blank %}
+            <div class="ai-stats-section__description-{{ ai_gen_id }}">
+              {{ stat_description }}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+
+    {% if block.settings.footer_text != blank %}
+      <div class="ai-stats-section__footer-{{ ai_gen_id }}">
+        {% if block.settings.show_footer_icon %}
+          <div class="ai-stats-section__footer-icon-{{ ai_gen_id }}">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </div>
+        {% endif %}
+        <div class="ai-stats-section__footer-text-{{ ai_gen_id }}">
+          {{ block.settings.footer_text }}
+        </div>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Statistics results",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section title"
+    },
+    {
+      "type": "text",
+      "id": "title_part1",
+      "label": "Title first part",
+      "default": "Real Sleep"
+    },
+    {
+      "type": "range",
+      "id": "title_part1_font_size",
+      "label": "First part font size",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "color",
+      "id": "title_part1_color",
+      "label": "First part color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "title_part1_font_weight",
+      "label": "First part font weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "default": 700
+    },
+    {
+      "type": "text",
+      "id": "title_part2",
+      "label": "Title second part",
+      "default": "Results"
+    },
+    {
+      "type": "range",
+      "id": "title_part2_font_size",
+      "label": "Second part font size",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "select",
+      "id": "title_part2_style",
+      "label": "Second part style",
+      "options": [
+        {
+          "value": "solid",
+          "label": "Solid color"
+        },
+        {
+          "value": "gradient",
+          "label": "Gradient"
+        }
+      ],
+      "default": "gradient"
+    },
+    {
+      "type": "color",
+      "id": "title_part2_color",
+      "label": "Second part color",
+      "default": "#803cee"
+    },
+    {
+      "type": "color",
+      "id": "title_part2_gradient_color_1",
+      "label": "Second part gradient start",
+      "default": "#803cee"
+    },
+    {
+      "type": "color",
+      "id": "title_part2_gradient_color_2",
+      "label": "Second part gradient end",
+      "default": "#c5aede"
+    },
+    {
+      "type": "range",
+      "id": "title_part2_gradient_angle",
+      "label": "Second part gradient angle",
+      "min": 0,
+      "max": 360,
+      "step": 10,
+      "unit": "deg",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "title_part2_font_weight",
+      "label": "Second part font weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "default": 700
+    },
+    {
+      "type": "select",
+      "id": "title_part2_font_style",
+      "label": "Second part font style",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "italic",
+          "label": "Italic"
+        }
+      ],
+      "default": "italic"
+    },
+    {
+      "type": "range",
+      "id": "title_bottom_margin",
+      "label": "Title bottom margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Statistics configuration"
+    },
+    {
+      "type": "range",
+      "id": "number_of_stats",
+      "label": "Number of stats",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Stat 1"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_number",
+      "label": "Number",
+      "default": "92%"
+    },
+    {
+      "type": "text",
+      "id": "stat_1_label",
+      "label": "Label",
+      "default": "Saw improved sleep quality"
+    },
+    {
+      "type": "textarea",
+      "id": "stat_1_description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "stat_1_use_color_override",
+      "label": "Use custom color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "stat_1_number_color_override",
+      "label": "Custom number color",
+      "default": "#803cee"
+    },
+    {
+      "type": "header",
+      "content": "Stat 2"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_number",
+      "label": "Number",
+      "default": "87%"
+    },
+    {
+      "type": "text",
+      "id": "stat_2_label",
+      "label": "Label",
+      "default": "Fell asleep faster"
+    },
+    {
+      "type": "textarea",
+      "id": "stat_2_description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "stat_2_use_color_override",
+      "label": "Use custom color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "stat_2_number_color_override",
+      "label": "Custom number color",
+      "default": "#803cee"
+    },
+    {
+      "type": "header",
+      "content": "Stat 3"
+    },
+    {
+      "type": "text",
+      "id": "stat_3_number",
+      "label": "Number",
+      "default": "95%"
+    },
+    {
+      "type": "text",
+      "id": "stat_3_label",
+      "label": "Label",
+      "default": "Felt more rested"
+    },
+    {
+      "type": "textarea",
+      "id": "stat_3_description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "stat_3_use_color_override",
+      "label": "Use custom color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "stat_3_number_color_override",
+      "label": "Custom number color",
+      "default": "#803cee"
+    },
+    {
+      "type": "header",
+      "content": "Stat 4"
+    },
+    {
+      "type": "text",
+      "id": "stat_4_number",
+      "label": "Number"
+    },
+    {
+      "type": "text",
+      "id": "stat_4_label",
+      "label": "Label"
+    },
+    {
+      "type": "textarea",
+      "id": "stat_4_description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "stat_4_use_color_override",
+      "label": "Use custom color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "stat_4_number_color_override",
+      "label": "Custom number color",
+      "default": "#803cee"
+    },
+    {
+      "type": "header",
+      "content": "Stat 5"
+    },
+    {
+      "type": "text",
+      "id": "stat_5_number",
+      "label": "Number"
+    },
+    {
+      "type": "text",
+      "id": "stat_5_label",
+      "label": "Label"
+    },
+    {
+      "type": "textarea",
+      "id": "stat_5_description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "stat_5_use_color_override",
+      "label": "Use custom color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "stat_5_number_color_override",
+      "label": "Custom number color",
+      "default": "#803cee"
+    },
+    {
+      "type": "header",
+      "content": "Stat 6"
+    },
+    {
+      "type": "text",
+      "id": "stat_6_number",
+      "label": "Number"
+    },
+    {
+      "type": "text",
+      "id": "stat_6_label",
+      "label": "Label"
+    },
+    {
+      "type": "textarea",
+      "id": "stat_6_description",
+      "label": "Description"
+    },
+    {
+      "type": "checkbox",
+      "id": "stat_6_use_color_override",
+      "label": "Use custom color",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "stat_6_number_color_override",
+      "label": "Custom number color",
+      "default": "#803cee"
+    },
+    {
+      "type": "header",
+      "content": "Number styling"
+    },
+    {
+      "type": "range",
+      "id": "number_font_size",
+      "label": "Font size",
+      "min": 30,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "default": 72
+    },
+    {
+      "type": "select",
+      "id": "number_style",
+      "label": "Number style",
+      "options": [
+        {
+          "value": "solid",
+          "label": "Solid color"
+        },
+        {
+          "value": "gradient",
+          "label": "Gradient"
+        }
+      ],
+      "default": "gradient"
+    },
+    {
+      "type": "color",
+      "id": "number_color",
+      "label": "Number color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "color",
+      "id": "number_gradient_color_1",
+      "label": "Gradient start color",
+      "default": "#803cee"
+    },
+    {
+      "type": "color",
+      "id": "number_gradient_color_2",
+      "label": "Gradient end color",
+      "default": "#c5aede"
+    },
+    {
+      "type": "range",
+      "id": "number_gradient_angle",
+      "label": "Gradient angle",
+      "min": 0,
+      "max": 360,
+      "step": 10,
+      "unit": "deg",
+      "default": 90
+    },
+    {
+      "type": "range",
+      "id": "number_font_weight",
+      "label": "Font weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "default": 700
+    },
+    {
+      "type": "checkbox",
+      "id": "number_text_shadow",
+      "label": "Enable text shadow",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "shadow_color",
+      "label": "Shadow color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "Shadow blur",
+      "min": 0,
+      "max": 50,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_x",
+      "label": "Shadow horizontal offset",
+      "min": -20,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_y",
+      "label": "Shadow vertical offset",
+      "min": -20,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "number_label_gap",
+      "label": "Gap between number and label",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Label styling"
+    },
+    {
+      "type": "range",
+      "id": "label_font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 40,
+      "step": 1,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "color",
+      "id": "label_color",
+      "label": "Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "range",
+      "id": "label_font_weight",
+      "label": "Font weight",
+      "min": 100,
+      "max": 900,
+      "step": 100,
+      "default": 600
+    },
+    {
+      "type": "range",
+      "id": "label_letter_spacing",
+      "label": "Letter spacing",
+      "min": -2,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "label_description_gap",
+      "label": "Gap between label and description",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "header",
+      "content": "Description styling"
+    },
+    {
+      "type": "range",
+      "id": "description_font_size",
+      "label": "Font size",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Color",
+      "default": "#666666"
+    },
+    {
+      "type": "select",
+      "id": "description_font_style",
+      "label": "Font style",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "italic",
+          "label": "Italic"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "header",
+      "content": "Divider lines"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dividers",
+      "label": "Show dividers",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "divider_color",
+      "label": "Color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "divider_thickness",
+      "label": "Thickness",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "divider_width",
+      "label": "Width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "select",
+      "id": "divider_alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "full",
+          "label": "Full width"
+        }
+      ],
+      "default": "full"
+    },
+    {
+      "type": "header",
+      "content": "Footer note"
+    },
+    {
+      "type": "textarea",
+      "id": "footer_text",
+      "label": "Footer text"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_footer_icon",
+      "label": "Show info icon",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "footer_font_size",
+      "label": "Font size",
+      "min": 10,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "footer_color",
+      "label": "Color",
+      "default": "#999999"
+    },
+    {
+      "type": "range",
+      "id": "footer_top_margin",
+      "label": "Top margin",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "select",
+      "id": "background_type",
+      "label": "Background type",
+      "options": [
+        {
+          "value": "solid",
+          "label": "Solid color"
+        },
+        {
+          "value": "gradient",
+          "label": "Gradient"
+        }
+      ],
+      "default": "solid"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#f9f7fc"
+    },
+    {
+      "type": "color",
+      "id": "gradient_color_1",
+      "label": "Gradient start color",
+      "default": "#f9f7fc"
+    },
+    {
+      "type": "color",
+      "id": "gradient_color_2",
+      "label": "Gradient end color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "gradient_angle",
+      "label": "Gradient angle",
+      "min": 0,
+      "max": 360,
+      "step": 10,
+      "unit": "deg",
+      "default": 180
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 150,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_left",
+      "label": "Left padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "section_padding_right",
+      "label": "Right padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "content_max_width",
+      "label": "Content max width",
+      "min": 400,
+      "max": 1400,
+      "step": 50,
+      "unit": "px",
+      "default": 800
+    },
+    {
+      "type": "range",
+      "id": "stat_item_padding_top",
+      "label": "Stat item top padding",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "stat_item_padding_bottom",
+      "label": "Stat item bottom padding",
+      "min": 0,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "Alignment"
+    },
+    {
+      "type": "select",
+      "id": "text_align_desktop",
+      "label": "Desktop alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "text_align_mobile",
+      "label": "Mobile alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Statistics results"
+    }
+  ]
+}
 {% endschema %}

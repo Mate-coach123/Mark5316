@@ -161,6 +161,39 @@
       ],
       "settings": {}
     },
+    "17802629069b46a697": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_9e28b3f_jUHA4d": {
+          "type": "ai_gen_block_9e28b3f",
+          "settings": {
+            "fill_color": "#c5aede",
+            "wave_height": 60,
+            "wave_frequency": 3,
+            "flip_wave": false,
+            "show_wave_top": true,
+            "show_wave_bottom": true,
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "title": "Trusted by thousands",
+            "subtitle": "Join our community of satisfied customers",
+            "text_color": "#2b2b2b",
+            "title_size": 42,
+            "subtitle_size": 18,
+            "show_stars": true,
+            "star_count": 5,
+            "star_text": "5.0",
+            "star_color": "#FFD700",
+            "star_size": 24
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_9e28b3f_jUHA4d"
+      ],
+      "settings": {}
+    },
     "1780261921c29ce816": {
       "type": "_blocks",
       "blocks": {
@@ -224,31 +257,31 @@
             "testimonial_2_text": "Nem vártam tőle sokat őszintén, de kellemes meglepetés volt. Hűvös marad éjjel ami nekem nagyon sokat számít nyáron.",
             "testimonial_2_name": "H. Bence",
             "testimonial_2_rating": 5,
-            "testimonial_2_verified": true,
+            "testimonial_2_verified": false,
             "testimonial_3_media": "shopify://shop_images/3_b7028265-bc0c-4da2-8b70-e2a8bfd156dc.png",
             "testimonial_3_video": "",
             "testimonial_3_text": "Először a lányom ajánlotta, kicsit szkeptikus voltam az ára miatt. De megérte, azóta a férjem is rendelt egyet magának 😄",
             "testimonial_3_name": "Sz. Judit",
             "testimonial_3_rating": 5,
-            "testimonial_3_verified": true,
+            "testimonial_3_verified": false,
             "testimonial_4_media": "shopify://shop_images/4_353fb660-ac59-40ca-9324-00230585a04f.png",
             "testimonial_4_video": "",
             "testimonial_4_text": "Kb egy hét kellett míg teljesen hozzászoktam, de azóta sokkal pihentetőbb az alvás. Irodában dolgozom sokat és a nyakam is sokkal kevésbé feszül.",
             "testimonial_4_name": "T. Márk",
             "testimonial_4_rating": 5,
-            "testimonial_4_verified": true,
+            "testimonial_4_verified": false,
             "testimonial_5_media": "shopify://shop_images/5.png",
             "testimonial_5_video": "",
             "testimonial_5_text": "Ajándékba kaptam és eleinte nem tudtam mit várjak tőle. Mostmár én is ajánlottam pár barátnőmnek, tényleg érezni a különbséget",
             "testimonial_5_name": "K. Eszter",
             "testimonial_5_rating": 5,
-            "testimonial_5_verified": true,
+            "testimonial_5_verified": false,
             "testimonial_6_media": "shopify://shop_images/7.png",
             "testimonial_6_video": "",
             "testimonial_6_text": "Régóta forgolódtam éjszaka és sosem aludtam át rendesen. Egy hónap után már azt sem tudom mikor feküdtem le, úgy alszom át az éjszakát.",
             "testimonial_6_name": "N. Péter",
             "testimonial_6_rating": 5,
-            "testimonial_6_verified": true
+            "testimonial_6_verified": false
           },
           "blocks": {}
         }
@@ -257,6 +290,36 @@
         "ai_gen_block_b60a43d_PCiKcT"
       ],
       "settings": {}
+    },
+    "images_with_text_scrolling_8G66pe": {
+      "type": "images-with-text-scrolling",
+      "blocks": {
+        "item_n6fdMe": {
+          "type": "item",
+          "settings": {
+            "icon": "none",
+            "icon_width": 48,
+            "title": "Rólunk",
+            "content": "<p>Az Ergorest ötlete egy egyszerű problémából született: éveken át küzdöttünk a <strong>reggeli nyakfájással</strong> és a <strong>nyugtalan alvással,</strong> de a piacon lévő párnák egyike sem hozott igazi megoldást. Elkezdtük kutatni mi az ami <strong>tényleg működik</strong> — így találtunk rá a <strong>TPE honeycomb technológiára,</strong> ami légáramlásával és ergonomikus tartásával teljesen más <strong>alvásélményt nyújt.</strong> Célunk az, hogy ezt a technológiát <strong>mindenki számára elérhetővé</strong> tegyük <strong>Magyarországon</strong>, egy <strong>megbízható </strong>és <strong>átlátható brandként.</strong> <strong>Az Ergorest nem csak egy párna</strong> — hanem egy <strong>befektetés</strong> a saját <strong>pihentető alvásodba.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_n6fdMe"
+      ],
+      "name": "Images and text scrolling",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "show_counter": false,
+        "desktop_image_effect": "reveal",
+        "image_position": "start",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
     }
   },
   "order": [
@@ -264,6 +327,8 @@
     "slideshow_JTkicX",
     "1780255316d70a2501",
     "17802603186b398db4",
-    "1780261921c29ce816"
+    "17802629069b46a697",
+    "1780261921c29ce816",
+    "images_with_text_scrolling_8G66pe"
   ]
 }

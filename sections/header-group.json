@@ -17,21 +17,21 @@
         "message_wpBUVW": {
           "type": "message",
           "settings": {
-            "text": "Dobierková zásielka do 1–2 dní",
+            "text": "1-2 Napos Szállítás",
             "url": ""
           }
         },
         "message_wy9mhU": {
           "type": "message",
           "settings": {
-            "text": "30-dňová záruka chuti",
+            "text": "30 Napos Garancia",
             "url": ""
           }
         },
         "message": {
           "type": "message",
           "settings": {
-            "text": "Objav prirodzenú alternatívu",
+            "text": "3500+ Elégedett Vásárló",
             "url": ""
           }
         }

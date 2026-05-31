@@ -27,8 +27,8 @@
     "privacy-banner": {
       "type": "privacy-banner",
       "settings": {
-        "privacy_bar_title": "Cookie policy",
-        "privacy_bar_content": "<p>We use cookies and similar technologies to provide the best experience on our website. Refer to our Privacy Policy for more information.</p>"
+        "privacy_bar_title": "Süti szabályzat",
+        "privacy_bar_content": "<p>Sütiket és hasonló technológiákat használunk, hogy a legjobb élményt nyújtsuk weboldalunkon. További információért tekintse meg Adatvédelmi szabályzatunkat.</p>"
       }
     },
     "cart-drawer": {

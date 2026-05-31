@@ -111,7 +111,7 @@
             "desktop_image": "shopify://shop_images/gepes_image_banner.png",
             "desktop_image_width": 100,
             "desktop_image_height": 500,
-            "mobile_image": "shopify://shop_images/telos_image_banner_masolat.png",
+            "mobile_image": "shopify://shop_images/telos_image_banner.png",
             "mobile_image_width": 100,
             "mobile_image_height": 400,
             "overlay_color": "#000000",

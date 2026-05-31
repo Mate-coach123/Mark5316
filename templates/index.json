@@ -163,35 +163,6 @@
     },
     "17802629069b46a697": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_9e28b3f_jUHA4d": {
-          "type": "ai_gen_block_9e28b3f",
-          "settings": {
-            "fill_color": "#c5aede",
-            "wave_height": 60,
-            "wave_frequency": 3,
-            "flip_wave": false,
-            "show_wave_top": true,
-            "show_wave_bottom": true,
-            "padding_top": 60,
-            "padding_bottom": 60,
-            "title": "Trusted by thousands",
-            "subtitle": "Join our community of satisfied customers",
-            "text_color": "#2b2b2b",
-            "title_size": 42,
-            "subtitle_size": 18,
-            "show_stars": true,
-            "star_count": 5,
-            "star_text": "5.0",
-            "star_color": "#FFD700",
-            "star_size": 24
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_9e28b3f_jUHA4d"
-      ],
       "settings": {}
     },
     "1780261921c29ce816": {
@@ -200,10 +171,10 @@
         "ai_gen_block_b60a43d_PCiKcT": {
           "type": "ai_gen_block_b60a43d",
           "settings": {
-            "section_title": "",
+            "section_title": "Vásárlóink Mondták!",
             "title_font_size": 42,
-            "title_color": "#1a1a1a",
-            "section_subtitle": "",
+            "title_color": "#8d5eb2",
+            "section_subtitle": "Valódi vásárlók. Valódi tapasztalatok.",
             "subtitle_font_size": 16,
             "subtitle_color": "#666666",
             "section_use_gradient": false,

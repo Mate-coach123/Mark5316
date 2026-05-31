@@ -1,6 +1,482 @@
+{% doc %}
+  @prompt
+    Create a Shopify section that acts as a visual divider between other sections on the page. It should be fully customizable with every possible option.
+    Divider styles: Include a setting to choose the divider type from the following options: solid line, dashed line, dotted line, double line, wavy line, zigzag line, diagonal slash pattern, and a fully invisible spacer with no visible element.
+    Size & spacing: Adjustable divider height or thickness in pixels. Individual top padding and bottom padding controls for the space above and below the divider. Full section height control for when used as a pure spacer.
+    Color & gradient: Solid color picker for the divider line. Toggle to switch to gradient mode with two color pickers for gradient start and end color and a gradient angle control from 0 to 360 degrees. Section background color picker with the same solid or gradient toggle so the background behind the divider can also be styled independently.
+    Decorative shape dividers: Include an option to choose a decorative SVG shape divider instead of a line — options should include: gentle wave, sharp wave, slanted cut, curve, triangle peak, and soft cloud shape. The shape divider should sit at the top or bottom of the section with a toggle to choose which side. Include a color picker for the shape fill color and an option to flip the shape horizontally or vertically.
+    Opacity & visibility: Opacity slider from 0 to 100 percent for the divider element. Separate visibility toggles for desktop and mobile so the divider can be hidden on one device type and shown on the other.
+    Width: Divider width control as a percentage of the section width (from 10 percent to 100 percent) and an alignment option (left, center, right) for when the divider is narrower than full width.
+    Make the section lightweight, with no unnecessary markup, and ensure all settings are clearly labeled and organized in the Shopify theme editor sidebar., The divider section is not working correctly — it only shows a straight line and the decorative shape options are not functioning as expected. Please fix and redesign it completely.
+    I want the divider to look exactly like the wave shape shown in my reference image: a smooth, organic wave shape that acts as a full-width decorative transition between sections — not a thin line, but a solid filled wave shape like a banner.
+    The wave should be a solid filled SVG shape, full width of the page, with a soft organic curve on the top and/or bottom edge. It should fill the entire section with color — similar to how a colored ribbon or wave banner looks between two white sections.
+    The brand color for Ergorest is a soft lavender purple — use approximately #c5aede as the default fill color, but make it fully customizable with a color picker in the settings.
+    Settings to include: fill color picker, wave height control, option to flip the wave vertically, option to show wave on top edge, bottom edge, or both edges, top and bottom padding control, and a text area inside the wave with editable title, subtitle, and optional star count display.
+    The shape must render as a real filled SVG wave — not a CSS border or a straight line. It must look smooth and premium, consistent with a soft wellness brand aesthetic., The wave shape is still not correct — it is just a flat rectangle with a solid color fill, there are no actual wave curves visible on the edges. The wave height slider exists but does nothing visible.
+    Please completely rewrite the SVG wave rendering logic. The section must render a real visible SVG wave curve on the top edge, bottom edge, or both — not a flat rectangle.
+    Here is exactly how it should work: the section background is a solid filled color. The top edge of the section should be cut into a smooth organic wave shape using an SVG path or clipPath so the boundary between this section and the section above it is a flowing wave curve, not a straight horizontal line. Same for the bottom edge.
+    The wave height setting should control how tall/deep the wave peaks and valleys are — at 0 it is flat, at maximum it creates deep dramatic waves.
+    Also add a wave frequency setting to control how many wave peaks appear across the width — from 1 large gentle wave to 5 or 6 smaller repeating waves.
+    The SVG path must be dynamically calculated based on the wave height and frequency settings so changing the sliders in the Shopify editor immediately changes the visible wave shape in the preview.
+    Keep all existing settings: fill color, flip vertically, top/bottom edge toggle, padding, title, subtitle, and star rating. Just fix the core SVG wave rendering so it actually works visually., Íme a follow-up prompt:
+    
+    
+    The wave is still completely wrong — it looks like a diamond or lens shape, not a wave. The SVG path logic is fundamentally broken.
+    Please rewrite the entire wave SVG from scratch using a proper sinusoidal wave path. Here is exactly how to build it correctly:
+    For the top wave edge, use an SVG path that starts at the top-left corner, draws a smooth sine wave across the full width using cubic bezier curves (C or S commands), then goes down to the bottom-right, across the bottom, and back to start. The wave must look like a natural flowing water wave — peaks and valleys alternating smoothly across the full width.
+    Use this exact approach for the wave path calculation in JavaScript: divide the full width into segments based on the frequency setting. For each segment, calculate the control points of a cubic bezier curve using sine math to create smooth peaks and valleys. The wave height setting controls the amplitude (how high and low the peaks go). Frequency controls how many complete wave cycles appear across the width.
+    The filled shape below the wave line should be the solid color. Above the wave is transparent, showing the section above.
+    For the bottom wave edge, apply the same logic but flipped — the wave cuts into the bottom of the section.
+    When both top and bottom waves are enabled, both edges should have proper wave curves simultaneously.
+    Do not use clip-path. Use a filled SVG polygon or path element positioned absolutely over the section. The SVG must be full width and overflow visible so the wave extends edge to edge with no gaps.
+    Test the math carefully — a sine wave with frequency 1 should show exactly one smooth S-curve across the full width. Frequency 3 should show three complete wave cycles.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-wave-divider-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    background-color: {{ block.settings.fill_color }};
+    padding-top: {{ block.settings.padding_top }}px;
+    padding-bottom: {{ block.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+
+  .ai-wave-svg-top-{{ ai_gen_id }} {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: {{ block.settings.wave_height }}px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .ai-wave-svg-bottom-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: {{ block.settings.wave_height }}px;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .ai-wave-content-{{ ai_gen_id }} {
+    position: relative;
+    z-index: 3;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    {% if block.settings.show_wave_top %}
+      padding-top: {{ block.settings.wave_height | times: 0.5 }}px;
+    {% endif %}
+    {% if block.settings.show_wave_bottom %}
+      padding-bottom: {{ block.settings.wave_height | times: 0.5 }}px;
+    {% endif %}
+  }
+
+  .ai-wave-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.title_size }}px;
+    font-weight: 700;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 12px 0;
+    line-height: 1.2;
+  }
+
+  .ai-wave-subtitle-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.text_color }};
+    margin: 0 0 16px 0;
+    line-height: 1.5;
+    opacity: 0.9;
+  }
+
+  .ai-wave-stars-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    margin-top: 16px;
+  }
+
+  .ai-wave-star-{{ ai_gen_id }} {
+    width: {{ block.settings.star_size }}px;
+    height: {{ block.settings.star_size }}px;
+    fill: {{ block.settings.star_color }};
+  }
+
+  .ai-wave-star-count-{{ ai_gen_id }} {
+    font-size: {{ block.settings.subtitle_size }}px;
+    color: {{ block.settings.text_color }};
+    margin-left: 8px;
+    font-weight: 600;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-wave-title-{{ ai_gen_id }} {
+      font-size: {{ block.settings.title_size | times: 0.7 }}px;
+    }
+
+    .ai-wave-subtitle-{{ ai_gen_id }} {
+      font-size: {{ block.settings.subtitle_size | times: 0.9 }}px;
+    }
+
+    .ai-wave-svg-top-{{ ai_gen_id }},
+    .ai-wave-svg-bottom-{{ ai_gen_id }} {
+      height: {{ block.settings.wave_height | times: 0.6 }}px;
+    }
+
+    .ai-wave-content-{{ ai_gen_id }} {
+      {% if block.settings.show_wave_top %}
+        padding-top: {{ block.settings.wave_height | times: 0.3 }}px;
+      {% endif %}
+      {% if block.settings.show_wave_bottom %}
+        padding-bottom: {{ block.settings.wave_height | times: 0.3 }}px;
+      {% endif %}
+    }
+  }
+{% endstyle %}
+
+<wave-divider-{{ ai_gen_id }} class="ai-wave-divider-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.show_wave_top %}
+    <svg class="ai-wave-svg-top-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 {{ block.settings.wave_height }}" preserveAspectRatio="none">
+      <path class="ai-wave-path-top-{{ ai_gen_id }}" fill="{{ block.settings.fill_color }}"></path>
+    </svg>
+  {% endif %}
+
+  <div class="ai-wave-content-{{ ai_gen_id }}">
+    {% if block.settings.title != blank %}
+      <h2 class="ai-wave-title-{{ ai_gen_id }}">{{ block.settings.title }}</h2>
+    {% endif %}
+
+    {% if block.settings.subtitle != blank %}
+      <div class="ai-wave-subtitle-{{ ai_gen_id }}">{{ block.settings.subtitle }}</div>
+    {% endif %}
+
+    {% if block.settings.show_stars and block.settings.star_count > 0 %}
+      <div class="ai-wave-stars-{{ ai_gen_id }}">
+        {% for i in (1..block.settings.star_count) %}
+          <svg class="ai-wave-star-{{ ai_gen_id }}" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+          </svg>
+        {% endfor %}
+        {% if block.settings.star_text != blank %}
+          <span class="ai-wave-star-count-{{ ai_gen_id }}">{{ block.settings.star_text }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+
+  {% if block.settings.show_wave_bottom %}
+    <svg class="ai-wave-svg-bottom-{{ ai_gen_id }}" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 {{ block.settings.wave_height }}" preserveAspectRatio="none">
+      <path class="ai-wave-path-bottom-{{ ai_gen_id }}" fill="{{ block.settings.fill_color }}"></path>
+    </svg>
+  {% endif %}
+</wave-divider-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class WaveDivider{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.waveHeight = {{ block.settings.wave_height }};
+        this.waveFrequency = {{ block.settings.wave_frequency }};
+        this.flipWave = {{ block.settings.flip_wave }};
+      }
+
+      connectedCallback() {
+        this.generateWavePaths();
+      }
+
+      generateWavePaths() {
+        const topPath = this.querySelector('.ai-wave-path-top-{{ ai_gen_id }}');
+        const bottomPath = this.querySelector('.ai-wave-path-bottom-{{ ai_gen_id }}');
+        
+        if (topPath) {
+          const topPathData = this.createWavePath(true);
+          topPath.setAttribute('d', topPathData);
+        }
+        
+        if (bottomPath) {
+          const bottomPathData = this.createWavePath(false);
+          bottomPath.setAttribute('d', bottomPathData);
+        }
+      }
+
+      createWavePath(isTop) {
+        const width = 1200;
+        const height = this.waveHeight;
+        const frequency = this.waveFrequency;
+        
+        if (height === 0) {
+          if (isTop) {
+            return `M0,0 L${width},0 L${width},${height} L0,${height} Z`;
+          } else {
+            return `M0,0 L${width},0 L${width},${height} L0,${height} Z`;
+          }
+        }
+
+        const amplitude = height;
+        const wavelength = width / frequency;
+        const segmentsPerWave = 4;
+        const totalSegments = frequency * segmentsPerWave;
+        const segmentWidth = width / totalSegments;
+        
+        let path = '';
+        
+        if (isTop) {
+          path = `M0,${amplitude} `;
+          
+          for (let i = 0; i <= totalSegments; i++) {
+            const x = i * segmentWidth;
+            const angle = (i / segmentsPerWave) * Math.PI * 2;
+            let y = amplitude / 2 + (Math.sin(angle) * amplitude / 2);
+            
+            if (this.flipWave) {
+              y = amplitude - y;
+            }
+            
+            if (i === 0) {
+              path += `L${x},${y} `;
+            } else {
+              const prevX = (i - 1) * segmentWidth;
+              const prevAngle = ((i - 1) / segmentsPerWave) * Math.PI * 2;
+              let prevY = amplitude / 2 + (Math.sin(prevAngle) * amplitude / 2);
+              
+              if (this.flipWave) {
+                prevY = amplitude - prevY;
+              }
+              
+              const cp1x = prevX + segmentWidth / 3;
+              const cp1y = prevY;
+              const cp2x = x - segmentWidth / 3;
+              const cp2y = y;
+              
+              path += `C${cp1x},${cp1y} ${cp2x},${cp2y} ${x},${y} `;
+            }
+          }
+          
+          path += `L${width},${height} L0,${height} Z`;
+          
+        } else {
+          path = `M0,0 `;
+          
+          for (let i = 0; i <= totalSegments; i++) {
+            const x = i * segmentWidth;
+            const angle = (i / segmentsPerWave) * Math.PI * 2;
+            let y = amplitude / 2 - (Math.sin(angle) * amplitude / 2);
+            
+            if (this.flipWave) {
+              y = amplitude - y;
+            }
+            
+            if (i === 0) {
+              path += `L${x},${y} `;
+            } else {
+              const prevX = (i - 1) * segmentWidth;
+              const prevAngle = ((i - 1) / segmentsPerWave) * Math.PI * 2;
+              let prevY = amplitude / 2 - (Math.sin(prevAngle) * amplitude / 2);
+              
+              if (this.flipWave) {
+                prevY = amplitude - prevY;
+              }
+              
+              const cp1x = prevX + segmentWidth / 3;
+              const cp1y = prevY;
+              const cp2x = x - segmentWidth / 3;
+              const cp2y = y;
+              
+              path += `C${cp1x},${cp1y} ${cp2x},${cp2y} ${x},${y} `;
+            }
+          }
+          
+          path += `L${width},0 L0,0 Z`;
+        }
+        
+        return path;
+      }
+    }
+
+    customElements.define('wave-divider-{{ ai_gen_id }}', WaveDivider{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "Wave divider",
+  "tag": null,
+  "class": "shopify-section-wave-divider",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Wave style"
+    },
+    {
+      "type": "color",
+      "id": "fill_color",
+      "label": "Fill color",
+      "default": "#c5aede"
+    },
+    {
+      "type": "range",
+      "id": "wave_height",
+      "label": "Wave height",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "wave_frequency",
+      "label": "Wave frequency",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "checkbox",
+      "id": "flip_wave",
+      "label": "Flip wave vertically",
+      "default": false
+    },
+    {
+      "type": "header",
+      "content": "Wave position"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_wave_top",
+      "label": "Show wave on top edge",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_wave_bottom",
+      "label": "Show wave on bottom edge",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Trusted by thousands"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "Join our community of satisfied customers"
+    },
+    {
+      "type": "header",
+      "content": "Text style"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#2b2b2b"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "label": "Title size",
+      "min": 16,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "default": 42
+    },
+    {
+      "type": "range",
+      "id": "subtitle_size",
+      "label": "Subtitle size",
+      "min": 12,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 18
+    },
+    {
+      "type": "header",
+      "content": "Star rating"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_stars",
+      "label": "Show stars",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "star_count",
+      "label": "Number of stars",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "default": 5
+    },
+    {
+      "type": "text",
+      "id": "star_text",
+      "label": "Star text",
+      "default": "5.0"
+    },
+    {
+      "type": "color",
+      "id": "star_color",
+      "label": "Star color",
+      "default": "#FFD700"
+    },
+    {
+      "type": "range",
+      "id": "star_size",
+      "label": "Star size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wave divider"
+    }
+  ]
+}
 {% endschema %}

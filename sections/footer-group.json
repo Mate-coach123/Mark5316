@@ -19,15 +19,15 @@
           "settings": {
             "image_width": 150,
             "heading_size": "h3",
-            "title": "Prihlás sa na odber nášho newslettera, aby si ako prvý dostával informácie o akciách a ponukách!",
+            "title": "Iratkozz fel hírlevelünkre, hogy elsőként értesülj akcióinkról és ajánlatainkról!",
             "content": ""
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "title": "O nás",
-            "content": "<p>Naším cieľom je ponúkať prirodzenú a osviežujúcu alternatívu pre všetkých, ktorí chcú viesť viac uvedomelý životný štýl.</p><p>Skúsenosť s Qlean je ľahká, bezpečná a jednoducho začleniteľná do každodenného života.</p>",
+            "title": "Rólunk",
+            "content": "<p>Célunk, hogy természetes és ergonomikus alternatívát kínáljunk mindazoknak, akik komolyan veszik az alvásuk minőségét és a testi jóllétüket.</p><p>Az Ergorest élmény egyszerű: egy innovatív TPE honeycomb párna, amely légáramlással, nyomásmentességgel és ergonomikus támasszal gondoskodik arról, hogy minden reggel kipihenten ébredj.</p>",
             "enable_follow_on_shop": true
           }
         },

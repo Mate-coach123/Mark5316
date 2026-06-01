@@ -26,6 +26,7 @@
     },
     "privacy-banner": {
       "type": "privacy-banner",
+      "disabled": true,
       "settings": {
         "privacy_bar_title": "Süti szabályzat",
         "privacy_bar_content": "<p>Sütiket és hasonló technológiákat használunk, hogy a legjobb élményt nyújtsuk weboldalunkon. További információért tekintse meg Adatvédelmi szabályzatunkat.</p>"

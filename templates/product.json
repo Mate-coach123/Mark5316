@@ -82,10 +82,16 @@
           "type": "quantity_selector",
           "settings": {}
         },
+        "liquid_e3pzJE": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"shipping-bar desktop-only\">\n  <div class=\"shipping-item\">\n    <span class=\"pulse-dot\"></span>\n    <span>1–3 napos szállítás</span>\n  </div>\n  <div class=\"shipping-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0977/9671/8929/files/Kepernyofoto_2025-10-28_-_20.51.31.png?v=1761681106\" alt=\"Magyar zászló\" class=\"flag-icon\">\n    <span>Magyar raktárból</span>\n  </div>\n</div>\n<style>\n@media (max-width: 768px) {\n  .desktop-only {\n    display: none !important;\n  }\n}\n.shipping-bar {\n  background-color: #F9F7FC;\n  border-radius: 20px;\n  padding: 6px 16px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  font-family: \"Arial\", sans-serif;\n  font-size: 14px;\n  font-weight: 600;\n  color: #000;\n  max-width: 360px;\n  margin: 10px auto;\n}\n.shipping-item {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n.flag-icon {\n  width: 20px;\n  height: auto;\n  border-radius: 2px;\n}\n.pulse-dot {\n  width: 10px;\n  height: 10px;\n  background-color: #1c7c27;\n  border-radius: 50%;\n  position: relative;\n}\n.pulse-dot::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background-color: #1c7c27;\n  animation: pulse 1.5s infinite;\n  opacity: 0.6;\n}\n@keyframes pulse {\n  0% {\n    transform: scale(1);\n    opacity: 0.8;\n  }\n  70% {\n    transform: scale(1.8);\n    opacity: 0;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 0;\n  }\n}\n</style>"
+          }
+        },
         "liquid_xnqPc7": {
           "type": "liquid",
           "settings": {
-            "liquid": "<style>\n  .custom-shipping-container {\n    display: flex;\n    padding: 6px 16px;\n    justify-content: space-between;\n    align-items: center;\n    align-self: stretch;\n    background-color: #f6f6f6;\n    border-radius: 20px;\n  }\n\n  .custom-shipping-item {\n    display: flex;\n    align-items: center;\n    gap: 6px;\n  }\n\n  .text-block-shipping {\n    font-size: 12px;\n    color: #000;\n  }\n\n  .shipping-date {\n    font-weight: bold;\n  }\n\n  .free-shipping {\n    font-weight: bold;\n  }\n\n  .green-circle {\n    animation: fade 1s ease-in-out infinite;\n  }\n\n  .custom-icon {\n    width: 20px;\n    height: auto;\n  }\n\n  @keyframes fade {\n    0%, 100% {\n      opacity: 1;\n    }\n    50% {\n      opacity: 0.5;\n    }\n  }\n</style>\n\n<script>\n  document.addEventListener(\"DOMContentLoaded\", function () {\n    var daysAfterToday = 5;\n    var today = new Date();\n    var shipDate = new Date(today.setDate(today.getDate() + daysAfterToday));\n    var options = { weekday: 'short', month: 'long', day: 'numeric' };\n\n    var formattedDate = shipDate.toLocaleDateString('en-US', options);\n    document.getElementById('shipping-date').textContent = formattedDate;\n  });\n</script>\n\n<div class=\"custom-shipping-container\">\n  <div class=\"custom-shipping-item\">\n    <svg class=\"green-circle\" xmlns=\"http://www.w3.org/2000/svg\" width=\"12\" height=\"13\" viewBox=\"0 0 12 13\" fill=\"none\">\n      <circle cx=\"6\" cy=\"6.5\" r=\"6\" fill=\"#137333\" />\n    </svg>\n    <div class=\"text-block-shipping\">\n      <b>Odoslanie do 24 hodín</b>\n    </div>\n  </div>\n  <div class=\"custom-shipping-item\">\n    <img src=\"https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg\" loading=\"lazy\" alt=\"Slovak flag\" class=\"custom-icon\">\n    <div class=\"text-block-shipping\">\n      <span class=\"free-shipping\">Zo skladu na Slovensku</span>\n    </div>\n  </div>\n</div>"
+            "liquid": "<div class=\"shipping-bar mobile-only\">\n  <div class=\"shipping-item\">\n    <span class=\"pulse-dot\"></span>\n    <span>1–3 napos szállítás</span>\n  </div>\n  <div class=\"divider\"></div>\n  <div class=\"shipping-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0977/9671/8929/files/Kepernyofoto_2025-10-28_-_20.51.31.png?v=1761681106\" alt=\"Magyar zászló\" class=\"flag-icon\">\n    <span>Magyar raktárból</span>\n  </div>\n</div>\n\n<style>\n/* ---- csak mobilon jelenjen meg ---- */\n@media (min-width: 769px) {\n  .mobile-only {\n    display: none !important;\n  }\n}\n\n/* ---- kinézet ---- */\n.shipping-bar {\n  background-color: #f6f6f6;\n  border-radius: 16px;\n  padding: 4px 12px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  font-family: \"Arial\", sans-serif;\n  font-size: 13px;\n  font-weight: 600;\n  color: #000;\n  width: 94%;\n  max-width: 430px;\n  margin: 8px auto;\n  height: 32px;\n  box-sizing: border-box;\n}\n\n.shipping-item {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n  white-space: nowrap;\n}\n\n.divider {\n  width: 1px;\n  height: 18px;\n  background-color: #d3d3d3;\n  opacity: 0.8;\n}\n\n.flag-icon {\n  width: 18px;\n  height: auto;\n  border-radius: 2px;\n}\n\n/* ---- pulzáló zöld pötty ---- */\n.pulse-dot {\n  width: 8px;\n  height: 8px;\n  background-color: #1c7c27;\n  border-radius: 50%;\n  position: relative;\n}\n\n.pulse-dot::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 8px;\n  height: 8px;\n  border-radius: 50%;\n  background-color: #1c7c27;\n  animation: pulse 1.5s infinite;\n  opacity: 0.6;\n}\n\n@keyframes pulse {\n  0% {\n    transform: scale(1);\n    opacity: 0.8;\n  }\n  70% {\n    transform: scale(1.8);\n    opacity: 0;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 0;\n  }\n}\n</style>"
           }
         },
         "text_U3tRDN": {
@@ -138,54 +144,34 @@
         "collapsible_text_64D6NW": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Aký aromatizovaný vzduch sa oplatí vdychovať?",
-            "content": "<p>Aromatizovaný vzduch Qlean poskytuje jemnú, prirodzenú chuť, ktorá predstavuje príjemnú alternatívu na každý deň. Je menej intenzívny ako vodná para, no zároveň ponúka osviežujúci zážitok – porovnateľný s ľahko vylúhovaným bylinným čajom alebo nesladenou perlivou vodou.</p>"
+            "title": "Előnyök",
+            "content": "<p><strong>Stabil nyaktartás, reggeli merevség nélkül</strong> — Ébredj kipihenten, a hagyományos párnák okozta merevség nélkül. Az Ergorest honeycomb szerkezete megszünteti a nyomáspontokat, amelyek azt a kellemetlen reggeli fájdalmat okozzák.</p><p><strong>Ergonomikus kialakítás</strong> — A lapos párnákkal ellentétben, amelyek természetellenes helyzetbe kényszerítik a nyakat, az Ergorest alkalmazkodik a te egyedi nyaki görbületedhez. Oldalon és háton alvóknak egyaránt ideális.</p><p><strong>Egész éjjel hűvös</strong> — A nyitott honeycomb szerkezet folyamatos légáramlást biztosít, így nem ébredsz fel izzadtan, ahogy a memóriaszivacs párna esetén előfordulhat.</p><p><strong>Minden alvási pozícióban működik</strong> — Oldalon alszol? Háton? Forgolódsz éjjel? Az Ergorest veled mozog és következetes tartást nyújt, bármelyik pozícióban.</p><p><strong>Tartós támasz évekig</strong> — A hagyományos párnák hónapok alatt ellapulnak. Az Ergorest TPE honeycomb szerkezete megőrzi alakját és tartását — nem hetekig, hanem évekig.</p><p><strong>Jobb alvás = jobb élet</strong> — Pihentető, mély alvás több energiát, jobb koncentrációt és jobb közérzetet jelent. Fektess az alvásodba, fektess az egészségedbe.</p>"
           }
         },
         "collapsible_text_ccRqEC": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Ako funguje Qlean?",
-            "content": "<p>Qlean ponúka prirodzene aromatizovaný vzduch, ktorý poskytuje osviežujúci zážitok na každý deň.</p><p>Vyrobený zo 100 % prírodných ingrediencií predstavuje pohodlnú alternatívu pre tých, ktorí chcú zaviesť vedomejšie návyky.</p><p>Používanie Qlean je jednoduché – stačia len 3 kroky:</p><ol><li>Zmäkči svoju obľúbenú aromatizovanú náplň.<br/></li><li>Vlož náplň do zariadenia Qlean.<br/></li><li>Užívaj si osviežujúci zážitok z prírodnej arómaterapie.<br/></li></ol>"
+            "title": "Anyag",
+            "content": "<p><strong>Prémium TPE</strong> — Az Ergorest párna orvosi minőségű TPE anyagból készül — ugyanabból az anyagból, amelyet prémium orvosi eszközökhöz és babatermékekhez használnak. Méret: 52cm x 35cm x 8/10cm.</p><p><strong>Miért jobb a TPE?</strong></p><ul><li>Hipoallergén — érzékeny bőrre is biztonságos</li><li>Méreganyagmentes — BPA, latex és káros vegyi anyagok nélkül</li><li>Antimikrobiális — természetesen ellenáll a poratka, penész és baktériumok ellen</li><li>100% vegán — semmilyen állati összetevőt nem tartalmaz</li><li>Környezetbarát — újrahasznosítható anyag</li><li>Szagmentes — nincs kellemetlen kémiai szag, mint a memóriaszivacsban</li></ul><p><strong>Légáteresztő honeycomb szerkezet</strong> — Több száz egyedi honeycomb cella, amelyek optimális légáramlást és nyomáselosztást biztosítanak. Ez nem csak esztétika — ez kényelem.</p><p><strong>Semmi töltelék, semmi hab, semmi toll</strong> — Csak tiszta TPE egy tudományosan tervezett szerkezetben. Amit látsz, azt kapod — egyszerű, tiszta, hatékony.</p>"
           }
         },
         "collapsible_text_44T676": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Je Qlean bezpečný?",
-            "content": "<p><strong>Samozrejme!</strong><br/><br/>Qlean je zo 100 % vyrobený z prírodných zložiek, vrátane čistých éterických olejov, rastlinných extraktov a prírodných aróm.</p><p>Neobsahuje nikotín, produkty spaľovania ani umelé prísady, vďaka čomu predstavuje osviežujúcu, prírodnú alternatívu na každý deň.</p><p>Viac informácií:<br/><br/><a href=\"/pages/bezpieczenstwo-toksykologia-smaki\" title=\"Bezpieczeństwo, toksykologia, smaki\">Bezpieczeństwo, wyniki toksykologiczne<br/></a><br/><a href=\"/pages/instrukcja-uzytkowania-i-informacja-dotyczaca-bezpieczenstwa\" title=\"Instrukcja użytkowania i informacja dotycząca bezpieczeństwa\">Instrukcja użytkowania produktu</a></p>"
+            "title": "Használat",
+            "content": "<p><strong>1. lépés: Csomagold ki</strong> — Az Ergorest párna azonnal használatra kész, nem kell felrázni vagy megvárni, amíg kitágul, mint a memóriaszivacsok esetén.</p><p><strong>2. lépés: Helyezd az ágyra</strong> — Tedd oda, ahol a hagyományos párnád volt. A magasabb él (10cm) a nyakadat támassza, az alacsonyabb él (8cm) az ágy lába felé nézzen.</p><p><strong>3. lépés: Igazítsd az alvási pozíciódhoz</strong></p><ul><li><strong>Oldalon alvók:</strong> Használd a teljes magasságot — a fejed kényelmesen nyugodjon, a gerinced egyenes vonalban legyen</li><li><strong>Háton alvók:</strong> Helyezd a fejed a párna közepére, a honeycomb szerkezet automatikusan igazodik a nyakad természetes görbületéhez</li><li><strong>Hason alvók:</strong> Nem ajánljuk gerincészeti okokból, de ha muszáj, használd az alacsonyabb (8cm) oldalt<br/><br/><strong>4. lépés: Adj magadnak 2-3 éjszakát</strong> — A tested évek óta megszokott egy rossz tartást biztosító párnát. Adj magadnak néhány éjszakát az alkalmazkodáshoz. A legtöbb vásárló már az első éjjel jobban alszik.</li></ul>"
           }
         },
         "collapsible_text_DETCHP": {
           "type": "collapsible_text",
           "settings": {
-            "title": "Ako dlho vydrží aromatizovaná náplň?",
-            "content": "<p>Každá aromatizovaná náplň vydrží 2–3 dni pravidelného používania, v závislosti od toho, ako často používaš Qlean.</p>"
-          }
-        },
-        "collapsible_text_wfhRXJ": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "Čo obsahuje balenie?",
-            "content": "<p>Obsah balenia:</p><ul><li>1 ks – Qlean POD Difúzor<br/></li><li>2 balenia – Qlean aromatizované náplne<br/></li><li>1 ks – Čistiaca sada Qlean</li></ul>"
-          }
-        },
-        "collapsible_text_AAhnNW": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "Doručenie",
-            "content": "<p>Za včasné doručenie je zodpovedná kuriérska spoločnosť <strong>GLS</strong>. Tvoj balík odovzdáme kuriérovi v prvý pracovný deň po vytvorení objednávky. Od momentu odoslania balík zvyčajne dorazí k tebe nasledujúci deň, takže celý proces doručenia trvá v priemere <strong>1–3 pracovné dni</strong>.</p>"
-          }
-        },
-        "collapsible_text_mQa9EW": {
-          "type": "collapsible_text",
-          "settings": {
-            "title": "Máš otázku? Kontaktuj nás!",
-            "content": "<p>Pomôžeme ti s výberom! Náš zákaznícky servis je k dispozícii od pondelka do piatku v čase 9:00–17:00.<br/><br/><a><strong>qlean.info@gmail.com</strong></a></p>"
+            "title": "Ápolás",
+            "content": "<p><strong>Tisztítás:</strong> Öblítsd le enyhe szappannal és vízzel, amikor szükséges. A TPE anyag gyorsan szárad — csak itasd fel törölközővel és hagyd megszáradni 30 percig.</p><p><strong>Karbantartás:</strong> Nem kell felrázni! Az Ergorest automatikusan megőrzi az alakját — csak használd és élvezd.</p><p><strong>Élettartam:</strong> Normál használat mellett az Ergorest párna 3-5 évig nyújt tartós támasztást — sokkal tovább, mint a hagyományos párnák, amelyek hónapok alatt ellapulnak.</p>"
           }
         },
         "image_3CicPB": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "alignment": "start",
             "max_width": 500
@@ -204,6 +190,7 @@
         "text_WccVEm",
         "variant_picker",
         "quantity_selector",
+        "liquid_e3pzJE",
         "liquid_xnqPc7",
         "text_U3tRDN",
         "buy_buttons",
@@ -214,9 +201,6 @@
         "collapsible_text_ccRqEC",
         "collapsible_text_44T676",
         "collapsible_text_DETCHP",
-        "collapsible_text_wfhRXJ",
-        "collapsible_text_AAhnNW",
-        "collapsible_text_mQa9EW",
         "image_3CicPB"
       ],
       "settings": {

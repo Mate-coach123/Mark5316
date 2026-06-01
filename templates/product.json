@@ -37,24 +37,28 @@
         },
         "text_ymY8Mt": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>🌿 100 % prírodné zložky</p>"
           }
         },
         "text_eCwxUz": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>🌟 Viac než 1500 príbehov úspechu</p>"
           }
         },
         "text_piHtpE": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>🚫 Užívaj si podporu prírodných aróm každý deň!</p>"
           }
         },
         "text_WccVEm": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>🎁 Darček: aromatizovaná náplň vystačí na 18 dní</p>"
           }

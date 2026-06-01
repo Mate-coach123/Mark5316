@@ -112,12 +112,6 @@
             "payment_button_text_color": ""
           }
         },
-        "text_fFjywT": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>📦 Doručenie GLS za 1–2 dni</strong></p>"
-          }
-        },
         "associated_products_6YheU6": {
           "type": "associated_products",
           "settings": {
@@ -126,19 +120,6 @@
             "products_count": 10,
             "background": "",
             "text_color": ""
-          }
-        },
-        "offer_Lecwba": {
-          "type": "offer",
-          "settings": {
-            "text_alignment": "start",
-            "icon_position": "aligned",
-            "icon": "picto-award-gift",
-            "icon_width": 24,
-            "title": "DARČEK: AROMATIZOVANÁ NÁPLŇ VYDRŽÍ NA 18 DNÍ",
-            "content": "<p>2 sáčky obsahujúce spolu 6 aromatizovaných náplní</p>",
-            "background": "#f4e8d5",
-            "text_color": "#d27f04"
           }
         },
         "collapsible_text_64D6NW": {
@@ -194,9 +175,7 @@
         "liquid_xnqPc7",
         "text_U3tRDN",
         "buy_buttons",
-        "text_fFjywT",
         "associated_products_6YheU6",
-        "offer_Lecwba",
         "collapsible_text_64D6NW",
         "collapsible_text_ccRqEC",
         "collapsible_text_44T676",
@@ -220,6 +199,91 @@
         "input_background": "rgba(0,0,0,0)",
         "input_text_color": ""
       }
+    },
+    "17803426894d822585": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_fc8b33a_za4LUN": {
+          "type": "ai_gen_block_fc8b33a",
+          "settings": {
+            "show_eyebrow": true,
+            "eyebrow_text": "ILYEN EGYSZERŰ AZ ELSŐ LÉPÉS",
+            "eyebrow_font_size": 12,
+            "eyebrow_color": "#8d5eb2",
+            "eyebrow_letter_spacing": 2,
+            "eyebrow_font_weight": "600",
+            "eyebrow_bottom_margin": 12,
+            "heading_text": "Három lépés a pihentető alváshoz",
+            "heading_font_size": 42,
+            "heading_color": "#1a1a1a",
+            "heading_font_weight": "700",
+            "header_bottom_margin": 50,
+            "step_1_emoji": "🛏️",
+            "step_1_title": "Helyezd az ágyra",
+            "step_1_description": "Tedd az Ergorest párnát oda, ahol a hagyományos párnád volt. A magasabb él támassza a nyakadat.",
+            "badge_1_bg_color": "#8d5eb2",
+            "badge_1_text_color": "#ffffff",
+            "step_2_emoji": "😴",
+            "step_2_title": "Aludj el természetesen",
+            "step_2_description": "A honeycomb szerkezet automatikusan alkalmazkodik a fejed és nyakad helyzetéhez — nem kell csinálnod semmit.",
+            "badge_2_bg_color": "#c5aede",
+            "badge_2_text_color": "#ffffff",
+            "step_3_emoji": "☀️",
+            "step_3_title": "Ébredj kipihenten",
+            "step_3_description": "Reggel nincs nyakfájás, nincs merevség — csak energia és frissesség, amire vágytál.",
+            "badge_3_bg_color": "#803cee",
+            "badge_3_text_color": "#ffffff",
+            "badge_size": 60,
+            "badge_border_radius": 50,
+            "badge_number_size": 28,
+            "badge_bottom_margin": 20,
+            "emoji_font_size": 48,
+            "emoji_bottom_margin": 20,
+            "card_title_font_size": 24,
+            "card_title_color": "#8d5eb2",
+            "card_title_font_weight": "700",
+            "card_title_alignment": "center",
+            "card_title_bottom_margin": 12,
+            "card_description_font_size": 16,
+            "card_description_color": "#666666",
+            "card_description_line_height": 1.5,
+            "card_description_alignment": "center",
+            "card_bg_color": "#f9f7fc",
+            "card_border_radius": 24,
+            "card_min_height": 0,
+            "enable_card_border": true,
+            "card_border_color": "#8d5eb2",
+            "card_border_thickness": 1,
+            "enable_card_shadow": true,
+            "shadow_color": "rgba(0, 0, 0, 0.1)",
+            "shadow_blur": 20,
+            "shadow_offset_x": 0,
+            "shadow_offset_y": 10,
+            "card_padding_top": 15,
+            "card_padding_bottom": 15,
+            "card_padding_left": 30,
+            "card_padding_right": 30,
+            "cards_gap_desktop": 30,
+            "cards_gap_mobile": 20,
+            "max_content_width": 1200,
+            "section_bg_color": "#ffffff",
+            "enable_gradient": false,
+            "gradient_color": "#f0f0f0",
+            "gradient_angle": 180,
+            "section_padding_top": 60,
+            "section_padding_bottom": 60,
+            "section_padding_left": 20,
+            "section_padding_right": 20,
+            "mobile_font_scale": 0.8,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_fc8b33a_za4LUN"
+      ],
+      "settings": {}
     },
     "17500911687bffbabb": {
       "type": "apps",
@@ -270,6 +334,7 @@
   },
   "order": [
     "main",
+    "17803426894d822585",
     "17500911687bffbabb",
     "175673452553c88bd6"
   ]

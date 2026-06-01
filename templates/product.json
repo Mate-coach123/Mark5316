@@ -150,6 +150,12 @@
             "content": "<p><strong>Tisztítás:</strong> Öblítsd le enyhe szappannal és vízzel, amikor szükséges. A TPE anyag gyorsan szárad — csak itasd fel törölközővel és hagyd megszáradni 30 percig.</p><p><strong>Karbantartás:</strong> Nem kell felrázni! Az Ergorest automatikusan megőrzi az alakját — csak használd és élvezd.</p><p><strong>Élettartam:</strong> Normál használat mellett az Ergorest párna 3-5 évig nyújt tartós támasztást — sokkal tovább, mint a hagyományos párnák, amelyek hónapok alatt ellapulnak.</p>"
           }
         },
+        "liquid_VcUcE6": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"erg-trust-grid\">\n  <div class=\"erg-trust-item\">\n    <span class=\"erg-trust-icon\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#8D5EB2\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z\"/></svg>\n    </span>\n    <span class=\"erg-trust-label\">Kipihent reggel</span>\n  </div>\n  <div class=\"erg-trust-item\">\n    <span class=\"erg-trust-icon\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#8D5EB2\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2\"/></svg>\n    </span>\n    <span class=\"erg-trust-label\">Nincs nyakfájás</span>\n  </div>\n  <div class=\"erg-trust-item\">\n    <span class=\"erg-trust-icon\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#8D5EB2\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><path d=\"M12 2a10 10 0 1 0 10 10\"/><path d=\"M12 6v6l4 2\"/></svg>\n    </span>\n    <span class=\"erg-trust-label\">Hűvös egész éjjel</span>\n  </div>\n  <div class=\"erg-trust-item\">\n    <span class=\"erg-trust-icon\">\n      <svg width=\"26\" height=\"26\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#8D5EB2\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"10\"/><path d=\"M8 14s1.5 2 4 2 4-2 4-2\"/><line x1=\"9\" y1=\"9\" x2=\"9.01\" y2=\"9\"/><line x1=\"15\" y1=\"9\" x2=\"15.01\" y2=\"9\"/></svg>\n    </span>\n    <span class=\"erg-trust-label\">Mély, pihentető alvás</span>\n  </div>\n</div>\n\n<style>\n  .erg-trust-grid {\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    gap: 22px 24px;\n    margin: 20px 0;\n    max-width: 420px;\n  }\n\n  .erg-trust-item {\n    display: flex;\n    align-items: center;\n    gap: 12px;\n  }\n\n  .erg-trust-icon {\n    width: 42px;\n    height: 42px;\n    min-width: 42px;\n    background: #F9F7FC;\n    border: 1px solid #e0d0f0;\n    border-radius: 12px;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n\n  .erg-trust-label {\n    font-size: 12.5px;\n    font-weight: 600;\n    color: #2d2d2d;\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;\n    line-height: 1.3;\n    text-transform: uppercase;\n    letter-spacing: 0.02em;\n  }\n\n  @media (max-width: 749px) {\n    .erg-trust-grid {\n      max-width: 100%;\n      gap: 18px 16px;\n    }\n    .erg-trust-label {\n      font-size: 11.5px;\n    }\n    .erg-trust-icon {\n      width: 38px;\n      height: 38px;\n      min-width: 38px;\n    }\n  }\n</style>"
+          }
+        },
         "image_3CicPB": {
           "type": "image",
           "disabled": true,
@@ -180,6 +186,7 @@
         "collapsible_text_ccRqEC",
         "collapsible_text_44T676",
         "collapsible_text_DETCHP",
+        "liquid_VcUcE6",
         "image_3CicPB"
       ],
       "settings": {
@@ -281,7 +288,7 @@
             "enable_gradient": false,
             "gradient_color": "#ffffff",
             "gradient_angle": 180,
-            "section_padding_top": 80,
+            "section_padding_top": 0,
             "section_padding_bottom": 80,
             "section_padding_left": 20,
             "section_padding_right": 20,

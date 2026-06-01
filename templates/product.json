@@ -24,10 +24,6 @@
             "heading_tag": "h2"
           }
         },
-        "judge_me_reviews_preview_badge_xpjmkT": {
-          "type": "shopify://apps/judge-me-reviews/blocks/preview_badge/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {}
-        },
         "price": {
           "type": "price",
           "settings": {
@@ -165,7 +161,6 @@
       "block_order": [
         "liquid_TUwQDj",
         "title",
-        "judge_me_reviews_preview_badge_xpjmkT",
         "price",
         "liquid_jTYkzH",
         "text_ymY8Mt",
@@ -318,20 +313,6 @@
     },
     "175673452553c88bd6": {
       "type": "apps",
-      "blocks": {
-        "judge_me_reviews_review_widget_h9cKrN": {
-          "type": "shopify://apps/judge-me-reviews/blocks/review_widget/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-          "settings": {
-            "review_data": "sample_data",
-            "max_width": 1200,
-            "show_shop_reviews": false,
-            "empty_state": "empty_widget"
-          }
-        }
-      },
-      "block_order": [
-        "judge_me_reviews_review_widget_h9cKrN"
-      ],
       "settings": {
         "full_width": true,
         "remove_vertical_spacing": false,
@@ -345,6 +326,37 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "1780346901e1b16c82": {
+      "type": "apps",
+      "blocks": {
+        "doran_product_reviews_product_widget_XxRJ6G": {
+          "type": "shopify://apps/doran-product-reviews/blocks/product-widget/ca90c3ee-bc39-4c25-90cd-fdf0519c6d11",
+          "settings": {
+            "topPadding": 36,
+            "bottomPadding": 36,
+            "is_hide_if_no_reviews": false,
+            "is_use_shopify_font": false,
+            "shopify_font": "sans_serif_n4"
+          }
+        }
+      },
+      "block_order": [
+        "doran_product_reviews_product_widget_XxRJ6G"
+      ],
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "enable_review_integration": true,
+        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
+        "review_header_text_color": "#000000",
+        "review_button_background": "#000000",
+        "review_button_text_color": "#ffffff"
+      }
     }
   },
   "order": [
@@ -352,6 +364,7 @@
     "17803426894d822585",
     "1780343585e0a85122",
     "17500911687bffbabb",
-    "175673452553c88bd6"
+    "175673452553c88bd6",
+    "1780346901e1b16c82"
   ]
 }

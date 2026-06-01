@@ -1,6 +1,910 @@
+{% doc %}
+  @prompt
+    Create a fully customizable Shopify "How it works" transformation section with 3 step cards displayed side by side on desktop and stacked vertically on mobile.
+    Section header: An optional small eyebrow label above the main title (e.g. "SOSEM VOLT ILYEN EGYSZERŰ") with font size, color, letter spacing, and visibility toggle. A large bold main heading below it with font size, color, and weight controls. Both centered.
+    Step cards layout: 3 cards displayed in a horizontal row on desktop (equal width, side by side). On mobile they stack vertically, full width, one below the other. Gap between cards adjustable. Card alignment centered.
+    Each card contains:
+    A step number badge at the top center of the card — a circle with a number inside (1, 2, 3). Badge background color picker per step. Badge text color picker. Badge size control. Badge border radius (fully round by default). Option to give each badge a different color independently.
+    An emoji or icon field below the badge — editable text field where any emoji can be typed. Font size control for the emoji. Centered.
+    A bold card title below the emoji with font size, color, and weight controls.
+    A short description text below the title with font size, color, and line height controls.
+    Card styling: Card background color picker. Card border radius control. Card border toggle with color and thickness controls. Card box shadow toggle with shadow color, blur radius, and offset controls. Individual top, bottom, left, right padding controls inside each card. Option to set card minimum height.
+    Section styling: Section background color picker with gradient toggle (two color pickers and angle control). Top and bottom padding controls for the entire section. Left and right padding controls. Max content width control.
+    Typography: All text elements have individual font size, color, font weight, and text alignment controls. Global font size scale option.
+    Responsive behavior: On desktop: 3 columns side by side. On mobile: single column, cards stacked vertically, full width. Gap between cards adjustable separately for desktop and mobile.
+    Make every single setting exposed in the Shopify theme editor sidebar, clearly labeled and organized into logical groups.
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-how-it-works-{{ ai_gen_id }} {
+    display: block;
+    background-color: {{ block.settings.section_bg_color }};
+    {% if block.settings.enable_gradient %}
+      background: linear-gradient({{ block.settings.gradient_angle }}deg, {{ block.settings.section_bg_color }} 0%, {{ block.settings.gradient_color }} 100%);
+    {% endif %}
+    padding-top: {{ block.settings.section_padding_top }}px;
+    padding-bottom: {{ block.settings.section_padding_bottom }}px;
+    padding-left: {{ block.settings.section_padding_left }}px;
+    padding-right: {{ block.settings.section_padding_right }}px;
+  }
+
+  .ai-how-it-works-container-{{ ai_gen_id }} {
+    max-width: {{ block.settings.max_content_width }}px;
+    margin: 0 auto;
+  }
+
+  .ai-how-it-works-header-{{ ai_gen_id }} {
+    text-align: center;
+    margin-bottom: {{ block.settings.header_bottom_margin }}px;
+  }
+
+  .ai-how-it-works-eyebrow-{{ ai_gen_id }} {
+    font-size: {{ block.settings.eyebrow_font_size }}px;
+    color: {{ block.settings.eyebrow_color }};
+    letter-spacing: {{ block.settings.eyebrow_letter_spacing }}px;
+    margin-bottom: {{ block.settings.eyebrow_bottom_margin }}px;
+    font-weight: {{ block.settings.eyebrow_font_weight }};
+    text-transform: uppercase;
+  }
+
+  .ai-how-it-works-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_font_size }}px;
+    color: {{ block.settings.heading_color }};
+    font-weight: {{ block.settings.heading_font_weight }};
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  .ai-how-it-works-cards-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: {{ block.settings.cards_gap_desktop }}px;
+    align-items: stretch;
+  }
+
+  .ai-how-it-works-card-{{ ai_gen_id }} {
+    background-color: {{ block.settings.card_bg_color }};
+    border-radius: {{ block.settings.card_border_radius }}px;
+    padding-top: {{ block.settings.card_padding_top }}px;
+    padding-bottom: {{ block.settings.card_padding_bottom }}px;
+    padding-left: {{ block.settings.card_padding_left }}px;
+    padding-right: {{ block.settings.card_padding_right }}px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    {% if block.settings.card_min_height > 0 %}
+      min-height: {{ block.settings.card_min_height }}px;
+    {% endif %}
+    {% if block.settings.enable_card_border %}
+      border: {{ block.settings.card_border_thickness }}px solid {{ block.settings.card_border_color }};
+    {% endif %}
+    {% if block.settings.enable_card_shadow %}
+      box-shadow: {{ block.settings.shadow_offset_x }}px {{ block.settings.shadow_offset_y }}px {{ block.settings.shadow_blur }}px {{ block.settings.shadow_color }};
+    {% endif %}
+  }
+
+  .ai-how-it-works-badge-{{ ai_gen_id }} {
+    width: {{ block.settings.badge_size }}px;
+    height: {{ block.settings.badge_size }}px;
+    border-radius: {{ block.settings.badge_border_radius }}px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: {{ block.settings.badge_number_size }}px;
+    font-weight: 700;
+    margin-bottom: {{ block.settings.badge_bottom_margin }}px;
+    flex-shrink: 0;
+  }
+
+  .ai-how-it-works-badge-1-{{ ai_gen_id }} {
+    background-color: {{ block.settings.badge_1_bg_color }};
+    color: {{ block.settings.badge_1_text_color }};
+  }
+
+  .ai-how-it-works-badge-2-{{ ai_gen_id }} {
+    background-color: {{ block.settings.badge_2_bg_color }};
+    color: {{ block.settings.badge_2_text_color }};
+  }
+
+  .ai-how-it-works-badge-3-{{ ai_gen_id }} {
+    background-color: {{ block.settings.badge_3_bg_color }};
+    color: {{ block.settings.badge_3_text_color }};
+  }
+
+  .ai-how-it-works-emoji-{{ ai_gen_id }} {
+    font-size: {{ block.settings.emoji_font_size }}px;
+    margin-bottom: {{ block.settings.emoji_bottom_margin }}px;
+    line-height: 1;
+  }
+
+  .ai-how-it-works-card-title-{{ ai_gen_id }} {
+    font-size: {{ block.settings.card_title_font_size }}px;
+    color: {{ block.settings.card_title_color }};
+    font-weight: {{ block.settings.card_title_font_weight }};
+    margin: 0 0 {{ block.settings.card_title_bottom_margin }}px 0;
+    text-align: {{ block.settings.card_title_alignment }};
+  }
+
+  .ai-how-it-works-card-description-{{ ai_gen_id }} {
+    font-size: {{ block.settings.card_description_font_size }}px;
+    color: {{ block.settings.card_description_color }};
+    line-height: {{ block.settings.card_description_line_height }};
+    margin: 0;
+    text-align: {{ block.settings.card_description_alignment }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-how-it-works-cards-{{ ai_gen_id }} {
+      grid-template-columns: 1fr;
+      gap: {{ block.settings.cards_gap_mobile }}px;
+    }
+
+    .ai-how-it-works-eyebrow-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.eyebrow_font_size }}px * {{ block.settings.mobile_font_scale }});
+    }
+
+    .ai-how-it-works-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_font_size }}px * {{ block.settings.mobile_font_scale }});
+    }
+
+    .ai-how-it-works-card-title-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.card_title_font_size }}px * {{ block.settings.mobile_font_scale }});
+    }
+
+    .ai-how-it-works-card-description-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.card_description_font_size }}px * {{ block.settings.mobile_font_scale }});
+    }
+  }
+{% endstyle %}
+
+<how-it-works-{{ ai_gen_id }} class="ai-how-it-works-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-how-it-works-container-{{ ai_gen_id }}">
+    <div class="ai-how-it-works-header-{{ ai_gen_id }}">
+      {% if block.settings.show_eyebrow and block.settings.eyebrow_text != blank %}
+        <div class="ai-how-it-works-eyebrow-{{ ai_gen_id }}">
+          {{ block.settings.eyebrow_text }}
+        </div>
+      {% endif %}
+      {% if block.settings.heading_text != blank %}
+        <h2 class="ai-how-it-works-heading-{{ ai_gen_id }}">
+          {{ block.settings.heading_text }}
+        </h2>
+      {% endif %}
+    </div>
+
+    <div class="ai-how-it-works-cards-{{ ai_gen_id }}">
+      <div class="ai-how-it-works-card-{{ ai_gen_id }}">
+        <div class="ai-how-it-works-badge-{{ ai_gen_id }} ai-how-it-works-badge-1-{{ ai_gen_id }}">
+          1
+        </div>
+        {% if block.settings.step_1_emoji != blank %}
+          <div class="ai-how-it-works-emoji-{{ ai_gen_id }}">
+            {{ block.settings.step_1_emoji }}
+          </div>
+        {% endif %}
+        {% if block.settings.step_1_title != blank %}
+          <h3 class="ai-how-it-works-card-title-{{ ai_gen_id }}">
+            {{ block.settings.step_1_title }}
+          </h3>
+        {% endif %}
+        {% if block.settings.step_1_description != blank %}
+          <p class="ai-how-it-works-card-description-{{ ai_gen_id }}">
+            {{ block.settings.step_1_description }}
+          </p>
+        {% endif %}
+      </div>
+
+      <div class="ai-how-it-works-card-{{ ai_gen_id }}">
+        <div class="ai-how-it-works-badge-{{ ai_gen_id }} ai-how-it-works-badge-2-{{ ai_gen_id }}">
+          2
+        </div>
+        {% if block.settings.step_2_emoji != blank %}
+          <div class="ai-how-it-works-emoji-{{ ai_gen_id }}">
+            {{ block.settings.step_2_emoji }}
+          </div>
+        {% endif %}
+        {% if block.settings.step_2_title != blank %}
+          <h3 class="ai-how-it-works-card-title-{{ ai_gen_id }}">
+            {{ block.settings.step_2_title }}
+          </h3>
+        {% endif %}
+        {% if block.settings.step_2_description != blank %}
+          <p class="ai-how-it-works-card-description-{{ ai_gen_id }}">
+            {{ block.settings.step_2_description }}
+          </p>
+        {% endif %}
+      </div>
+
+      <div class="ai-how-it-works-card-{{ ai_gen_id }}">
+        <div class="ai-how-it-works-badge-{{ ai_gen_id }} ai-how-it-works-badge-3-{{ ai_gen_id }}">
+          3
+        </div>
+        {% if block.settings.step_3_emoji != blank %}
+          <div class="ai-how-it-works-emoji-{{ ai_gen_id }}">
+            {{ block.settings.step_3_emoji }}
+          </div>
+        {% endif %}
+        {% if block.settings.step_3_title != blank %}
+          <h3 class="ai-how-it-works-card-title-{{ ai_gen_id }}">
+            {{ block.settings.step_3_title }}
+          </h3>
+        {% endif %}
+        {% if block.settings.step_3_description != blank %}
+          <p class="ai-how-it-works-card-description-{{ ai_gen_id }}">
+            {{ block.settings.step_3_description }}
+          </p>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</how-it-works-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class HowItWorks{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+    }
+    customElements.define('how-it-works-{{ ai_gen_id }}', HowItWorks{{ ai_gen_id }});
+  })();
+</script>
+
 {% schema %}
- {
-   "name": "AI_Block",
-   "tag": "shopify-ai-generated-block"
- }
+{
+  "name": "How it works",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section header"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_eyebrow",
+      "label": "Show eyebrow label",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "eyebrow_text",
+      "label": "Eyebrow text",
+      "default": "SOSEM VOLT ILYEN EGYSZERŰ"
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_font_size",
+      "label": "Eyebrow font size",
+      "min": 10,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "color",
+      "id": "eyebrow_color",
+      "label": "Eyebrow color",
+      "default": "#8d5eb2"
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_letter_spacing",
+      "label": "Eyebrow letter spacing",
+      "min": 0,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "eyebrow_font_weight",
+      "label": "Eyebrow font weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "600"
+    },
+    {
+      "type": "range",
+      "id": "eyebrow_bottom_margin",
+      "label": "Eyebrow bottom spacing",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "text",
+      "id": "heading_text",
+      "label": "Main heading",
+      "default": "Hogyan működik?"
+    },
+    {
+      "type": "range",
+      "id": "heading_font_size",
+      "label": "Heading font size",
+      "min": 20,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "select",
+      "id": "heading_font_weight",
+      "label": "Heading font weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-bold" },
+        { "value": "700", "label": "Bold" },
+        { "value": "800", "label": "Extra bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "range",
+      "id": "header_bottom_margin",
+      "label": "Header bottom spacing",
+      "min": 20,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Step 1"
+    },
+    {
+      "type": "text",
+      "id": "step_1_emoji",
+      "label": "Emoji or icon",
+      "default": "🛒"
+    },
+    {
+      "type": "text",
+      "id": "step_1_title",
+      "label": "Title",
+      "default": "Válassz terméket"
+    },
+    {
+      "type": "textarea",
+      "id": "step_1_description",
+      "label": "Description",
+      "default": "Böngéssz a kínálatunkban és válaszd ki a neked tetsző terméket."
+    },
+    {
+      "type": "color",
+      "id": "badge_1_bg_color",
+      "label": "Badge background",
+      "default": "#8d5eb2"
+    },
+    {
+      "type": "color",
+      "id": "badge_1_text_color",
+      "label": "Badge text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Step 2"
+    },
+    {
+      "type": "text",
+      "id": "step_2_emoji",
+      "label": "Emoji or icon",
+      "default": "📦"
+    },
+    {
+      "type": "text",
+      "id": "step_2_title",
+      "label": "Title",
+      "default": "Add le a rendelést"
+    },
+    {
+      "type": "textarea",
+      "id": "step_2_description",
+      "label": "Description",
+      "default": "Egyszerű és gyors rendelési folyamat, biztonságos fizetéssel."
+    },
+    {
+      "type": "color",
+      "id": "badge_2_bg_color",
+      "label": "Badge background",
+      "default": "#c5aede"
+    },
+    {
+      "type": "color",
+      "id": "badge_2_text_color",
+      "label": "Badge text color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "header",
+      "content": "Step 3"
+    },
+    {
+      "type": "text",
+      "id": "step_3_emoji",
+      "label": "Emoji or icon",
+      "default": "✨"
+    },
+    {
+      "type": "text",
+      "id": "step_3_title",
+      "label": "Title",
+      "default": "Élvezd a terméket"
+    },
+    {
+      "type": "textarea",
+      "id": "step_3_description",
+      "label": "Description",
+      "default": "Gyors szállítás után élvezd a minőségi termékedet!"
+    },
+    {
+      "type": "color",
+      "id": "badge_3_bg_color",
+      "label": "Badge background",
+      "default": "#803cee"
+    },
+    {
+      "type": "color",
+      "id": "badge_3_text_color",
+      "label": "Badge text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Badge style"
+    },
+    {
+      "type": "range",
+      "id": "badge_size",
+      "label": "Badge size",
+      "min": 40,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "badge_border_radius",
+      "label": "Badge border radius",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "badge_number_size",
+      "label": "Badge number size",
+      "min": 16,
+      "max": 48,
+      "step": 2,
+      "unit": "px",
+      "default": 28
+    },
+    {
+      "type": "range",
+      "id": "badge_bottom_margin",
+      "label": "Badge bottom spacing",
+      "min": 10,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Emoji style"
+    },
+    {
+      "type": "range",
+      "id": "emoji_font_size",
+      "label": "Emoji size",
+      "min": 24,
+      "max": 80,
+      "step": 4,
+      "unit": "px",
+      "default": 48
+    },
+    {
+      "type": "range",
+      "id": "emoji_bottom_margin",
+      "label": "Emoji bottom spacing",
+      "min": 10,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Card title style"
+    },
+    {
+      "type": "range",
+      "id": "card_title_font_size",
+      "label": "Font size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "card_title_color",
+      "label": "Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "select",
+      "id": "card_title_font_weight",
+      "label": "Font weight",
+      "options": [
+        { "value": "400", "label": "Normal" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semi-bold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "700"
+    },
+    {
+      "type": "select",
+      "id": "card_title_alignment",
+      "label": "Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "card_title_bottom_margin",
+      "label": "Bottom spacing",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "header",
+      "content": "Card description style"
+    },
+    {
+      "type": "range",
+      "id": "card_description_font_size",
+      "label": "Font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "card_description_color",
+      "label": "Color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "card_description_line_height",
+      "label": "Line height",
+      "min": 1,
+      "max": 2,
+      "step": 0.1,
+      "default": 1.5
+    },
+    {
+      "type": "select",
+      "id": "card_description_alignment",
+      "label": "Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Card style"
+    },
+    {
+      "type": "color",
+      "id": "card_bg_color",
+      "label": "Background color",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_min_height",
+      "label": "Minimum height",
+      "min": 0,
+      "max": 600,
+      "step": 10,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_card_border",
+      "label": "Enable border",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Border color",
+      "default": "#e0e0e0"
+    },
+    {
+      "type": "range",
+      "id": "card_border_thickness",
+      "label": "Border thickness",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_card_shadow",
+      "label": "Enable shadow",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "shadow_color",
+      "label": "Shadow color",
+      "default": "rgba(0, 0, 0, 0.1)"
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "Shadow blur",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_x",
+      "label": "Shadow horizontal offset",
+      "min": -20,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "shadow_offset_y",
+      "label": "Shadow vertical offset",
+      "min": -20,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "header",
+      "content": "Card padding"
+    },
+    {
+      "type": "range",
+      "id": "card_padding_top",
+      "label": "Top",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "card_padding_bottom",
+      "label": "Bottom",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "card_padding_left",
+      "label": "Left",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "card_padding_right",
+      "label": "Right",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "cards_gap_desktop",
+      "label": "Gap between cards (desktop)",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "cards_gap_mobile",
+      "label": "Gap between cards (mobile)",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "max_content_width",
+      "label": "Max content width",
+      "min": 800,
+      "max": 1600,
+      "step": 50,
+      "unit": "px",
+      "default": 1200
+    },
+    {
+      "type": "header",
+      "content": "Section background"
+    },
+    {
+      "type": "color",
+      "id": "section_bg_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_gradient",
+      "label": "Enable gradient",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "gradient_color",
+      "label": "Gradient end color",
+      "default": "#f0f0f0"
+    },
+    {
+      "type": "range",
+      "id": "gradient_angle",
+      "label": "Gradient angle",
+      "min": 0,
+      "max": 360,
+      "step": 15,
+      "unit": "deg",
+      "default": 180
+    },
+    {
+      "type": "header",
+      "content": "Section spacing"
+    },
+    {
+      "type": "range",
+      "id": "section_padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 120,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 120,
+      "step": 5,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "section_padding_left",
+      "label": "Left padding",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "section_padding_right",
+      "label": "Right padding",
+      "min": 10,
+      "max": 80,
+      "step": 5,
+      "unit": "px",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Responsive"
+    },
+    {
+      "type": "range",
+      "id": "mobile_font_scale",
+      "label": "Mobile font scale",
+      "min": 0.5,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.8
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "How it works"
+    }
+  ]
+}
 {% endschema %}

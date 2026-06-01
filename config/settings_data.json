@@ -43,11 +43,6 @@
     "checkout_button_color": "#1a1a1a",
     "content_for_index": [],
     "blocks": {
-      "14060646107696862457": {
-        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
-        "disabled": false,
-        "settings": {}
-      },
       "5134484470793087125": {
         "type": "shopify://apps/vitals/blocks/app-embed/aeb48102-2a5a-4f39-bdbd-d8d49f4e20b8",
         "disabled": false,
@@ -58,10 +53,17 @@
         "disabled": false,
         "settings": {}
       },
-      "13669795325273674392": {
-        "type": "shopify://apps/releasit-cod-form/blocks/app-embed/72faf214-4174-4fec-886b-0d0e8d3af9a2",
-        "disabled": true,
-        "settings": {}
+      "13766566558402285670": {
+        "type": "shopify://apps/doran-product-reviews/blocks/app-embed/ca90c3ee-bc39-4c25-90cd-fdf0519c6d11",
+        "disabled": false,
+        "settings": {
+          "isJSONLD": false,
+          "isPopup": false,
+          "isPop": false,
+          "customCSS": "",
+          "is_use_shopify_font": false,
+          "pop_shopify_font": "sans_serif_n4"
+        }
       }
     }
   },

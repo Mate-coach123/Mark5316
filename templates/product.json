@@ -630,7 +630,7 @@
             "gradient_color_1": "#f9f7fc",
             "gradient_color_2": "#ffffff",
             "gradient_angle": 180,
-            "section_padding_top": 0,
+            "section_padding_top": 15,
             "section_padding_bottom": 35,
             "section_padding_left": 20,
             "section_padding_right": 20,

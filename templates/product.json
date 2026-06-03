@@ -307,6 +307,29 @@
       ],
       "settings": {}
     },
+    "blocks_kE69b6": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_bc47d37_6Re6Rb": {
+          "type": "ai_gen_block_bc47d37",
+          "settings": {
+            "desktop_image": "shopify://shop_images/gepes_image_banner_c8770811-50dd-4c77-98ba-235bfb453e23.png",
+            "desktop_image_width": 100,
+            "desktop_image_height": 500,
+            "mobile_image": "shopify://shop_images/telos_ket.png",
+            "mobile_image_width": 100,
+            "mobile_image_height": 400,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_bc47d37_6Re6Rb"
+      ],
+      "settings": {}
+    },
     "17500911687bffbabb": {
       "type": "apps",
       "settings": {
@@ -375,6 +398,7 @@
     "main",
     "17803426894d822585",
     "1780343585e0a85122",
+    "blocks_kE69b6",
     "17500911687bffbabb",
     "175673452553c88bd6",
     "1780346901e1b16c82"

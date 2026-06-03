@@ -800,11 +800,34 @@
         "background_gradient": "",
         "text_color": "",
         "enable_review_integration": true,
-        "review_header_gradient": "linear-gradient(135deg, #FFC266 0%, #FFA31A 100%)",
+        "review_header_gradient": "linear-gradient(135deg, rgba(255, 194, 102, 1), rgba(255, 163, 26, 1) 100%)",
         "review_header_text_color": "#000000",
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "blocks_Cq388n": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_bc47d37_Aybi6M": {
+          "type": "ai_gen_block_bc47d37",
+          "settings": {
+            "desktop_image": "shopify://shop_images/gepes_image_banner_154ef4b3-7d6a-4fbf-bb03-077931f5a592.png",
+            "desktop_image_width": 100,
+            "desktop_image_height": 500,
+            "mobile_image": "shopify://shop_images/Kepernyofoto_2026-06-01_-_20.09.24.png",
+            "mobile_image_width": 100,
+            "mobile_image_height": 400,
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_bc47d37_Aybi6M"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -816,6 +839,7 @@
     "1780512349dc95e9b7",
     "17500911687bffbabb",
     "175673452553c88bd6",
-    "1780346901e1b16c82"
+    "1780346901e1b16c82",
+    "blocks_Cq388n"
   ]
 }

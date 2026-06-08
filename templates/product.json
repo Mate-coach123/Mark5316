@@ -334,6 +334,42 @@
       "type": "_blocks",
       "settings": {}
     },
+    "impact_text_rRe83m": {
+      "type": "impact-text",
+      "blocks": {
+        "item_V6RLBq": {
+          "type": "item",
+          "settings": {
+            "title": "3.500+",
+            "subheading": "Elégedett és kipihent vásáró",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": true,
+            "animate_impact_text_duration": 2
+          }
+        }
+      },
+      "block_order": [
+        "item_V6RLBq"
+      ],
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "#8d5eb2",
+        "heading_gradient": "",
+        "text_color": "#8d5eb2",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
     "1780512349dc95e9b7": {
       "type": "_blocks",
       "blocks": {
@@ -427,7 +463,7 @@
             "table_border_color": "#e0e0e0",
             "table_border_thickness": 1,
             "enable_table_shadow": false,
-            "shadow_color": "#00000020",
+            "shadow_color": "#00000021",
             "shadow_blur": 10,
             "cell_padding_top": 16,
             "cell_padding_bottom": 16,
@@ -864,6 +900,7 @@
     "1780343585e0a85122",
     "blocks_kE69b6",
     "178051191821b56905",
+    "impact_text_rRe83m",
     "1780512349dc95e9b7",
     "17500911687bffbabb",
     "175673452553c88bd6",

@@ -1,1 +1,79 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"contact":{"type":"contact","settings":{}}},"order":["main","contact"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "content_width": "80ch"
+      }
+    },
+    "contact": {
+      "type": "contact",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "subheading": "Vedd fel velünk a kapcsolatot",
+        "title": "Do you have any question?",
+        "content": "",
+        "text_position": "start",
+        "contact_form_size": "large",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "contact_background": "",
+        "contact_text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "rich_text_TCGxCF": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_atDHRK": {
+          "type": "heading",
+          "settings": {
+            "text": "Vedd fel velünk a kapcsolatot",
+            "heading_tag": "h1",
+            "text_color": "",
+            "gradient": ""
+          }
+        },
+        "richtext_rzhUVr": {
+          "type": "richtext",
+          "settings": {
+            "content": "<p>Kérdésed van? Keress minket bizalommal!</p><p>Írj nekünk email-t az ergorest.info@gmail.com-ra, kollégánk igyekszik minél hamarabb segítséget nyújtani! Várhatóan 24 órán belül válaszolunk minden levélre.</p><p>E-mail: ergorest.info@gmail.com</p><p>Vagy keressen minket telefonon a 06/70-230-8086-os telefonszámon!</p><h2>Gyakran ismételt kérdések</h2><p><strong>Mikor várható a csomagom érkezése?</strong></p><p>Amennyiben 12:00 óráig adtad le rendelésed, mi azt aznap átadtuk a futárnak, így másnapra várhatod csomagod érkezését!</p><p><strong>Milyen a termékek minősége?</strong></p><p>Büszkén jelenthetjük ki, hogy immár több ezer kézbesített csomag után 100%-os elégedettségi arányt tudhatunk magunk mögött. 300 termékenként kapunk 1 cserekérelmet, így 99%-ban minden tökéletesen zajlik a kosárba helyezéstől a csomag örömteli kibontásáig.</p><p>Ha a rendelésed érkezéséről szeretnél érdeklődni kérlek add meg a rendeléshez használt:</p><ul><li>címet</li><li>teljes nevet</li></ul><p>Szeretnénk, ha minden téren elégedett lennél szolgáltatásainkkal és termékeinkkel, hogy aztán majd ismerőseidnek, barátaidnak is elmesélhesd pozitív élményeid.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_atDHRK",
+        "richtext_rzhUVr"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "contact",
+    "rich_text_TCGxCF"
+  ]
+}

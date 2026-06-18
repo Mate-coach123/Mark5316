@@ -34,7 +34,7 @@
         "links": {
           "type": "links",
           "settings": {
-            "menu": "",
+            "menu": "oldalak",
             "show_menu_title": true
           }
         }

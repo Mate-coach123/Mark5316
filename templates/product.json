@@ -116,6 +116,19 @@
             "payment_button_text_color": ""
           }
         },
+        "offer_dpeVWE": {
+          "type": "offer",
+          "settings": {
+            "text_alignment": "start",
+            "icon_position": "aligned",
+            "icon": "picto-gift",
+            "icon_width": 24,
+            "title": "AJÁNDÉK DÍSZDOBOZ MINDEN RENDELÉSHEZ",
+            "content": "<p>Díszdoboz minden rendelés mellé 6.990 Forint értékben</p>",
+            "background": "#FAE7C0",
+            "text_color": "#80552C"
+          }
+        },
         "liquid_yhhyDb": {
           "type": "liquid",
           "disabled": true,
@@ -182,6 +195,7 @@
         "liquid_xnqPc7",
         "text_U3tRDN",
         "buy_buttons",
+        "offer_dpeVWE",
         "liquid_yhhyDb",
         "collapsible_text_64D6NW",
         "collapsible_text_ccRqEC",
@@ -208,100 +222,21 @@
         "input_text_color": ""
       }
     },
+    "custom_liquid_WLefVM": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"vellum-steps-wrapper\">\n  <p class=\"vellum-steps-eyebrow\">EGYSZERŰBB, MINT GONDOLNÁD</p>\n  <h2 class=\"vellum-steps-title\">Három lépés a saját Vellumodig</h2>\n  <div class=\"vellum-steps-grid\">\n\n    <div class=\"vellum-step-card\">\n      <div class=\"vellum-step-number\">1</div>\n      <div class=\"vellum-step-emoji\">✍️</div>\n      <h3 class=\"vellum-step-heading\">Mondd el, mit szeretnél</h3>\n      <p class=\"vellum-step-desc\">Elküldöd a saját szövegedet, vagy válaszolsz néhány kérdésre, és megfogalmazzuk helyetted.</p>\n    </div>\n\n    <div class=\"vellum-step-card\">\n      <div class=\"vellum-step-number\">2</div>\n      <div class=\"vellum-step-emoji\">📩</div>\n      <h3 class=\"vellum-step-heading\">Hagyd jóvá a tervet</h3>\n      <p class=\"vellum-step-desc\">Emailben megkapod a teljes szöveget és a designt. Ha valamin változtatnál, jelzed, és csak utána készül el.</p>\n    </div>\n\n    <div class=\"vellum-step-card\">\n      <div class=\"vellum-step-number\">3</div>\n      <div class=\"vellum-step-emoji\">🎁</div>\n      <h3 class=\"vellum-step-heading\">Díszdobozban megérkezik</h3>\n      <p class=\"vellum-step-desc\">5–6 munkanapon belül nálad van, ajándék díszdobozban, azonnal átadható formában.</p>\n    </div>\n\n  </div>\n</div>\n<style>\n  .vellum-steps-wrapper {\n    background: #ffffff;\n    padding: 36px 20px 32px;\n    text-align: center;\n    font-family: 'Inter', 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;\n  }\n  .vellum-steps-eyebrow {\n    font-size: 17px;\n    font-weight: 900;\n    letter-spacing: 0.14em;\n    color: #80552C;\n    text-transform: uppercase;\n    margin: 0 0 10px;\n  }\n  .vellum-steps-title {\n    font-size: 26px;\n    font-weight: 800;\n    color: #1a1a1a;\n    margin: 0 0 28px;\n    line-height: 1.2;\n  }\n  .vellum-steps-grid {\n    display: grid;\n    grid-template-columns: repeat(3, 1fr);\n    gap: 16px;\n    max-width: 860px;\n    margin: 0 auto;\n  }\n  .vellum-step-card {\n    background: #FAF6F1;\n    border: 1px solid #E8D9C6;\n    border-radius: 16px;\n    padding: 28px 20px 24px;\n    position: relative;\n    text-align: center;\n  }\n  .vellum-step-number {\n    position: absolute;\n    top: -14px;\n    left: 50%;\n    transform: translateX(-50%);\n    width: 28px;\n    height: 28px;\n    border-radius: 50%;\n    background: #80552C;\n    color: #fff;\n    font-size: 13px;\n    font-weight: 800;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n  }\n  .vellum-step-emoji {\n    font-size: 32px;\n    margin: 8px 0 14px;\n  }\n  .vellum-step-heading {\n    font-size: 15px;\n    font-weight: 800;\n    color: #1a1a1a;\n    margin: 0 0 10px;\n    line-height: 1.3;\n  }\n  .vellum-step-desc {\n    font-size: 13px;\n    color: #555;\n    line-height: 1.55;\n    margin: 0;\n  }\n  @media (max-width: 749px) {\n    .vellum-steps-grid {\n      grid-template-columns: 1fr;\n      gap: 28px;\n    }\n    .vellum-steps-title {\n      font-size: 20px;\n    }\n    .vellum-steps-eyebrow {\n      font-size: 14px;\n    }\n  }\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "17803426894d822585": {
       "type": "_blocks",
-      "settings": {}
-    },
-    "1780343585e0a85122": {
-      "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_8f65aa1_JEN7ka": {
-          "type": "ai_gen_block_8f65aa1",
-          "settings": {
-            "show_eyebrow": true,
-            "eyebrow_text": "ILYEN EGYSZERŰ AZ ELSŐ LÉPÉS",
-            "eyebrow_font_size": 12,
-            "eyebrow_color": "#8d5eb2",
-            "eyebrow_letter_spacing": 2,
-            "heading_text": "Három lépés a pihentető alváshoz",
-            "heading_font_size": 40,
-            "heading_color": "#2b2b2b",
-            "heading_font_weight": "700",
-            "card_gap_desktop": 30,
-            "card_gap_mobile": 20,
-            "card_background": "#f9f7fc",
-            "card_border_radius": 24,
-            "enable_card_border": true,
-            "card_border_color": "#8d5eb2",
-            "card_border_thickness": 1,
-            "enable_card_shadow": true,
-            "card_shadow_color": "#00000014",
-            "card_shadow_blur": 20,
-            "card_shadow_offset_x": 0,
-            "card_shadow_offset_y": 10,
-            "card_padding_top": 40,
-            "card_padding_bottom": 40,
-            "card_padding_left": 30,
-            "card_padding_right": 30,
-            "card_min_height": 0,
-            "badge_size": 50,
-            "badge_text_color": "#ffffff",
-            "badge_1_bg_color": "#8d5eb2",
-            "badge_2_bg_color": "#8d5eb2",
-            "badge_3_bg_color": "#8d5eb2",
-            "global_image_width": 100,
-            "image_aspect_ratio": "1:1",
-            "image_fit_mode": "cover",
-            "image_object_position": "center",
-            "image_rendering": "auto",
-            "image_border_radius": 16,
-            "enable_image_border": false,
-            "image_border_color": "#8d5eb2",
-            "image_border_thickness": 1,
-            "enable_image_shadow": false,
-            "image_shadow_color": "#00000021",
-            "image_shadow_blur": 15,
-            "image_shadow_offset_x": 0,
-            "image_shadow_offset_y": 5,
-            "image_padding_top": 0,
-            "image_padding_bottom": 0,
-            "image_padding_left": 0,
-            "image_padding_right": 0,
-            "step_1_image": "shopify://shop_images/erg.png",
-            "step_1_image_width": 0,
-            "step_1_title": "Helyezd az ágyra",
-            "step_1_description": "Tedd az Ergorest párnát oda, ahol a hagyományos párnád volt. A magasabb él támassza a nyakadat.",
-            "step_2_image": "shopify://shop_images/ChatGPT_Image_2026._jun._1._22_03_58.png",
-            "step_2_image_width": 0,
-            "step_2_title": "Aludj el természetesen",
-            "step_2_description": "A honeycomb szerkezet automatikusan alkalmazkodik a fejed és nyakad helyzetéhez — nem kell csinálnod semmit.",
-            "step_3_image": "shopify://shop_images/pomelli_photoshoot_image_1_1_0601.jpg",
-            "step_3_image_width": 0,
-            "step_3_title": "Ébredj kipihenten",
-            "step_3_description": "Reggel nincs nyakfájás, nincs merevség — csak energia és frissesség, amire vágytál.",
-            "card_title_font_size": 24,
-            "card_title_color": "#8d5eb2",
-            "card_title_font_weight": "700",
-            "card_description_font_size": 16,
-            "card_description_color": "#666666",
-            "card_description_line_height": 1.5,
-            "background_color": "#ffffff",
-            "enable_gradient": false,
-            "gradient_color": "#ffffff",
-            "gradient_angle": 180,
-            "section_padding_top": 0,
-            "section_padding_bottom": 80,
-            "section_padding_left": 20,
-            "section_padding_right": 20,
-            "max_content_width": 1400,
-            "desktop_width_percent": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_8f65aa1_JEN7ka"
-      ],
       "settings": {}
     },
     "blocks_kE69b6": {
@@ -893,8 +828,8 @@
   },
   "order": [
     "main",
+    "custom_liquid_WLefVM",
     "17803426894d822585",
-    "1780343585e0a85122",
     "blocks_kE69b6",
     "178051191821b56905",
     "impact_text_rRe83m",

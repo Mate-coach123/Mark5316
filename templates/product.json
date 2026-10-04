@@ -303,7 +303,7 @@
           "type": "item",
           "settings": {
             "title": "3.500+",
-            "subheading": "Elégedett és kipihent vásáró",
+            "subheading": "",
             "content": "",
             "button_text": "",
             "button_url": "",
@@ -325,11 +325,71 @@
         "impact_text_size_ratio": 1,
         "background": "",
         "background_gradient": "",
-        "heading_text_color": "#8d5eb2",
+        "heading_text_color": "#80552C",
         "heading_gradient": "",
         "text_color": "#8d5eb2",
         "button_background": "",
         "button_text_color": ""
+      }
+    },
+    "testimonials_XPbbcf": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_ddaMFY": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Kiss Anna",
+            "title": "Hatalmas meglepetés",
+            "content": "<p>Páromnak adtam születésnapjára és rég láttam így elérzékenyülve. Csodálatos emlék!</p>"
+          }
+        },
+        "testimonial_gfND7a": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "János P.",
+            "title": "Kollégám imádta",
+            "content": "<p>Kollégámnak vettem nyugdíjba vonulására és hihetetlenül örült neki.</p>"
+          }
+        },
+        "testimonial_cy4BdJ": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Hunor Kovács",
+            "title": "Kisfiam mindig örömmel néz rá a falra",
+            "content": "<p>Fiam ballagására vettem és azóta minden egyes nap megemlíti mennyire jól mutat a falán.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_ddaMFY",
+        "testimonial_gfND7a",
+        "testimonial_cy4BdJ"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "Vásárlóink örök emlékei",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
       }
     },
     "17500911687bffbabb": {
@@ -454,6 +514,7 @@
     "rich_text_xN7PGr",
     "image_with_text_overlay_dPeXrQ",
     "impact_text_rRe83m",
+    "testimonials_XPbbcf",
     "17500911687bffbabb",
     "175673452553c88bd6",
     "1780346901e1b16c82",

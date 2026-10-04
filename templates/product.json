@@ -579,6 +579,75 @@
       ],
       "settings": {}
     },
+    "faq_RfyGJw": {
+      "type": "faq",
+      "blocks": {
+        "item_EMRPBQ": {
+          "type": "item",
+          "settings": {
+            "title": "Mi különbözteti meg a Vellumot a hagyományos ajándékoktól?",
+            "content": "<p>A Vellum nem egy előre gyártott, személytelen ajándék. Minden tekercs egyedi üzenettel készül, amelyet megírhatsz saját szavaiddal, vagy néhány kérdés alapján mi fogalmazunk meg neked. A régi időket idéző forma, a strapabíró fa és a gondosan válogatott vászonpapír együtt olyan maradandó emléket ad, amelyet évekkel később is jó érzés elővenni.</p>"
+          }
+        },
+        "item_j6yn48": {
+          "type": "item",
+          "settings": {
+            "title": "Milyen alkalomra adható a Vellum?",
+            "content": "<p>A Vellum szinte bármilyen alkalomra személyre szabható. Évfordulóra, gyermek születésére, költözésre, esküvőre, köszönetként vagy akár különösebb alkalom nélkül is adható. A lényeg nem az esemény, hanem az üzenet, amit szeretnél maradandó formában átadni.</p>"
+          }
+        },
+        "item_YGVNnw": {
+          "type": "item",
+          "settings": {
+            "title": "Hogyan készül a Vellum?",
+            "content": "<p>A rendelés során két lehetőség közül választhatsz: megírhatod teljesen saját szavaiddal az üzenetet, vagy néhány kérdés megválaszolásával ránk bízhatod a megfogalmazást. Ezután elkészítjük a szöveg és a design tervét, amit emailben jóváhagyásra elküldünk. Ha bármin változtatnál, módosítjuk, és csak a végleges jóváhagyás után kezdjük el a gyártást.</p>"
+          }
+        },
+        "item_rj6gb4": {
+          "type": "item",
+          "settings": {
+            "title": "Mennyi ideig tart a szállítás?",
+            "content": "<p>A Vellum a jóváhagyást követően garantáltan <strong>5–6 munkanapon belül megérkezik</strong>. Ebben benne van az elkészítés és az expressz GLS szállítás is. Fontos, hogy a határidő a végleges szöveg és design gyors jóváhagyásától számít.</p>"
+          }
+        },
+        "item_CkT9LJ": {
+          "type": "item",
+          "settings": {
+            "title": "Hogyan tudok kapcsolatba lépni veletek?",
+            "content": "<p>Bármilyen kérdés vagy probléma esetén írj nekünk a vellum.info@gmail.com email címre, vagy hívj minket a <strong>06/70-230-8086</strong> telefonszámon. Igyekszünk minden megkeresésre a lehető leghamarabb válaszolni.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "item_EMRPBQ",
+        "item_j6yn48",
+        "item_YGVNnw",
+        "item_rj6gb4",
+        "item_CkT9LJ"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "full_width": true,
+        "subheading": "",
+        "title": "Gyakran ismételt kérdések",
+        "content": "",
+        "team_avatar_width": 160,
+        "support_hours": "Ügyfélszolgálatunk minden hétköznap 9:00-tól 15:00-ig érhető el a vellum.info@gmail.com címen vagy a 06/70-230-8086-os telefonszámon!",
+        "answer_time": "Átlagos válaszolási idő: 24 órán belül",
+        "button_text": "",
+        "button_url": "",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "button_background": "",
+        "button_text_color": "",
+        "accordion_background": "",
+        "accordion_text_color": ""
+      }
+    },
     "1780346901e1b16c82": {
       "type": "apps",
       "blocks": {
@@ -677,6 +746,7 @@
     "17500911687bffbabb",
     "175673452553c88bd6",
     "1791137146c6f58578",
+    "faq_RfyGJw",
     "1780346901e1b16c82",
     "blocks_Cq388n"
   ]

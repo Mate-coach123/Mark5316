@@ -165,102 +165,101 @@
       "type": "_blocks",
       "settings": {}
     },
-    "1780261921c29ce816": {
-      "type": "_blocks",
+    "impact_text_EBJCh3": {
+      "type": "impact-text",
       "blocks": {
-        "ai_gen_block_b60a43d_PCiKcT": {
-          "type": "ai_gen_block_b60a43d",
+        "item_JUfUfq": {
+          "type": "item",
           "settings": {
-            "section_title": "Vásárlóink Mondták!",
-            "title_font_size": 42,
-            "title_color": "#80552C",
-            "section_subtitle": "Valódi vásárlók. Valódi tapasztalatok.",
-            "subtitle_font_size": 16,
-            "subtitle_color": "#80552C",
-            "section_use_gradient": false,
-            "section_background": "#f9f9f9",
-            "section_gradient_start": "#f9f9f9",
-            "section_gradient_end": "#ffffff",
-            "section_gradient_angle": 180,
-            "section_padding_top": 80,
-            "section_padding_bottom": 80,
-            "cards_per_view_desktop": 3,
-            "enable_auto_scroll": true,
-            "card_use_gradient": true,
-            "card_background": "#FFFFFF",
-            "card_gradient_start": "#FFFFFF",
-            "card_gradient_end": "#FFFFFF",
-            "card_gradient_angle": 135,
-            "card_border_radius": 20,
-            "card_border_width": 1,
-            "card_border_color": "#80552C",
-            "card_shadow_opacity": 10,
-            "card_shadow_vertical": 8,
-            "card_shadow_blur": 30,
-            "media_aspect_ratio": "4 / 5",
-            "bubble_use_gradient": true,
-            "bubble_background": "#80552C",
-            "bubble_gradient_start": "#FFFFFF",
-            "bubble_gradient_end": "#FFFFFF",
-            "bubble_gradient_angle": 180,
-            "testimonial_font_size": 15,
-            "testimonial_text_color": "#80552C",
-            "customer_font_size": 13,
-            "customer_text_color": "#1a1a1a",
-            "star_position": "above",
-            "star_size": 18,
-            "star_color": "#000000",
-            "verified_badge_bg": "#FFFFFF",
-            "verified_badge_text": "#2e7d32",
-            "arrow_size": 48,
-            "arrow_background": "#ffffff",
-            "arrow_hover_background": "#f5f5f5",
-            "arrow_color": "#000000",
-            "dot_color": "#80552C",
-            "testimonial_1_media": "shopify://shop_images/1.png",
-            "testimonial_1_video": "",
-            "testimonial_1_text": "Pár napig furcsa volt megszokni, de utána tényleg éreztem hogy jobban alszom. A nyakam reggel nem fáj annyira mint régen.",
-            "testimonial_1_name": "K. Réka",
-            "testimonial_1_rating": 5,
-            "testimonial_1_verified": false,
-            "testimonial_2_media": "shopify://shop_images/2_e49cbd32-d9f8-4dfc-a421-8225f1ab9b3a.png",
-            "testimonial_2_video": "",
-            "testimonial_2_text": "Nem vártam tőle sokat őszintén, de kellemes meglepetés volt. Hűvös marad éjjel ami nekem nagyon sokat számít nyáron.",
-            "testimonial_2_name": "H. Bence",
-            "testimonial_2_rating": 5,
-            "testimonial_2_verified": false,
-            "testimonial_3_media": "shopify://shop_images/3_b7028265-bc0c-4da2-8b70-e2a8bfd156dc.png",
-            "testimonial_3_video": "",
-            "testimonial_3_text": "Először a lányom ajánlotta, kicsit szkeptikus voltam az ára miatt. De megérte, azóta a férjem is rendelt egyet magának 😄",
-            "testimonial_3_name": "Sz. Judit",
-            "testimonial_3_rating": 5,
-            "testimonial_3_verified": false,
-            "testimonial_4_media": "shopify://shop_images/4_353fb660-ac59-40ca-9324-00230585a04f.png",
-            "testimonial_4_video": "",
-            "testimonial_4_text": "Kb egy hét kellett míg teljesen hozzászoktam, de azóta sokkal pihentetőbb az alvás. Irodában dolgozom sokat és a nyakam is sokkal kevésbé feszül.",
-            "testimonial_4_name": "T. Márk",
-            "testimonial_4_rating": 5,
-            "testimonial_4_verified": false,
-            "testimonial_5_media": "shopify://shop_images/5.png",
-            "testimonial_5_video": "",
-            "testimonial_5_text": "Ajándékba kaptam és eleinte nem tudtam mit várjak tőle. Mostmár én is ajánlottam pár barátnőmnek, tényleg érezni a különbséget",
-            "testimonial_5_name": "K. Eszter",
-            "testimonial_5_rating": 5,
-            "testimonial_5_verified": false,
-            "testimonial_6_media": "shopify://shop_images/7.png",
-            "testimonial_6_video": "",
-            "testimonial_6_text": "Régóta forgolódtam éjszaka és sosem aludtam át rendesen. Egy hónap után már azt sem tudom mikor feküdtem le, úgy alszom át az éjszakát.",
-            "testimonial_6_name": "N. Péter",
-            "testimonial_6_rating": 5,
-            "testimonial_6_verified": false
-          },
-          "blocks": {}
+            "title": "3500+",
+            "subheading": "",
+            "content": "",
+            "button_text": "",
+            "button_url": "",
+            "animate_impact_text": false,
+            "animate_impact_text_duration": 2
+          }
         }
       },
       "block_order": [
-        "ai_gen_block_b60a43d_PCiKcT"
+        "item_JUfUfq"
       ],
-      "settings": {}
+      "name": "Impact text",
+      "settings": {
+        "full_width": true,
+        "stack_mobile": true,
+        "text_alignment": "center",
+        "impact_text_style": "fill",
+        "text_divider": "none",
+        "impact_text_size_ratio": 1,
+        "background": "",
+        "background_gradient": "",
+        "heading_text_color": "#80552C",
+        "heading_gradient": "",
+        "text_color": "",
+        "button_background": "",
+        "button_text_color": ""
+      }
+    },
+    "testimonials_iARqXe": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_KD6ziw": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Kiss Anna",
+            "title": "Hatalmas meglepetés",
+            "content": "<p>Páromnak adtam születésnapjára és rég láttam így elérzékenyülve. Csodálatos emlék!</p>"
+          }
+        },
+        "testimonial_bycKXM": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "János P.",
+            "title": "Kollégám imádta",
+            "content": "<p>Kollégámnak vettem nyugdíjba vonulására és hihetetlenül örült neki.</p>"
+          }
+        },
+        "testimonial_RwDg7z": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Hunor Kovács",
+            "title": "Kisfiam mindig örömmel néz rá a falra",
+            "content": "<p>Fiam ballagására vettem és azóta minden egyes nap megemlíti mennyire jól mutat a falán.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_KD6ziw",
+        "testimonial_bycKXM",
+        "testimonial_RwDg7z"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": true,
+        "subheading": "",
+        "title": "Vásárlóink örök emlékei",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
     },
     "images_with_text_scrolling_8G66pe": {
       "type": "images-with-text-scrolling",
@@ -682,7 +681,8 @@
     "1780255316d70a2501",
     "17802603186b398db4",
     "17802629069b46a697",
-    "1780261921c29ce816",
+    "impact_text_EBJCh3",
+    "testimonials_iARqXe",
     "images_with_text_scrolling_8G66pe",
     "1780264277032ad6c7",
     "17803357406683d520",

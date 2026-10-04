@@ -235,31 +235,25 @@
         "text_color": ""
       }
     },
+    "custom_liquid_TrXYA7": {
+      "type": "custom-liquid",
+      "name": "Custom Liquid",
+      "settings": {
+        "full_width": true,
+        "remove_vertical_spacing": false,
+        "remove_horizontal_spacing": false,
+        "liquid": "<div class=\"vellum-why-wrapper\">\n  <p class=\"vellum-why-eyebrow\">ISMERŐS?</p>\n  <h2 class=\"vellum-why-title\">Ajándékot venni könnyű. Olyat adni, ami számít, már nem.</h2>\n  <div class=\"vellum-why-grid\">\n\n    <div class=\"vellum-why-card\">\n      <div class=\"vellum-why-emoji\">🛍️</div>\n      <h3 class=\"vellum-why-heading\">„Már mindene megvan”</h3>\n      <p class=\"vellum-why-desc\">Nem kell újabb tárgyat keresned a polcára. A Vellumon az van, amit csak te adhatsz neki: a közös történetetek.</p>\n    </div>\n\n    <div class=\"vellum-why-card\">\n      <div class=\"vellum-why-emoji\">🥀</div>\n      <h3 class=\"vellum-why-heading\">Pár hét, és elfelejtődik</h3>\n      <p class=\"vellum-why-desc\">A virág elhervad, a parfüm elfogy, a képeslap elkallódik. Egy tekercsre írt üzenetet évek múlva is elővesz és újraolvas.</p>\n    </div>\n\n    <div class=\"vellum-why-card\">\n      <div class=\"vellum-why-emoji\">🎯</div>\n      <h3 class=\"vellum-why-heading\">Félsz, hogy mellényúlsz</h3>\n      <p class=\"vellum-why-desc\">Nincs méret, szín vagy ízlés, amit eltéveszthetsz. Arról szól, amit együtt éltetek át, és a tervet úgyis jóváhagyod, mielőtt elkészül.</p>\n    </div>\n\n    <div class=\"vellum-why-card\">\n      <div class=\"vellum-why-emoji\">💬</div>\n      <h3 class=\"vellum-why-heading\">Érzed, csak nehéz kimondani</h3>\n      <p class=\"vellum-why-desc\">A legfontosabb dolgokat ritkán mondjuk el. Ha nem jönnek a szavak, néhány kérdés alapján segítünk megfogalmazni.</p>\n    </div>\n\n  </div>\n</div>\n<style>\n  .vellum-why-wrapper {\n    background: #FAF8F5;\n    padding: 48px 20px 52px;\n    text-align: center;\n    font-family: inherit;\n  }\n  .vellum-why-eyebrow {\n    font-size: 16px;\n    font-weight: 700;\n    letter-spacing: 0.12em;\n    color: #80552C;\n    text-transform: uppercase;\n    margin: 0 0 12px;\n  }\n  .vellum-why-title {\n    font-size: 32px;\n    font-weight: 800;\n    color: #1a1a1a;\n    margin: 0 auto 36px;\n    line-height: 1.2;\n    max-width: 760px;\n  }\n  .vellum-why-grid {\n    display: grid;\n    grid-template-columns: repeat(2, 1fr);\n    gap: 22px;\n    max-width: 900px;\n    margin: 0 auto;\n    text-align: left;\n  }\n  .vellum-why-card {\n    background: #F3E9DD;\n    border: 1px solid #C9A882;\n    border-radius: 10px;\n    padding: 24px 22px 22px;\n  }\n  .vellum-why-emoji {\n    font-size: 28px;\n    line-height: 1;\n    margin: 0 0 14px;\n  }\n  .vellum-why-heading {\n    font-size: 16px;\n    font-weight: 700;\n    color: #1a1a1a;\n    margin: 0 0 10px;\n    line-height: 1.3;\n  }\n  .vellum-why-desc {\n    font-size: 13.5px;\n    color: #5a5049;\n    line-height: 1.6;\n    margin: 0;\n  }\n  @media (max-width: 749px) {\n    .vellum-why-wrapper {\n      padding: 36px 16px 40px;\n    }\n    .vellum-why-grid {\n      grid-template-columns: 1fr;\n      gap: 14px;\n    }\n    .vellum-why-title {\n      font-size: 22px;\n      margin-bottom: 26px;\n    }\n    .vellum-why-eyebrow {\n      font-size: 13px;\n    }\n  }\n</style>",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
     "17803426894d822585": {
       "type": "_blocks",
       "settings": {}
     },
     "blocks_kE69b6": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_bc47d37_6Re6Rb": {
-          "type": "ai_gen_block_bc47d37",
-          "settings": {
-            "desktop_image": "shopify://shop_images/gepes_image_banner_c8770811-50dd-4c77-98ba-235bfb453e23.png",
-            "desktop_image_width": 100,
-            "desktop_image_height": 500,
-            "mobile_image": "shopify://shop_images/telos_ergorest.png",
-            "mobile_image_width": 100,
-            "mobile_image_height": 400,
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_bc47d37_6Re6Rb"
-      ],
       "settings": {}
     },
     "178051191821b56905": {
@@ -829,6 +823,7 @@
   "order": [
     "main",
     "custom_liquid_WLefVM",
+    "custom_liquid_TrXYA7",
     "17803426894d822585",
     "blocks_kE69b6",
     "178051191821b56905",

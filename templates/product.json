@@ -49,30 +49,26 @@
         },
         "text_ymY8Mt": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>🌿 100 % prírodné zložky</p>"
+            "text": "<p>📜 Régi időket idéző, személyre szabott emléktekercs</p>"
           }
         },
         "text_eCwxUz": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>🌟 Viac než 1500 príbehov úspechu</p>"
+            "text": "<p>🪵 Strapabíró fa és gondosan válogatott vászonpapír</p>"
           }
         },
         "text_piHtpE": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>🚫 Užívaj si podporu prírodných aróm každý deň!</p>"
+            "text": "<p>🎁 Most minden Vellum mellé ajándék díszdoboz</p>"
           }
         },
         "text_WccVEm": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<p>🎁 Darček: aromatizovaná náplň vystačí na 18 dní</p>"
+            "text": "<p>🚚 Garantált 5–6 munkanapos elkészítés és szállítás</p>"
           }
         },
         "variant_picker": {
@@ -114,7 +110,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#8d5eb2",
+            "atc_button_background": "#80552C",
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -122,6 +118,7 @@
         },
         "liquid_yhhyDb": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "<style>\n.wellive-review-slider {\n  position: relative;\n  max-width: 420px;\n  margin: 0 auto;\n  font-family: \"Poppins\", sans-serif;\n  min-height: 210px;\n}\n\n.wellive-review {\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 100%;\n  opacity: 0;\n  transform: translateY(10px);\n  transition: opacity 0.6s ease, transform 0.6s ease;\n  background: #F9F7FC;\n  border: 1px solid #8D5EB2;\n  border-radius: 12px;\n  padding: 22px 26px;\n  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);\n  z-index: 0;\n}\n\n.wellive-review.active {\n  opacity: 1;\n  transform: translateY(0);\n  z-index: 2;\n}\n\n.review-header {\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  margin-bottom: 8px;\n}\n\n.review-left {\n  display: flex;\n  align-items: center;\n  gap: 10px;\n}\n\n.review-avatar {\n  width: 46px;\n  height: 46px;\n  border-radius: 50%;\n  object-fit: cover;\n  border: 1px solid #ddd;\n}\n\n.review-name {\n  font-weight: 700;\n  font-size: 15px;\n}\n\n.review-date {\n  color: #555;\n  font-size: 13px;\n}\n\n.review-stars {\n  color: #ffb400;\n  font-size: 16px;\n  margin: 3px 0;\n}\n\n.review-text {\n  font-size: 14px;\n  line-height: 1.5;\n  margin-top: 10px;\n}\n\n.review-verified {\n  display: flex;\n  align-items: center;\n  margin-top: 10px;\n  font-weight: 600;\n  color: #000;\n  font-size: 13px;\n}\n\n.review-verified::before {\n  content: \"✔️\";\n  margin-right: 6px;\n}\n</style>\n\n<div class=\"wellive-review-slider\">\n  <div class=\"wellive-review active\">\n    <div class=\"review-header\">\n      <div class=\"review-left\">\n        <img class=\"review-avatar\" src=\"https://cdn.shopify.com/s/files/1/0923/5284/0022/files/pomelli_photoshoot_image_1_1_0601_masolat.jpg?v=1780346257\" alt=\"Kovács Réka\">\n        <div>\n          <div class=\"review-name\">Kovács Réka</div>\n          <div class=\"review-stars\">★★★★★</div>\n        </div>\n      </div>\n      <div class=\"review-date\">2025. február 4.</div>\n    </div>\n    <div class=\"review-text\">\n      Évek óta nyakfájással ébredtem. Az első hét után már éreztem a különbséget — azóta tényleg kipihenten kelek fel minden reggel.\n    </div>\n    <div class=\"review-verified\">Hitelesített vásárló</div>\n  </div>\n\n  <div class=\"wellive-review\">\n    <div class=\"review-header\">\n      <div class=\"review-left\">\n        <img class=\"review-avatar\" src=\"https://cdn.shopify.com/s/files/1/0923/5284/0022/files/pomelli_photoshoot_image_1_1_0601_80e26f57-15d3-4f24-b8ac-30a661cc20af.jpg?v=1780346283\" alt=\"Horváth Bence\">\n        <div>\n          <div class=\"review-name\">Horváth Bence</div>\n          <div class=\"review-stars\">★★★★★</div>\n        </div>\n      </div>\n      <div class=\"review-date\">2025. március 14.</div>\n    </div>\n    <div class=\"review-text\">\n      Nyáron vettem és azonnal megoldódott az éjszakai izzadás. Hűvös marad egész éjjel — nem vártam tőle sokat, de kellemes meglepetés volt.\n    </div>\n    <div class=\"review-verified\">Hitelesített vásárló</div>\n  </div>\n\n  <div class=\"wellive-review\">\n    <div class=\"review-header\">\n      <div class=\"review-left\">\n        <img class=\"review-avatar\" src=\"https://cdn.shopify.com/s/files/1/0923/5284/0022/files/pomelli_photoshoot_image_1_1_0601_masolat_2.jpg?v=1780346556\" alt=\"Tóth Márk\">\n        <div>\n          <div class=\"review-name\">Tóth Márk</div>\n          <div class=\"review-stars\">★★★★★</div>\n        </div>\n      </div>\n      <div class=\"review-date\">2025. január 27.</div>\n    </div>\n    <div class=\"review-text\">\n      Irodában dolgozom, sokat ülök. Kb. egy hét után teljesen megváltozott az alvásom — sokkal pihentetőbb és a nyakam sem feszül reggel.\n    </div>\n    <div class=\"review-verified\">Hitelesített vásárló</div>\n  </div>\n</div>\n\n<script>\n(function() {\n  const reviews = document.querySelectorAll(\".wellive-review\");\n  if (reviews.length === 0) return;\n\n  let current = 0;\n  setInterval(() => {\n    reviews[current].classList.remove(\"active\");\n    current = (current + 1) % reviews.length;\n    reviews[current].classList.add(\"active\");\n  }, 6000);\n})();\n</script>"
           }

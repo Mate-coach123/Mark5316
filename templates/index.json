@@ -396,6 +396,7 @@
       "block_order": [
         "ai_gen_block_3174cec_eFGMHd"
       ],
+      "disabled": true,
       "settings": {}
     },
     "17803357406683d520": {
@@ -403,6 +404,7 @@
       "blocks": {
         "ai_gen_block_407291d_MDD4n4": {
           "type": "ai_gen_block_407291d",
+          "disabled": true,
           "settings": {
             "show_icon": false,
             "icon_size": 60,
@@ -546,6 +548,7 @@
         "item_YFXNRR",
         "item_cHTF3L"
       ],
+      "disabled": true,
       "name": "Text with icons",
       "settings": {
         "full_width": true,
@@ -568,7 +571,7 @@
             "section_heading": "<strong>Gyakran ismételt kérdések</strong>",
             "heading_font": "assistant_n4",
             "heading_font_size": 28,
-            "heading_color": "#8d5eb2",
+            "heading_color": "#80552C",
             "heading_alignment": "center",
             "heading_letter_spacing": 0,
             "heading_spacing": 16,
@@ -581,24 +584,24 @@
             "section_gradient_angle": 135,
             "items_spacing": 12,
             "item_border_radius": 16,
-            "item_gradient_color_1": "#f9f7fc",
-            "item_gradient_color_2": "#8d5eb2",
+            "item_gradient_color_1": "#80552C",
+            "item_gradient_color_2": "#80552C",
             "item_gradient_angle": 135,
             "item_border_width": 1,
-            "item_border_color": "#8d5eb2",
+            "item_border_color": "#80552C",
             "item_shadow_opacity": 10,
             "item_shadow_horizontal": 0,
             "item_shadow_vertical": 4,
             "item_shadow_blur": 12,
             "question_font": "assistant_n4",
             "question_font_size": 18,
-            "question_color": "#000000",
-            "question_hover_color": "#6c757d",
+            "question_color": "#FFFFFF",
+            "question_hover_color": "#FFFFFF",
             "question_letter_spacing": 0,
             "question_padding": 20,
             "answer_font": "assistant_n4",
             "answer_font_size": 16,
-            "answer_color": "#495057",
+            "answer_color": "#FFFFFF",
             "answer_link_color": "#0066cc",
             "answer_letter_spacing": 0,
             "answer_padding": 20,
@@ -627,6 +630,7 @@
         },
         "ai_gen_block_bc47d37_DbTH4f": {
           "type": "ai_gen_block_bc47d37",
+          "disabled": true,
           "settings": {
             "desktop_image": "shopify://shop_images/gepes_image_banner_154ef4b3-7d6a-4fbf-bb03-077931f5a592.png",
             "desktop_image_width": 100,
@@ -641,6 +645,7 @@
         },
         "ai_gen_block_eac03f3_wA8gF7": {
           "type": "ai_gen_block_eac03f3",
+          "disabled": true,
           "settings": {
             "padding_top": 0,
             "padding_bottom": 12,

@@ -17,14 +17,14 @@
         "message_wpBUVW": {
           "type": "message",
           "settings": {
-            "text": "1-2 Napos Szállítás",
+            "text": "5-6 Napos Szállítás",
             "url": ""
           }
         },
         "message_wy9mhU": {
           "type": "message",
           "settings": {
-            "text": "30 Napos Garancia",
+            "text": "Ajándék, amiből csak egy van",
             "url": ""
           }
         },
@@ -46,7 +46,7 @@
         "text_size": "text-base",
         "navigation_mode": "scrolling",
         "scrolling_speed": 10,
-        "background": "#8d5eb2",
+        "background": "#80552C",
         "background_gradient": "",
         "text_color": "#ffffff"
       }

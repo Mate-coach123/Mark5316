@@ -392,6 +392,134 @@
         "testimonial_card_text_color": ""
       }
     },
+    "rich_text_Me8HFJ": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_pMBAxp": {
+          "type": "heading",
+          "settings": {
+            "text": "Az emlék, amit sosem felejtesz el",
+            "heading_tag": "h2",
+            "text_color": "#80552C",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_pMBAxp"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "media_with_text_nrtAhK": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_ajpdFk": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Mondd el neki úgy, hogy évek múlva is elolvashassa!",
+            "content": "<p>A Vellum régi időket idéző tekercsre teszi a te szavaidat, hogy egy fontos pillanat ne csak emlék maradjon, hanem meg is őrizhesse.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_ajpdFk"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_w7tMNm": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_z3NBPb": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "start",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Most minden Vellum mellé ajándék díszdobozt adunk!",
+            "content": "<p>Nem kell csomagolással bajlódnod: a tekercs díszdobozban érkezik, így úgy adhatod át, ahogy megjött. Kinyitja, kiveszi, kitekeri, és elkezdi olvasni.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_z3NBPb"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
+    "media_with_text_meVL77": {
+      "type": "media-with-text",
+      "blocks": {
+        "image_bUR69R": {
+          "type": "image",
+          "settings": {
+            "media_width": 50,
+            "media_position": "end",
+            "text_position": "place-self-center text-center",
+            "icon": "none",
+            "icon_width": 48,
+            "subheading": "",
+            "title": "Az érzés tőled jön, a szavakban segítünk!",
+            "content": "<p>Ha megvan a saját szöveged, pontosan az kerül rá. Ha nincs, néhány kérdés alapján megfogalmazzuk, és emailben jóváhagyod, mielőtt bármi elkészül.</p>",
+            "link_text": "",
+            "link_url": "",
+            "background": "#FFFFFF",
+            "background_gradient": "",
+            "text_color": "#000000",
+            "text_gradient": "",
+            "button_background": "",
+            "button_text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_bUR69R"
+      ],
+      "name": "Media with text",
+      "settings": {
+        "full_width": false,
+        "spacing": "small"
+      }
+    },
     "17500911687bffbabb": {
       "type": "apps",
       "settings": {
@@ -423,6 +551,33 @@
         "review_button_background": "#000000",
         "review_button_text_color": "#ffffff"
       }
+    },
+    "1791137146c6f58578": {
+      "type": "_blocks",
+      "blocks": {
+        "ai_gen_block_7e5cc88_FC7KVF": {
+          "type": "ai_gen_block_7e5cc88",
+          "settings": {
+            "heading": "Miért más a Vellum?",
+            "left_title": "Vellum",
+            "right_title": "Hagyományos ajándékok",
+            "our_row_1": "A ti saját történetetek van rajta",
+            "our_row_2": "Évekig megőrizhető, újra elolvasható",
+            "our_row_3": "Senki más nem kaphatja meg ugyanezt",
+            "other_row_1": "Bárki más is kaphatta volna",
+            "other_row_2": "Pár hét múlva elhervad vagy elfogy",
+            "other_row_3": "Egy idő után nem tudod, mit adj",
+            "accent_color": "#80552C",
+            "dark_row_color": "#3B2A1F",
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "ai_gen_block_7e5cc88_FC7KVF"
+      ],
+      "settings": {}
     },
     "1780346901e1b16c82": {
       "type": "apps",
@@ -515,8 +670,13 @@
     "image_with_text_overlay_dPeXrQ",
     "impact_text_rRe83m",
     "testimonials_XPbbcf",
+    "rich_text_Me8HFJ",
+    "media_with_text_nrtAhK",
+    "media_with_text_w7tMNm",
+    "media_with_text_meVL77",
     "17500911687bffbabb",
     "175673452553c88bd6",
+    "1791137146c6f58578",
     "1780346901e1b16c82",
     "blocks_Cq388n"
   ]

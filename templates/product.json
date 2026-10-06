@@ -110,7 +110,7 @@
           "settings": {
             "show_payment_button": false,
             "show_gift_card_recipient": true,
-            "atc_button_background": "#80552C",
+            "atc_button_background": "#80552c",
             "atc_button_text_color": "#ffffff",
             "payment_button_background": "",
             "payment_button_text_color": ""
@@ -125,8 +125,8 @@
             "icon_width": 24,
             "title": "AJÁNDÉK DÍSZDOBOZ MINDEN RENDELÉSHEZ",
             "content": "<p>Díszdoboz minden rendelés mellé 6.990 Forint értékben</p>",
-            "background": "#FAE7C0",
-            "text_color": "#80552C"
+            "background": "#fae7c0",
+            "text_color": "#80552c"
           }
         },
         "liquid_yhhyDb": {
@@ -256,7 +256,7 @@
           "settings": {
             "text": "SZAVAK, AMIK MEGMARADNAK",
             "heading_tag": "h1",
-            "text_color": "#80552C",
+            "text_color": "#80552c",
             "gradient": ""
           }
         },
@@ -325,7 +325,7 @@
         "impact_text_size_ratio": 1,
         "background": "",
         "background_gradient": "",
-        "heading_text_color": "#80552C",
+        "heading_text_color": "#80552c",
         "heading_gradient": "",
         "text_color": "#8d5eb2",
         "button_background": "",
@@ -400,7 +400,7 @@
           "settings": {
             "text": "Az emlék, amit sosem felejtesz el",
             "heading_tag": "h2",
-            "text_color": "#80552C",
+            "text_color": "#80552c",
             "gradient": ""
           }
         }
@@ -424,6 +424,7 @@
         "image_ajpdFk": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/5_IMG_Ezt_nekem_irta.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -434,7 +435,7 @@
             "content": "<p>A Vellum régi időket idéző tekercsre teszi a te szavaidat, hogy egy fontos pillanat ne csak emlék maradjon, hanem meg is őrizhesse.</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#FFFFFF",
+            "background": "#ffffff",
             "background_gradient": "",
             "text_color": "#000000",
             "text_gradient": "",
@@ -468,7 +469,7 @@
             "content": "<p>Nem kell csomagolással bajlódnod: a tekercs díszdobozban érkezik, így úgy adhatod át, ahogy megjött. Kinyitja, kiveszi, kitekeri, és elkezdi olvasni.</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#FFFFFF",
+            "background": "#ffffff",
             "background_gradient": "",
             "text_color": "#000000",
             "text_gradient": "",
@@ -492,6 +493,7 @@
         "image_bUR69R": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/2_IMG_Nem_kell_ironak_lenned.png",
             "media_width": 50,
             "media_position": "end",
             "text_position": "place-self-center text-center",
@@ -502,7 +504,7 @@
             "content": "<p>Ha megvan a saját szöveged, pontosan az kerül rá. Ha nincs, néhány kérdés alapján megfogalmazzuk, és emailben jóváhagyod, mielőtt bármi elkészül.</p>",
             "link_text": "",
             "link_url": "",
-            "background": "#FFFFFF",
+            "background": "#ffffff",
             "background_gradient": "",
             "text_color": "#000000",
             "text_gradient": "",
@@ -567,8 +569,8 @@
             "other_row_1": "Bárki más is kaphatta volna",
             "other_row_2": "Pár hét múlva elhervad vagy elfogy",
             "other_row_3": "Egy idő után nem tudod, mit adj",
-            "accent_color": "#80552C",
-            "dark_row_color": "#3B2A1F",
+            "accent_color": "#80552c",
+            "dark_row_color": "#3b2a1f",
             "desktop_width_percent": 100
           },
           "blocks": {}

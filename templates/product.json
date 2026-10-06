@@ -290,6 +290,7 @@
         "enable_parallax": false,
         "image_size": "auto",
         "image": "shopify://shop_images/1006.gif",
+        "mobile_image": "shopify://shop_images/1006.gif",
         "mobile_text_position": "place-self-center text-center",
         "desktop_text_position": "sm:place-self-center sm:text-center",
         "text_color": "#ffffff",
@@ -564,6 +565,7 @@
           "settings": {
             "heading": "Miért más a Vellum?",
             "left_title": "Vellum",
+            "left_image": "shopify://shop_images/1_IMG_Mar_mindene_megvan.png",
             "right_title": "Hagyományos ajándékok",
             "our_row_1": "A ti saját történetetek van rajta",
             "our_row_2": "Évekig megőrizhető, újra elolvasható",

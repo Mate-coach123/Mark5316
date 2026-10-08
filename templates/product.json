@@ -150,6 +150,13 @@
             "content": "<p>A Vellum szinte bármilyen alkalomra személyre szabható. Évfordulóra, gyermek születésére, költözésre, esküvőre, köszönetként vagy akár különösebb alkalom nélkül is adható. A lényeg nem az esemény, hanem az üzenet, amit szeretnél maradandó formában átadni.</p>"
           }
         },
+        "collapsible_text_jfXqzw": {
+          "type": "collapsible_text",
+          "settings": {
+            "title": "Mekkora a tekercs?",
+            "content": "<p>A tekercs méretei: 50cm magas és 30 cm széles</p>"
+          }
+        },
         "collapsible_text_44T676": {
           "type": "collapsible_text",
           "settings": {
@@ -199,6 +206,7 @@
         "liquid_yhhyDb",
         "collapsible_text_64D6NW",
         "collapsible_text_ccRqEC",
+        "collapsible_text_jfXqzw",
         "collapsible_text_44T676",
         "collapsible_text_DETCHP",
         "liquid_VcUcE6",

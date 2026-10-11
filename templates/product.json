@@ -35,12 +35,6 @@
             "shopify_font": "sans_serif_n4"
           }
         },
-        "price": {
-          "type": "price",
-          "settings": {
-            "show_taxes_notice": false
-          }
-        },
         "liquid_jTYkzH": {
           "type": "liquid",
           "settings": {
@@ -90,6 +84,12 @@
           "type": "liquid",
           "settings": {
             "liquid": "<div class=\"shipping-bar desktop-only\">\n  <div class=\"shipping-item\">\n    <span class=\"pulse-dot\"></span>\n    <span>5-6 napos szállítás</span>\n  </div>\n  <div class=\"shipping-item\">\n    <img src=\"https://cdn.shopify.com/s/files/1/0977/9671/8929/files/Kepernyofoto_2025-10-28_-_20.51.31.png?v=1761681106\" alt=\"Magyar zászló\" class=\"flag-icon\">\n    <span>Magyar raktárból</span>\n  </div>\n</div>\n<style>\n@media (max-width: 768px) {\n  .desktop-only {\n    display: none !important;\n  }\n}\n.shipping-bar {\n  background-color: #F9F7FC;\n  border-radius: 20px;\n  padding: 6px 16px;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  font-family: \"Arial\", sans-serif;\n  font-size: 14px;\n  font-weight: 600;\n  color: #000;\n  max-width: 360px;\n  margin: 10px auto;\n}\n.shipping-item {\n  display: flex;\n  align-items: center;\n  gap: 6px;\n}\n.flag-icon {\n  width: 20px;\n  height: auto;\n  border-radius: 2px;\n}\n.pulse-dot {\n  width: 10px;\n  height: 10px;\n  background-color: #1c7c27;\n  border-radius: 50%;\n  position: relative;\n}\n.pulse-dot::after {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 10px;\n  height: 10px;\n  border-radius: 50%;\n  background-color: #1c7c27;\n  animation: pulse 1.5s infinite;\n  opacity: 0.6;\n}\n@keyframes pulse {\n  0% {\n    transform: scale(1);\n    opacity: 0.8;\n  }\n  70% {\n    transform: scale(1.8);\n    opacity: 0;\n  }\n  100% {\n    transform: scale(1);\n    opacity: 0;\n  }\n}\n</style>"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
           }
         },
         "liquid_xnqPc7": {
@@ -190,7 +190,6 @@
         "liquid_TUwQDj",
         "title",
         "doran_product_reviews_rating_widget_gLyeMU",
-        "price",
         "liquid_jTYkzH",
         "text_ymY8Mt",
         "text_eCwxUz",
@@ -199,6 +198,7 @@
         "variant_picker",
         "quantity_selector",
         "liquid_e3pzJE",
+        "price",
         "liquid_xnqPc7",
         "text_U3tRDN",
         "buy_buttons",
